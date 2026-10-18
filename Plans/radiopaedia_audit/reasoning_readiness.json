@@ -1,0 +1,36 @@
+{
+  "source": "metadata.jsonl",
+  "source_sha256": "2e258d95c32e948b344b7cb8a4d768039321b3c5cc16fdd331020a609cf14c72",
+  "scope": "Base-case records in existing 2026-10-15 audit; not a fresh source census",
+  "case_count": 64160,
+  "nonempty_discussions": 58491,
+  "nonempty_discussion_characters": {
+    "q1": 149.0,
+    "median": 264,
+    "q3": 458.0,
+    "definition": "Length of saved discussion string, including any heading; not tokens"
+  },
+  "cases_with_qa": 4593,
+  "total_qa_pairs": 9647,
+  "top_level_key_counts": {
+    "article_feature_image": 64160,
+    "author": 64160,
+    "certainty": 64160,
+    "citation_info": 64160,
+    "discussion": 64160,
+    "discussion_links": 64160,
+    "patient_data": 64160,
+    "presentation": 64160,
+    "public_playlist": 64160,
+    "qa_pairs": 64160,
+    "reference": 64160,
+    "related-article": 64160,
+    "title": 64160
+  },
+  "limitations": [
+    "No measured human or model difficulty labels.",
+    "No clinician validation of reasoning or per-author credentials.",
+    "Top-level schema does not establish the absence of dialogue embedded in prose.",
+    "Discussion length does not measure clinical quality or reasoning depth."
+  ]
+}

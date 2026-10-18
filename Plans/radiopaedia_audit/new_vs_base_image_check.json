@@ -1,0 +1,386 @@
+[
+  {
+    "rid": "63801",
+    "relative_path": "images/0/case63801_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "63801",
+    "relative_path": "images/0/case63801_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "214250",
+    "relative_path": "images/0/annotation/Gerota\u2019s fascia.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "214250",
+    "relative_path": "images/0/annotation/an ill-defined smudging of the surrounding peri-pancreatic fascial planes.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "42837",
+    "relative_path": "images/0/annotation/curvilinear calcification.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "42837",
+    "relative_path": "images/0/case42837_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "97872",
+    "relative_path": "images/0/case97872_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "97872",
+    "relative_path": "images/0/case97872_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212449",
+    "relative_path": "images/0/annotation/extra-axial fluid collection.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212449",
+    "relative_path": "images/0/annotation/high signal intensity on T1.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "217290",
+    "relative_path": "images/0/annotation/ADC mapping.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "217290",
+    "relative_path": "images/0/annotation/FLAIR high signal.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "211945",
+    "relative_path": "images/0/annotation/expansile lesion.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "211945",
+    "relative_path": "images/0/annotation/plate.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "61664",
+    "relative_path": "images/0/case61664_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "61664",
+    "relative_path": "images/0/case61664_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "79128",
+    "relative_path": "images/0/case79128_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "79128",
+    "relative_path": "images/0/case79128_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215147",
+    "relative_path": "images/0/annotation/Mildly dilated, fluid-filled bowel loops.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215147",
+    "relative_path": "images/0/annotation/arterial.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "2660",
+    "relative_path": "images/0/case2660_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "2660",
+    "relative_path": "images/0/case2660_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212957",
+    "relative_path": "images/0/annotation/temporal lobes.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212957",
+    "relative_path": "images/0/case212957_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "213122",
+    "relative_path": "images/0/annotation/T1.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "213122",
+    "relative_path": "images/0/annotation/T2.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215343",
+    "relative_path": "images/0/annotation/FLAIR.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215343",
+    "relative_path": "images/0/annotation/T2.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "217156",
+    "relative_path": "images/0/annotation/carpometacarpal.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "217156",
+    "relative_path": "images/0/annotation/intercarpal.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "35766",
+    "relative_path": "images/0/case35766_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "35766",
+    "relative_path": "images/0/case35766_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "211866",
+    "relative_path": "images/0/annotation/Linear hypodensity.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "211866",
+    "relative_path": "images/0/annotation/displaced medially.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "41695",
+    "relative_path": "images/0/case41695_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "41695",
+    "relative_path": "images/0/case41695_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "175426",
+    "relative_path": "images/0/annotation/frontal sinus.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "175426",
+    "relative_path": "images/0/annotation/vividly enhancing lobulated mass.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215487",
+    "relative_path": "images/0/annotation/left anterior inferior cerebellar artery.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215487",
+    "relative_path": "images/0/annotation/right anterior inferior cerebellar artery.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "43062",
+    "relative_path": "images/0/case43062_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "43062",
+    "relative_path": "images/0/case43062_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212159",
+    "relative_path": "images/0/annotation/magnetic susceptibility artefact.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212159",
+    "relative_path": "images/0/annotation/similar characteristics is observed on T2.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215947",
+    "relative_path": "images/0/annotation/Multiloculated ovoid cystic structure.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215947",
+    "relative_path": "images/0/annotation/lateral border of the right rectus abdominis muscle.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "210341",
+    "relative_path": "images/0/annotation/partially formed fetus.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "210341",
+    "relative_path": "images/0/case210341_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "39863",
+    "relative_path": "images/0/annotation/left.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "39863",
+    "relative_path": "images/0/annotation/right.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "217548",
+    "relative_path": "images/0/annotation/A hyperdense foreign body.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "217548",
+    "relative_path": "images/0/annotation/air bronchogram.png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "47736",
+    "relative_path": "images/0/case47736_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "47736",
+    "relative_path": "images/0/case47736_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "152246",
+    "relative_path": "images/0/case152246_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "152246",
+    "relative_path": "images/0/case152246_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "54763",
+    "relative_path": "images/0/case54763_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "54763",
+    "relative_path": "images/0/case54763_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "211906",
+    "relative_path": "images/0/case211906_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "211906",
+    "relative_path": "images/0/case211906_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215976",
+    "relative_path": "images/0/annotation/high T2 signal of free silicone..png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "215976",
+    "relative_path": "images/0/annotation/low T1 signal of free silicone..png",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212321",
+    "relative_path": "images/0/case212321_v0_s0_0.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  },
+  {
+    "rid": "212321",
+    "relative_path": "images/0/case212321_v0_s0_1.jpg",
+    "exists_in_base": true,
+    "identical_bytes": true
+  }
+]

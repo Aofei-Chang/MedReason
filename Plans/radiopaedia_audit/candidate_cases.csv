@@ -1,0 +1,101 @@
+rid,title,certainty,confirmation_mention,uncertainty_mention,followup_mention,text_chars,pool,metadata_path,status
+32560,Acinic cell carcinoma of the parotid gland,Diagnosis certain,True,True,True,1072,parotid,/data/lingwei/radiopaedia_0826/cases/32560/data.json,lexical candidate; not adjudicated
+27977,Enlarged parotid lymph node,Diagnosis almost certain,True,True,False,544,parotid,/data/lingwei/radiopaedia_0826/cases/27977/data.json,lexical candidate; not adjudicated
+198678,Acinic cell carcinoma of the parotid gland,Diagnosis almost certain,True,True,False,468,parotid,/data/lingwei/radiopaedia_0826/cases/198678/data.json,lexical candidate; not adjudicated
+57753,Parotid mucoepidermoid carcinoma,Diagnosis certain,True,False,False,1169,parotid,/data/lingwei/radiopaedia_0826/cases/57753/data.json,lexical candidate; not adjudicated
+82340,Parotid gland non-Hodgkin lymphoma,Diagnosis certain,True,False,False,1105,parotid,/data/lingwei/radiopaedia_0826/cases/82340/data.json,lexical candidate; not adjudicated
+45969,Pleomorphic adenoma: parotid gland,Diagnosis certain,True,False,False,736,parotid,/data/lingwei/radiopaedia_0826/cases/45969/data.json,lexical candidate; not adjudicated
+48254,Parotid pleomorphic adenoma: myxoid type,Diagnosis certain,True,False,False,682,parotid,/data/lingwei/radiopaedia_0826/cases/48254/data.json,lexical candidate; not adjudicated
+161517,Parotid gland pleomorphic adenoma,Diagnosis certain,True,False,False,669,parotid,/data/lingwei/radiopaedia_0826/cases/161517/data.json,lexical candidate; not adjudicated
+47587,Deep lobe of parotid pleomorphic adenoma,Diagnosis certain,True,False,False,603,parotid,/data/lingwei/radiopaedia_0826/cases/47587/data.json,lexical candidate; not adjudicated
+4322,Mucoepidermoid carcinoma - parotid,Diagnosis almost certain,True,False,False,548,parotid,/data/lingwei/radiopaedia_0826/cases/4322/data.json,lexical candidate; not adjudicated
+28886,Parotid mucoepidermoid carcinoma,Diagnosis certain,True,False,False,506,parotid,/data/lingwei/radiopaedia_0826/cases/28886/data.json,lexical candidate; not adjudicated
+79726,Pleomorphic adenoma - deep parotid gland,Diagnosis certain,True,False,False,483,parotid,/data/lingwei/radiopaedia_0826/cases/79726/data.json,lexical candidate; not adjudicated
+200059,Parotitis with parotid abscess,Diagnosis certain,True,False,True,481,parotid,/data/lingwei/radiopaedia_0826/cases/200059/data.json,lexical candidate; not adjudicated
+64100,Parotid adenoid cystic carcinoma,Diagnosis almost certain,True,False,False,401,parotid,/data/lingwei/radiopaedia_0826/cases/64100/data.json,lexical candidate; not adjudicated
+149218,Parotid lymphoepithelial cyst,Diagnosis almost certain,True,False,False,391,parotid,/data/lingwei/radiopaedia_0826/cases/149218/data.json,lexical candidate; not adjudicated
+97061,Pleomorphic adenoma - parotid,Diagnosis almost certain,True,False,True,379,parotid,/data/lingwei/radiopaedia_0826/cases/97061/data.json,lexical candidate; not adjudicated
+84395,Epidermal inclusion cyst - parotid region,Diagnosis almost certain,True,False,False,376,parotid,/data/lingwei/radiopaedia_0826/cases/84395/data.json,lexical candidate; not adjudicated
+78037,Parotid lipoma,Diagnosis certain,True,False,False,355,parotid,/data/lingwei/radiopaedia_0826/cases/78037/data.json,lexical candidate; not adjudicated
+152012,Lymphangioma of parotid gland,Diagnosis certain,True,False,False,348,parotid,/data/lingwei/radiopaedia_0826/cases/152012/data.json,lexical candidate; not adjudicated
+76468,Pleomorphic adenoma parotid gland,Diagnosis certain,True,False,False,344,parotid,/data/lingwei/radiopaedia_0826/cases/76468/data.json,lexical candidate; not adjudicated
+83774,Epidermal inclusion cyst - parotid region,Diagnosis almost certain,True,False,False,341,parotid,/data/lingwei/radiopaedia_0826/cases/83774/data.json,lexical candidate; not adjudicated
+89841,Pleomorphic adenoma - parotid gland,Diagnosis almost certain,True,False,False,325,parotid,/data/lingwei/radiopaedia_0826/cases/89841/data.json,lexical candidate; not adjudicated
+159982,Pleomorphic adenoma of the parotid gland,Diagnosis almost certain,True,False,False,313,parotid,/data/lingwei/radiopaedia_0826/cases/159982/data.json,lexical candidate; not adjudicated
+82030,Pleomorphic adenoma of the parotid gland - pediatric,Diagnosis certain,True,False,False,290,parotid,/data/lingwei/radiopaedia_0826/cases/82030/data.json,lexical candidate; not adjudicated
+57719,Parotid duct alveolar rhabdomyosarcoma,Diagnosis almost certain,True,False,True,270,parotid,/data/lingwei/radiopaedia_0826/cases/57719/data.json,lexical candidate; not adjudicated
+33235,Glioblastoma IDH wild-type (with primitive neuronal component),Diagnosis almost certain,True,True,False,2137,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/33235/data.json,lexical candidate; not adjudicated
+182530,Glioblastoma - hypothalamus,Diagnosis certain,True,True,False,2067,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/182530/data.json,lexical candidate; not adjudicated
+56379,Glioblastoma IDH wild type (brainstem),Diagnosis certain,True,True,False,1915,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/56379/data.json,lexical candidate; not adjudicated
+156878,Optic pathway glioblastoma,Diagnosis certain,True,True,False,1661,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/156878/data.json,lexical candidate; not adjudicated
+33365,Glioblastoma NOS,Diagnosis certain,True,True,False,1581,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/33365/data.json,lexical candidate; not adjudicated
+65122,Brain metastasis as initial presentation of non-small cell lung cancer,Diagnosis certain,True,True,False,1249,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/65122/data.json,lexical candidate; not adjudicated
+33598,Tuberculous brain abscess,Diagnosis certain,True,True,False,1191,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/33598/data.json,lexical candidate; not adjudicated
+81568,Cerebral metastasis to basal ganglia,Diagnosis certain,True,True,False,1130,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/81568/data.json,lexical candidate; not adjudicated
+50835,Glioblastoma IDH wild-type (unusual),Diagnosis certain,True,True,False,987,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/50835/data.json,lexical candidate; not adjudicated
+87566,Brain abscess with dual rim sign,Diagnosis almost certain,True,True,False,953,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/87566/data.json,lexical candidate; not adjudicated
+98668,Cerebral metastasis - cholangiocarcinoma,Diagnosis certain,True,True,False,877,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/98668/data.json,lexical candidate; not adjudicated
+182098,CNS capillary telangiectasia and cerebral metastases,Diagnosis almost certain,True,True,False,860,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/182098/data.json,lexical candidate; not adjudicated
+150187,Glioblastoma with primitive neuronal components,Diagnosis certain,True,True,False,828,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/150187/data.json,lexical candidate; not adjudicated
+158898,Metastatic extraneural glioblastoma,Diagnosis almost certain,True,True,False,738,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/158898/data.json,lexical candidate; not adjudicated
+38258,Glioblastoma NOS (mimicking a melanoma metastasis),Diagnosis almost certain,True,True,False,664,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/38258/data.json,lexical candidate; not adjudicated
+163604,"Glioblastoma, IDH-wildtype",Diagnosis almost certain,True,True,False,633,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/163604/data.json,lexical candidate; not adjudicated
+72901,Glioblastoma NOS,Diagnosis certain,True,True,False,593,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/72901/data.json,lexical candidate; not adjudicated
+9286,Bronchogenic carcinoma brain metastasis,Diagnosis certain,True,True,False,565,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/9286/data.json,lexical candidate; not adjudicated
+213837,Multicentric glioblastoma - IDH-wildtype,Diagnosis certain,True,True,False,538,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/213837/data.json,lexical candidate; not adjudicated
+38587,Glioblastoma NOS,Diagnosis almost certain,True,True,False,535,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/38587/data.json,lexical candidate; not adjudicated
+51438,Glioblastoma NOS spreading to the corticospinal tract,Diagnosis probable,True,True,False,522,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/51438/data.json,lexical candidate; not adjudicated
+19254,Glioblastoma NOS - splenium,Diagnosis almost certain,True,True,False,519,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/19254/data.json,lexical candidate; not adjudicated
+79670,Glioblastoma,Diagnosis certain,True,True,False,394,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/79670/data.json,lexical candidate; not adjudicated
+2589,Glioblastoma NOS - butterfly morphology,Diagnosis almost certain,True,True,False,302,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/2589/data.json,lexical candidate; not adjudicated
+9969,Glioblastoma NOS - hemorrhagic,Diagnosis probable,True,False,False,2820,intracranial_lesions,/data/lingwei/radiopaedia_0826/cases/9969/data.json,lexical candidate; not adjudicated
+35133,Adrenal pheochromocytoma,Diagnosis certain,True,True,False,5736,adrenal,/data/lingwei/radiopaedia_0826/cases/35133/data.json,lexical candidate; not adjudicated
+148113,Extra adrenal paraganglioma,Diagnosis certain,True,True,False,1306,adrenal,/data/lingwei/radiopaedia_0826/cases/148113/data.json,lexical candidate; not adjudicated
+194727,Adrenal hematoma,Diagnosis certain,True,True,False,1126,adrenal,/data/lingwei/radiopaedia_0826/cases/194727/data.json,lexical candidate; not adjudicated
+218149,Extra-adrenal myelolipoma,Diagnosis certain,True,True,False,543,adrenal,/data/lingwei/radiopaedia_0826/cases/218149/data.json,lexical candidate; not adjudicated
+78375,Bilateral adrenal granulocytic sarcomas (chloromas),Diagnosis almost certain,True,True,False,497,adrenal,/data/lingwei/radiopaedia_0826/cases/78375/data.json,lexical candidate; not adjudicated
+157476,Adrenal cortical carcinoma,Diagnosis certain,True,True,False,430,adrenal,/data/lingwei/radiopaedia_0826/cases/157476/data.json,lexical candidate; not adjudicated
+11039,Adrenal hemangioma,Diagnosis certain,True,False,False,1234,adrenal,/data/lingwei/radiopaedia_0826/cases/11039/data.json,lexical candidate; not adjudicated
+89677,Adrenal adenoma,Diagnosis certain,True,False,False,1188,adrenal,/data/lingwei/radiopaedia_0826/cases/89677/data.json,lexical candidate; not adjudicated
+96452,Adrenal cyst,Diagnosis almost certain,True,False,False,763,adrenal,/data/lingwei/radiopaedia_0826/cases/96452/data.json,lexical candidate; not adjudicated
+33078,Adrenal hemangioma,Diagnosis certain,True,False,False,757,adrenal,/data/lingwei/radiopaedia_0826/cases/33078/data.json,lexical candidate; not adjudicated
+171042,Squamous cell carcinoma of the lung with bilateral adrenal metastasis,Diagnosis almost certain,True,False,False,740,adrenal,/data/lingwei/radiopaedia_0826/cases/171042/data.json,lexical candidate; not adjudicated
+186706,Adrenal pseudocyst,Diagnosis certain,True,False,False,729,adrenal,/data/lingwei/radiopaedia_0826/cases/186706/data.json,lexical candidate; not adjudicated
+200553,Adrenal cortical carcinoma,Diagnosis almost certain,True,False,False,576,adrenal,/data/lingwei/radiopaedia_0826/cases/200553/data.json,lexical candidate; not adjudicated
+157197,Adrenal cortical carcinoma,Diagnosis almost certain,True,False,False,513,adrenal,/data/lingwei/radiopaedia_0826/cases/157197/data.json,lexical candidate; not adjudicated
+195296,Adrenal pheochromocytoma,Diagnosis almost certain,True,False,True,502,adrenal,/data/lingwei/radiopaedia_0826/cases/195296/data.json,lexical candidate; not adjudicated
+34307,Adrenal cortical carcinoma with IVC invasion and thrombosis,Diagnosis probable,True,False,False,482,adrenal,/data/lingwei/radiopaedia_0826/cases/34307/data.json,lexical candidate; not adjudicated
+95458,Congenital adrenal hyperplasia,Diagnosis almost certain,True,False,False,459,adrenal,/data/lingwei/radiopaedia_0826/cases/95458/data.json,lexical candidate; not adjudicated
+28558,Lung cancer and adrenal mass CT-guided biopsy,Diagnosis not applicable,True,False,False,449,adrenal,/data/lingwei/radiopaedia_0826/cases/28558/data.json,lexical candidate; not adjudicated
+96053,Adrenal cortical carcinoma,Diagnosis almost certain,True,False,False,408,adrenal,/data/lingwei/radiopaedia_0826/cases/96053/data.json,lexical candidate; not adjudicated
+86842,Adrenal sarcoma in a treated patient with ovarian cancer,Diagnosis certain,True,False,False,358,adrenal,/data/lingwei/radiopaedia_0826/cases/86842/data.json,lexical candidate; not adjudicated
+90209,Adrenal cystic lymphangioma,Diagnosis almost certain,True,False,False,340,adrenal,/data/lingwei/radiopaedia_0826/cases/90209/data.json,lexical candidate; not adjudicated
+77299,Presacral extra-adrenal myelolipoma,Diagnosis almost certain,True,False,False,333,adrenal,/data/lingwei/radiopaedia_0826/cases/77299/data.json,lexical candidate; not adjudicated
+195419,Adrenal myelolipoma,Diagnosis almost certain,True,False,False,324,adrenal,/data/lingwei/radiopaedia_0826/cases/195419/data.json,lexical candidate; not adjudicated
+183821,Adrenal adenoma - atypical,Diagnosis certain,True,False,False,314,adrenal,/data/lingwei/radiopaedia_0826/cases/183821/data.json,lexical candidate; not adjudicated
+157263,Adrenal cortical carcinoma,Diagnosis almost certain,True,False,False,282,adrenal,/data/lingwei/radiopaedia_0826/cases/157263/data.json,lexical candidate; not adjudicated
+44482,Scaphoid pseudoarthrosis,Diagnosis certain,False,True,True,1064,scaphoid,/data/lingwei/radiopaedia_0826/cases/44482/data.json,lexical candidate; not adjudicated
+213586,Scaphoid nonunion with degenerative pseudarthrosis,Diagnosis almost certain,False,False,False,1754,scaphoid,/data/lingwei/radiopaedia_0826/cases/213586/data.json,lexical candidate; not adjudicated
+85756,Trans-scaphoid perilunate dislocation,Diagnosis certain,False,False,True,1026,scaphoid,/data/lingwei/radiopaedia_0826/cases/85756/data.json,lexical candidate; not adjudicated
+165951,Scaphoid nonunion with humpback and DISI deformities,Diagnosis certain,False,False,False,1008,scaphoid,/data/lingwei/radiopaedia_0826/cases/165951/data.json,lexical candidate; not adjudicated
+61093,Scaphoid avascular necrosis with undisplaced pisiform fracture,Diagnosis probable,False,False,False,776,scaphoid,/data/lingwei/radiopaedia_0826/cases/61093/data.json,lexical candidate; not adjudicated
+210421,Dislocation of the first row of carpal bones and fracture of the scaphoid bone,Diagnosis certain,False,False,False,739,scaphoid,/data/lingwei/radiopaedia_0826/cases/210421/data.json,lexical candidate; not adjudicated
+81552,Scaphoid non-union with avascular necrosis,Diagnosis probable,False,False,False,666,scaphoid,/data/lingwei/radiopaedia_0826/cases/81552/data.json,lexical candidate; not adjudicated
+194425,Trans-scaphoid perilunate fracture-dislocation,Diagnosis certain,False,False,False,649,scaphoid,/data/lingwei/radiopaedia_0826/cases/194425/data.json,lexical candidate; not adjudicated
+162976,Scaphoid fracture (MRI),Diagnosis almost certain,False,False,False,640,scaphoid,/data/lingwei/radiopaedia_0826/cases/162976/data.json,lexical candidate; not adjudicated
+60395,Scaphoid fracture with AVN,Diagnosis almost certain,False,False,False,628,scaphoid,/data/lingwei/radiopaedia_0826/cases/60395/data.json,lexical candidate; not adjudicated
+62179,Occult scaphoid fracture,Diagnosis certain,False,False,False,623,scaphoid,/data/lingwei/radiopaedia_0826/cases/62179/data.json,lexical candidate; not adjudicated
+99377,Scaphoid fracture - distal third,Diagnosis certain,False,False,False,615,scaphoid,/data/lingwei/radiopaedia_0826/cases/99377/data.json,lexical candidate; not adjudicated
+163447,Herbert and Fisher classification of scaphoid fractures (illustration),Diagnosis not applicable,False,False,False,608,scaphoid,/data/lingwei/radiopaedia_0826/cases/163447/data.json,lexical candidate; not adjudicated
+189991,Scaphoid nonunion advanced collapse,Diagnosis almost certain,False,False,False,587,scaphoid,/data/lingwei/radiopaedia_0826/cases/189991/data.json,lexical candidate; not adjudicated
+60487,Scaphoid fracture,Diagnosis almost certain,False,False,False,541,scaphoid,/data/lingwei/radiopaedia_0826/cases/60487/data.json,lexical candidate; not adjudicated
+48359,Scaphoid fracture - non-union,Diagnosis almost certain,False,False,False,518,scaphoid,/data/lingwei/radiopaedia_0826/cases/48359/data.json,lexical candidate; not adjudicated
+29656,Scaphoid non union advanced collapse,Diagnosis certain,False,False,True,513,scaphoid,/data/lingwei/radiopaedia_0826/cases/29656/data.json,lexical candidate; not adjudicated
+98240,Scaphoid bone fracture,Diagnosis certain,False,False,False,483,scaphoid,/data/lingwei/radiopaedia_0826/cases/98240/data.json,lexical candidate; not adjudicated
+35209,Scaphoid avascular necrosis,Diagnosis certain,False,False,False,475,scaphoid,/data/lingwei/radiopaedia_0826/cases/35209/data.json,lexical candidate; not adjudicated
+90371,Trans-scaphoid perilunate dislocation,Diagnosis almost certain,False,False,False,473,scaphoid,/data/lingwei/radiopaedia_0826/cases/90371/data.json,lexical candidate; not adjudicated
+206550,Scaphoid fracture,Diagnosis almost certain,False,False,False,461,scaphoid,/data/lingwei/radiopaedia_0826/cases/206550/data.json,lexical candidate; not adjudicated
+98466,Scaphoid fracture - middle third,Diagnosis certain,False,False,False,457,scaphoid,/data/lingwei/radiopaedia_0826/cases/98466/data.json,lexical candidate; not adjudicated
+88809,Scaphoid proximal pole and lunate avascular necrosis,Diagnosis almost certain,False,False,False,440,scaphoid,/data/lingwei/radiopaedia_0826/cases/88809/data.json,lexical candidate; not adjudicated
+42352,Trans-scaphoid trans-capitate perilunate fracture-dislocation,Diagnosis certain,False,False,False,436,scaphoid,/data/lingwei/radiopaedia_0826/cases/42352/data.json,lexical candidate; not adjudicated
+179967,Scaphoid fracture,Diagnosis certain,False,False,False,433,scaphoid,/data/lingwei/radiopaedia_0826/cases/179967/data.json,lexical candidate; not adjudicated

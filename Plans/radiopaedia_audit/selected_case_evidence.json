@@ -1,0 +1,366 @@
+[
+  {
+    "rid": "198678",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/198678/data.json",
+    "title": "Acinic cell carcinoma of the parotid gland",
+    "certainty": "Diagnosis almost certain",
+    "presentation": "Presentation\nThe patient presents with a left facial mass lesion for work-up. The lesion is painless.",
+    "discussion": "Case Discussion\nAn acinic cell carcinoma of the left superficial and deep parotid gland is definitively confirmed on excision histology in this case.\nBased on the lesion's MR imaging characteristics the broad differential in this case unfortunately still includes all the salivary gland neoplasms:\nWarthin's tumor\npleomorphic adenoma\nadenoid cystic carcinoma\nmucoepidermoid carcinoma\nacinic cell carcinoma\nOver 80% of acinic cell carcinomas occur in the parotid gland.",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/198678/images/0/viewer_info.json",
+        "modality": "MRI",
+        "text": "There is a well-marginated, bilobed, mixed, solid-cystic left intraparotid mass lesion within the superficial and deep lobes. The lesion has heterogeneous signal intensity on multiparametric MR imaging due to its mixed nature. The lesion has a regional mass effect, displacing the left parapharyngeal space anteromedially, the left lateral pterygoid muscle anteriorly (masticator space), and the carotid space (post styloid parapharyngeal space ) posteromedially with no encasement or infiltration. There is asymmetric compression of the left longus colli muscle and no infiltration. There is a widening of the stylomandibular tunnel. There is no calcification suspected. There is avid enhancement post-contrast administration.\nThe right parotid gland and bilateral submandibular glands are normal.\nThere are no suspicious cervical lymph nodes.",
+        "titles": [
+          "Axial STIR",
+          "Axial T2",
+          "Axial T1",
+          "Axial T1 C+ fat sat",
+          "Sagittal T2",
+          "Coronal T1 C+ fat sat",
+          "Sagittal T1 C+ fat sat",
+          "Coronal STIR",
+          "Coronal T2",
+          "Coronal T1"
+        ],
+        "image_file_count": 454
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "32560",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/32560/data.json",
+    "title": "Acinic cell carcinoma of the parotid gland",
+    "certainty": "Diagnosis certain",
+    "presentation": "Presentation\nA new palpable, mildly painful mass at the right mandibular angle, noticed two weeks ago. No pertinent past medical history.",
+    "discussion": "Case Discussion\nThe right superficial parotid mass in this case first came to the patient's attention when he began having trouble sleeping on the right side. The mass was mildly tender to palpation, but there were no paresthesias or other evidence of facial nerve injury.\nImaging with CT demonstrated the cystic and solid lesion above without lymphadenopathy, and the subsequent MRI showed a similar mass, but more clearly demonstrated enhancement in the solid components of the mass. The mass was then referred for FNA and core biopsy under ultrasound guidance. The ultrasound appearance of the cystic and solid mass is relatively nonspecific.\nPre-biopsy, the differential for the mass is still relatively wide and \"tissue is the issue.\"  Possible etiologies include:\nWarthin tumor\nadenoid cystic carcinoma\npleomorphic adenoma\nmucoepidermoid carcinoma\nacinic cell carcinoma\nDuring the FNA, the cytopathologist remarked that all the smears he was seeing \"looked just like acinar cells.\" On the core biopsy, a diagnosis of acinic cell carcinoma was made, a rare diagnosis.",
+    "qa_pairs": [
+      [
+        "What is the most common malignant tumour of the parotid gland?",
+        "Although Warthin tumor and pleomorphic adenoma are the most common tumors, the most common *malignant* tumor is mucoepidermoid carcinoma."
+      ]
+    ],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/32560/images/0/viewer_info.json",
+        "modality": "CT",
+        "text": "There is a 2.8 x 3.5 cm solid and cystic (or necrotic) mass in the superficial right parotid gland. No lymphadenopathy.",
+        "titles": [
+          "Axial non-contrast",
+          "Axial C+ arterial phase",
+          "Coronal C+ arterial phase",
+          "Sagittal C+ arterial phase"
+        ],
+        "image_file_count": 54
+      },
+      {
+        "viewer_id": "1",
+        "path": "/data/lingwei/radiopaedia_0826/cases/32560/images/1/viewer_info.json",
+        "modality": "MRI",
+        "text": "There is a 2.8 x 3.5 cm solid and cystic (or necrotic) mass in the superficial right parotid gland. No lymphadenopathy.",
+        "titles": [
+          "Axial STIR",
+          "Axial T1",
+          "Sagittal T1",
+          "Axial T1 C+ fat sat",
+          "Axial DWI and ADC map"
+        ],
+        "image_file_count": 44
+      },
+      {
+        "viewer_id": "2",
+        "path": "/data/lingwei/radiopaedia_0826/cases/32560/images/2/viewer_info.json",
+        "modality": "ULTRASOUND",
+        "text": "There is a 2.8 x 3.5 cm solid and cystic (or necrotic) mass in the superficial right parotid gland. No lymphadenopathy.",
+        "titles": [
+          "Targeted ultrasound",
+          "Targeted ultrasound",
+          "Targeted ultrasound",
+          "colour Doppler",
+          "Biopsy"
+        ],
+        "image_file_count": 10
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "45969",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/45969/data.json",
+    "title": "Pleomorphic adenoma: parotid gland",
+    "certainty": "Diagnosis certain",
+    "presentation": "Presentation\nSlowly-enlarging right neck mass.",
+    "discussion": "Case Discussion\nFine needle aspiration biopsy was consistent with a pleomorphic adenoma. The diagnosis was confirmed in the parotidectomy specimen above. \nPleomorphic adenoma accounts for 70% to 80% of all neoplasms of salivary glands and it involves the parotid gland in almost 80% of cases. It is usually well-circumscribed and has pushing borders. The gross appearance depends upon the relative proportion of epithelial elements and stromal component which may range from myxoid to cartilage. Tumors with a prominent cartilaginous matrix have bluish-gray opalescent appearance as seen in this case.\nThis case has been reproduced with permission from Dharam M. Ramnani, MD's collection at WebPathology.com. Additional images are here.",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/45969/images/0/viewer_info.json",
+        "modality": "PATHOLOGY",
+        "text": "Parotidectomy and histology images described individually. \nGross Pathology\nPleomorphic adenomas arising in the parotid gland usually have a pink-tan rubbery surface, well-defined pushing margins, and translucent areas of cartilaginous differentiation (as seen in this image). A rim of uninvolved salivary gland parenchyma is present around the tumor in this superficial parotidectomy specimen.\nH&E\nPleomorphic adenomas often have a biphasic appearance caused by admixture of epithelium and stroma. The epithelial component here is arranged in tubular and glandular structures. The stroma has myxochondroid appearance\nMicroscopically, the pleomorphic adenomas consist of three elements: epithelial cells, myoepithelial cells, and stroma. The epithelial cells commonly form tubular or glandular structures and are surrounded by myoepithelial cells. The background stroma may be myxoid, chondroid, hyalinized, or vascular\nPleomorphic adenomas arising in the parotid usually have a thick fibrous capsule as seen here. The normal parotid tissue is to the upper right of the capsule and the tumor is on the lower left. The capsule can be variable in thickness and may even be absent. Pleomorphic adenomas arising in the minor salivary glands are well-demarcated but usually not encapsulated",
+        "titles": [
+          "Gross pathology",
+          "H&E",
+          "H&E",
+          "H&E"
+        ],
+        "image_file_count": 8
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "87566",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/87566/data.json",
+    "title": "Brain abscess with dual rim sign",
+    "certainty": "Diagnosis almost certain",
+    "presentation": "Presentation\nSudden weakness on the right side of the body, fever.",
+    "discussion": "Case Discussion\nDual rim sign is seen on T2/FLAIR/SWI, comprising two concentric rims surrounding the abscess cavity, the outer one is hypointense, and the inner one is hyperintense. \nDual rim sign helps distinguish an abscess from a glioblastoma. The hypointense rim typically demonstrates a thin, complete, regular overlapping the contrast-enhancing rim in cerebral abscesses. In glioblastoma, the T2 hypointense line is inner to the contrast-enhancing rim and is irregular, incomplete.\nOn histopathology, the outer rim corresponds to the capsule abscess in which the production of paramagnetic free radicals by macrophages resulting in magnetic susceptibility 1. The granulation tissues between the necrotic center and capsule are responsible for the hyperintense inner rim 1,2.\nIn contrast, the random deposition of hemorrhagic products at the edge of the necrotic cavity glioblastoma causes the irregular, incomplete, hypointense margin on SWI 1,2.",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/87566/images/0/viewer_info.json",
+        "modality": "MRI",
+        "text": "The lesions demonstrate central restricted diffusion on DWI, ring enhancement on T1 C+, dual rim sign on FLAIR/T2 involving left parietal-occipital lobe and left temporal lobe in keeping with brain abscess. \nThere are peritumoral vasogenic edema and mass effect to compress adjacent brain parenchyma and left lateral ventricle.",
+        "titles": [
+          "Axial T1",
+          "Axial T2",
+          "Axial FLAIR",
+          "Axial SWI",
+          "Axial DWI",
+          "Axial ADC",
+          "Axial T1 C+"
+        ],
+        "image_file_count": 300
+      },
+      {
+        "viewer_id": "1",
+        "path": "/data/lingwei/radiopaedia_0826/cases/87566/images/1/viewer_info.json",
+        "modality": "ANNOTATED IMAGE",
+        "text": "The lesions demonstrate central restricted diffusion on DWI, ring enhancement on T1 C+, dual rim sign on FLAIR/T2 involving left parietal-occipital lobe and left temporal lobe in keeping with brain abscess. \nThere are peritumoral vasogenic edema and mass effect to compress adjacent brain parenchyma and left lateral ventricle.",
+        "titles": [
+          "FLAIR",
+          "T1 C+"
+        ],
+        "image_file_count": 5
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "33598",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/33598/data.json",
+    "title": "Tuberculous brain abscess",
+    "certainty": "Diagnosis certain",
+    "presentation": "Presentation\nHeadache for more than 3 months. Her symptoms began with projectile bouts of vomiting initially. An MRI scan was performed for further evaluation.",
+    "discussion": "Case Discussion\nThe presence of irregular wall thickening favors a malignant process, and lack of marked peripheral edema, also indicates a benign lesion. On the other hand, the location of this lesion, in the deep white matter, suggests the diagnosis of lymphoma. However, the patient underwent a craniotomy and the mass was resected. Histopathology revealed that no malignant cell was observed, and the diagnosis of malignancy was excluded, so the presence of brain abscess has been implicated and microbiology evaluation was performed. Although the abscess has generally a thin wall, in this case, we can see the opposite. Unfortunately, the microbiological test performed a few hours prior to the patient's death revealed that the causative organism was Mycobacterium tuberculosis. Because extensive peripheral edema is a hallmark finding of metastasis, GBM or abscess differential diagnosis of intracerebral space-occupying lesions with ring enhancement includes them.\nRegarding this same patient, due to the partial treatment and use of corticosteroid, a thicker capsule and less amounts of edema were found, whilst the granulomatous abscesses tend to make a thicker ring on their own.",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/33598/images/0/viewer_info.json",
+        "modality": "MRI",
+        "text": "The MRI shows a well-defined thick-walled cystic lesion in the left basal ganglia which has mild peripheral edema and associated with considerable mass effect, especially on the foramen of Monro, which causes obliteration of the left frontal horn of the lateral ventricle. After the administration of contrast medium, the mass shows thick ring-like enhancement. You can see a small projection of the mass in the medial side of it, which seems to be trying to cross the midline and creates the butterfly fashion.",
+        "titles": [
+          "Axial T1",
+          "Axial T2",
+          "Axial FLAIR",
+          "Sagittal T1 C+",
+          "Axial T1 C+",
+          "Coronal T1 C+",
+          "Sagittal T2"
+        ],
+        "image_file_count": 141
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "78687",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/78687/data.json",
+    "title": "Glioblastoma - solitary ring enhancing lesion",
+    "certainty": "Diagnosis certain",
+    "presentation": "Presentation\nHeadache and seizures. No history of trauma, fever, neurological deficit, or weight loss.",
+    "discussion": "Case Discussion\nCraniotomy and biopsy of the left frontal lobe tumor.\nHistopathology: Glioblastoma (WHO grade IV). \nThe tumor is very cellular comprising epithelioid and spindle cell sarcomatous components as well as striking giant cells often with bizarre features together with extensive necrosis. Immunohistochemistry shows a negative reaction to cytokeratin AE1/AE3 and strong reactivity of tumor and brain tissue to vimentin.  CD34 is also negative. Glial fibrillary acidic protein (GFAP) shows focal immunoreactivity of viable as well as a necrotic tumor but the vast majority of the giant cells are nonreactive or only weakly reactive.",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/78687/images/0/viewer_info.json",
+        "modality": "CT",
+        "text": "FINDINGS: A space-occupying lesion with enhancing thick irregular walls and central necrotic core is seen in the left frontal lobe white matter. Marked surrounding vasogenic edema, effacement of the underlying ipsilateral lateral ventricle, and contralateral midline shift of 8 mm are noted. No other focal space-occupying lesion is seen.\nCONCLUSION: Left frontal lobe ring-enhancing space-occupying lesion with mass effect, which is likely a primary brain tumor; other possible differential includes brain abscess & solitary brain metastasis.",
+        "titles": [
+          "Axial non-contrast",
+          "Coronal non-contrast",
+          "Sagittal non-contrast",
+          "Axial C+ portal venous phase",
+          "Coronal C+ portal venous phase",
+          "Sagittal C+ portal venous phase",
+          "Axial, coronal & sagittal Reformated MIP Images"
+        ],
+        "image_file_count": 356
+      },
+      {
+        "viewer_id": "1",
+        "path": "/data/lingwei/radiopaedia_0826/cases/78687/images/1/viewer_info.json",
+        "modality": "MRI",
+        "text": "FINDINGS: A space-occupying lesion with enhancing thick irregular walls and central necrotic core is seen in the left frontal lobe white matter. Marked surrounding vasogenic edema, effacement of the underlying ipsilateral lateral ventricle, and contralateral midline shift of 8 mm are noted. No other focal space-occupying lesion is seen.\nCONCLUSION: Left frontal lobe ring-enhancing space-occupying lesion with mass effect, which is likely a primary brain tumor; other possible differential includes brain abscess & solitary brain metastasis.",
+        "titles": [
+          "Axial T1",
+          "Axial T2",
+          "Axial T2 TIRM",
+          "Coronal T2",
+          "Sagittal T2",
+          "Axial DWI",
+          "Axial ADC",
+          "Axial T1 C+",
+          "Sagittal T1 C+"
+        ],
+        "image_file_count": 262
+      },
+      {
+        "viewer_id": "2",
+        "path": "/data/lingwei/radiopaedia_0826/cases/78687/images/2/viewer_info.json",
+        "modality": "MRI",
+        "text": "FINDINGS: A space-occupying lesion with enhancing thick irregular walls and central necrotic core is seen in the left frontal lobe white matter. Marked surrounding vasogenic edema, effacement of the underlying ipsilateral lateral ventricle, and contralateral midline shift of 8 mm are noted. No other focal space-occupying lesion is seen.\nCONCLUSION: Left frontal lobe ring-enhancing space-occupying lesion with mass effect, which is likely a primary brain tumor; other possible differential includes brain abscess & solitary brain metastasis.",
+        "titles": [
+          "Axial T2",
+          "Sagittal T2",
+          "Axial T1 C+",
+          "Sagittal T1 C+"
+        ],
+        "image_file_count": 8
+      },
+      {
+        "viewer_id": "3",
+        "path": "/data/lingwei/radiopaedia_0826/cases/78687/images/3/viewer_info.json",
+        "modality": "ULTRASOUND",
+        "text": "FINDINGS: A space-occupying lesion with enhancing thick irregular walls and central necrotic core is seen in the left frontal lobe white matter. Marked surrounding vasogenic edema, effacement of the underlying ipsilateral lateral ventricle, and contralateral midline shift of 8 mm are noted. No other focal space-occupying lesion is seen.\nCONCLUSION: Left frontal lobe ring-enhancing space-occupying lesion with mass effect, which is likely a primary brain tumor; other possible differential includes brain abscess & solitary brain metastasis.",
+        "titles": [
+          "Transverse",
+          "Transverse",
+          "Longitudinal",
+          "Transverse",
+          "Transverse",
+          "Transverse"
+        ],
+        "image_file_count": 12
+      },
+      {
+        "viewer_id": "4",
+        "path": "/data/lingwei/radiopaedia_0826/cases/78687/images/4/viewer_info.json",
+        "modality": "NUCLEAR MEDICINE",
+        "text": "FINDINGS: A space-occupying lesion with enhancing thick irregular walls and central necrotic core is seen in the left frontal lobe white matter. Marked surrounding vasogenic edema, effacement of the underlying ipsilateral lateral ventricle, and contralateral midline shift of 8 mm are noted. No other focal space-occupying lesion is seen.\nCONCLUSION: Left frontal lobe ring-enhancing space-occupying lesion with mass effect, which is likely a primary brain tumor; other possible differential includes brain abscess & solitary brain metastasis.",
+        "titles": [
+          "30 minutes delayed",
+          "2 hours delayed",
+          "Axial SPECT",
+          "Sagittal SPECT",
+          "Coronal SPECT",
+          "Axial, coronal & sagittal"
+        ],
+        "image_file_count": 12
+      },
+      {
+        "viewer_id": "5",
+        "path": "/data/lingwei/radiopaedia_0826/cases/78687/images/5/viewer_info.json",
+        "modality": "MRI",
+        "text": "FINDINGS: A space-occupying lesion with enhancing thick irregular walls and central necrotic core is seen in the left frontal lobe white matter. Marked surrounding vasogenic edema, effacement of the underlying ipsilateral lateral ventricle, and contralateral midline shift of 8 mm are noted. No other focal space-occupying lesion is seen.\nCONCLUSION: Left frontal lobe ring-enhancing space-occupying lesion with mass effect, which is likely a primary brain tumor; other possible differential includes brain abscess & solitary brain metastasis.",
+        "titles": [
+          "Axial T1",
+          "Axial T2",
+          "Axial TIRM",
+          "Coronal T2",
+          "Sagittal T1",
+          "Sagittal T1 C+",
+          "Coronal T1 C+"
+        ],
+        "image_file_count": 215
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "194727",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/194727/data.json",
+    "title": "Adrenal hematoma",
+    "certainty": "Diagnosis certain",
+    "presentation": "Presentation\nDuring hemoptysis workup, a left retroperitoneal mass was incidentally found on imaging and further evaluated with multi-phase MRI abdomen. Of note, patient was on anticoagulation for cardiac dysrhythmia.",
+    "discussion": "Case Discussion\nGiven the small, enhancing nodule of indeterminate etiology, the patient underwent left adrenalectomy. Pathology showed a large adrenal hematoma with microscopic myelolipoma and negative for carcinoma.\nA few take-home points for adrenal hematomas:\nmay be unilateral or bilateral\nbilateral hemorrhage can cause adrenal insufficiency, which can lead to adrenal crisis and has the potential to be fatal 2\npredisposing factors are numerous: anticoagulation use, infection, trauma, coagulopathic states 1\nhighly variable in size and internal complexity. The chronicity of blood products, from acute to chronic, have a specific appearance on T1 and T2, as the hemoglobin molecules break down 3\nretractile blood clots can have an irregular appearance\nutilize subtraction post-contrast sequences to negate the intrinsic T1 signal\nenhancement in a large adrenal mass can indicate a secondary underlying etiology for the hemorrhage, such as adrenal myelolipoma, adrenal adenoma or adrenal carcinoma, or metastases\nmyelolipoma is a risk factor for hemorrhage, usually when they are larger\nCase co-author: Fadi Moaikel, DO",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/194727/images/0/viewer_info.json",
+        "modality": "MRI",
+        "text": "A complex, cystic mass in the retroperitoneum is centered at the left adrenal gland, which can be seen just medially to the mass, best on the axial T2 series. Note, there is NO claw sign with the kidney.\nThe mass is predominantly T2 hyperintense, which persists after fat saturation. Within the mass are strand-like and nodular areas of T2 hypointense signal, which, along the periphery, are intrinsically T1 hyperintense, suggestive of hemorrhagic components superimposed on the cystic components. Post-contrast, subtraction sequence shows previously T1 hyperintense signal on pre-contrast does not enhance.\nThere is an approximately 1 cm nodular focus of enhancement along the inferior-posterior aspect of the mass. No signal dropout was evident on opposed phase sequences (not shown).",
+        "titles": [
+          "Axial T2",
+          "Coronal T2",
+          "Axial T2 fat sat",
+          "Axial T1 fat sat",
+          "Axial T1 C+ fat sat",
+          "Axial T1 C+ fat sat"
+        ],
+        "image_file_count": 199
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "37511",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/37511/data.json",
+    "title": "Normal thumb series",
+    "certainty": "Diagnosis not applicable",
+    "presentation": "Presentation\nHyperextension during basketball",
+    "discussion": "",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/37511/images/0/viewer_info.json",
+        "modality": "X-RAY",
+        "text": "NAD",
+        "titles": [
+          "Thumb oblique",
+          "Thumb lateral",
+          "Thumb PA"
+        ],
+        "image_file_count": 6
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  },
+  {
+    "rid": "100001",
+    "source_path": "/data/lingwei/radiopaedia_0826/cases/100001/data.json",
+    "title": "Metastatic testicular germ cell tumor",
+    "certainty": "Diagnosis almost certain",
+    "presentation": "Presentation\nKnow and operated case of left testicular germ cell tumor. Post-chemotherapy follow-up CT.",
+    "discussion": "Case Discussion\nThis is a known and operated case of the left testicular germ cell tumor with pulmonary, hepatic, and retroperitoneal metastasis.\nCystic change is expected in germ cell tumors that respond to chemotherapy.",
+    "qa_pairs": [],
+    "viewers": [
+      {
+        "viewer_id": "0",
+        "path": "/data/lingwei/radiopaedia_0826/cases/100001/images/0/viewer_info.json",
+        "modality": "CT",
+        "text": "Post-operative changes are seen in the left inguinal regions due to the left orchiectomy.\nSeveral nodules less than 22 mm are seen at both lung fields, inferring metastasis.\nA 175 × 90 × 115 mm well-defined mass with heterogeneous enhancement, internal cystic changes, and some foci of calcification is present at the left para-aortic regions. It partially encases the aorta and completely encases the inferior mesenteric artery. The left psoas muscle and the mid part of the left ureter are infiltrated by the mass, causing left-sided mild hydronephrosis and relatively renal parenchymal atrophy.\nMultiple masses at the liver less than 50 mm show mild delayed peripheral enhancement, suggesting cystic metastasis.\nA 5 mm stone is noted in the gallbladder.",
+        "titles": [
+          "Axial lung window",
+          "Axial C+ arterial phase",
+          "Axial C+ portal venous phase",
+          "Axial C+ delayed",
+          "Coronal C+ portal venous phase",
+          "Sagittal C+ portal venous phase"
+        ],
+        "image_file_count": 494
+      }
+    ],
+    "annotation_status": "source facts only; not clinician-adjudicated"
+  }
+]

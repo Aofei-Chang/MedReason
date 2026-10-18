@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1-proposal",
+  "record_status": "DRAFT_NOT_TRAINING_GOLD",
+  "case_id": "radiopaedia:198678",
+  "source": {
+    "local_path": "/data/lingwei/radiopaedia_0826/cases/198678/data.json",
+    "sha256": "627c82758e7ff1da0a31ea05d0cdfdb861cf546c3bf06b0618c280535490e5cc",
+    "url": "https://radiopaedia.org/cases/198678",
+    "access_role": "reviewer_only"
+  },
+  "grouping": {
+    "case_group": "radiopaedia:198678",
+    "patient_linkage": "unknown_beyond_case",
+    "duplicate_component": null,
+    "family_tags_proposed": [
+      "head_and_neck",
+      "salivary_gland_mass"
+    ],
+    "split": null
+  },
+  "asset_inventory": {
+    "reference": "../radiopaedia_audit/pilot_state_drafts.json",
+    "selector": {
+      "case_id": "198678",
+      "field": "inventory"
+    },
+    "available_file_count": 454,
+    "reviewed_model_asset_ids": null,
+    "note": "No frame selected as diagnostically sufficient; numeric viewer/series/frame indexing is not a patient timeline."
+  },
+  "reviewer_only_source_claims": {
+    "final_diagnosis": "Acinic cell carcinoma of the parotid gland",
+    "confirmation_basis": "Source discussion reports excision histology; primary pathology record not independently obtained",
+    "imaging_differential": "Source discussion retains multiple salivary neoplasms",
+    "source_certainty": "Diagnosis almost certain",
+    "clinical_gold": false
+  },
+  "decision_states": [
+    {
+      "state_id": "preconfirmation",
+      "evidence_stage": "constructed_preconfirmation_state_not_observed_workflow",
+      "model_input_candidate": {
+        "clinical_context_paraphrase": "A 30-year-old woman presents with a painless left facial mass.",
+        "image_asset_ids": null,
+        "question": "Describe the supported findings, compare plausible diagnoses, and state how specifically the supplied evidence permits a diagnosis."
+      },
+      "excluded_from_model_input": [
+        "case_title",
+        "source_url",
+        "source_discussion",
+        "diagnosis-bearing_links",
+        "confirmation_statement",
+        "source_certainty",
+        "raw_asset_filenames"
+      ],
+      "clinical_gold": null
+    },
+    {
+      "state_id": "source_confirmation_added",
+      "parent_state_id": "preconfirmation",
+      "evidence_stage": "constructed_reveal_state_not_observed_workflow",
+      "model_input_candidate": {
+        "added_evidence_paraphrase": "The source author reports that excision histology confirmed acinic cell carcinoma.",
+        "question": "Update the conclusion and identify which claim now depends on the added evidence."
+      },
+      "clinical_gold": null
+    }
+  ],
+  "annotation": {
+    "visual_observations": [],
+    "inference_steps": [],
+    "alternative_comparisons": [],
+    "warranted_conclusion": null,
+    "evidence_sufficiency": null,
+    "reviewers": [],
+    "adjudication_status": "not_started"
+  },
+  "difficulty": {
+    "human": null,
+    "model": null,
+    "reasoning_operation_tags": []
+  },
+  "release": {
+    "eligible": false,
+    "reason": "Illustrative schema draft; clinical annotation and image sufficiency review pending"
+  }
+}

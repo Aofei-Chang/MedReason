@@ -1,0 +1,52 @@
+{
+  "pools": {
+    "parotid": {
+      "title_matched": 185,
+      "confirmation_mention": 50,
+      "uncertainty_mention": 9,
+      "both": 3
+    },
+    "intracranial_lesions": {
+      "title_matched": 442,
+      "confirmation_mention": 192,
+      "uncertainty_mention": 63,
+      "both": 24
+    },
+    "adrenal": {
+      "title_matched": 253,
+      "confirmation_mention": 40,
+      "uncertainty_mention": 42,
+      "both": 6
+    },
+    "scaphoid": {
+      "title_matched": 173,
+      "confirmation_mention": 0,
+      "uncertainty_mention": 1,
+      "both": 0
+    }
+  },
+  "article_unique_normalized_titles": 17205,
+  "case_article_links": 138988,
+  "cases_with_resolved_title_link": 58403,
+  "total_related_titles": 153058,
+  "lexical_confirmation_and_uncertainty": 983,
+  "cases_viewer_checks": {
+    "repeated_nonempty_viewer_text": 151,
+    "same_text_different_modality": 121,
+    "multiple_viewers": 153
+  },
+  "cases_new_viewer_checks": {
+    "repeated_nonempty_viewer_text": 31,
+    "same_text_different_modality": 23,
+    "multiple_viewers": 44
+  },
+  "new_vs_base_image_check": {
+    "files_checked": 64,
+    "exist_in_base": 64,
+    "identical_bytes": 64
+  },
+  "article_asset_sample": {
+    "n": 256,
+    "only_data_json": 256
+  }
+}
