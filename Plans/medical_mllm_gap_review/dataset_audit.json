@@ -1,0 +1,293 @@
+{
+  "seed": 20261019,
+  "interpretation": "Lexical screens of local copies; no clinical sufficiency or hallucination prevalence estimates.",
+  "patterns": {
+    "exact_age": "\\b(?:\\d{1,3}[ -]years?[ -]old|aged?\\s+\\d{1,3})\\b",
+    "external_test_event": "\\b(?:biopsy|histopatholog\\w*|immunohistochem\\w*|genetic testing|laboratory (?:test|result)\\w*)\\b",
+    "longitudinal": "\\b(?:compared (?:to|with)|previous (?:scan|study|radiograph|exam\\w*)|prior (?:scan|study|radiograph|exam\\w*)|follow[ -]up|unchanged|interval (?:change|increase|decrease)|stable)\\b",
+    "clinical_history": "\\b(?:history of|presented with|patient (?:had|underwent)|after (?:surgery|treatment)|chemotherapy)\\b"
+  },
+  "inputs": [
+    {
+      "path": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+      "bytes": 721722204,
+      "sha256": "11095defdaf08fc7ef196fa99946ae120d6752a61075c853bddd5d64302ff2fc"
+    },
+    {
+      "path": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_Original_Caption.json",
+      "bytes": 396157508,
+      "sha256": "9957f2bf3114488adcd3061f5ea4a9ba24d99a0f4ea75d3826b13c9c3c3ae459"
+    },
+    {
+      "path": "/data/aofei/hallucination/MIMIC_CXR/data_report/training.json",
+      "bytes": 1493336,
+      "sha256": "d00f2f3eb29dd4ea16cac9613415b660b264e9f596529ef0c2060e1351321a51"
+    },
+    {
+      "path": "/data/aofei/hallucination/MIMIC_CXR/data_report/test.json",
+      "bytes": 383827,
+      "sha256": "998c706b3bbf24d0e4d4aed2d70aa7bab0731f96cf4310e71232bc9f9f37603c"
+    },
+    {
+      "path": "/data/aofei/hallucination/IU_Xray/data_report/training.json",
+      "bytes": 1250473,
+      "sha256": "f70d4103e525e19d47484bf5ee0b9a5cb7bf1598d246ac9ce6c19b69fb1a5878"
+    },
+    {
+      "path": "/data/aofei/hallucination/IU_Xray/data_report/test.json",
+      "bytes": 341655,
+      "sha256": "4ded821bdf5a20890a750450b22c9b1831043ddd4fe6e4f6ae0e758155871fad"
+    },
+    {
+      "path": "/data/aofei/hallucination/Slake/train.json",
+      "bytes": 2964571,
+      "sha256": "7a9fb81f9d7bb145c3d7e9bc8d3b9016ba18b6539ea5031a53bae8fd3cd991c3"
+    },
+    {
+      "path": "/data/aofei/hallucination/Slake/validate.json",
+      "bytes": 639139,
+      "sha256": "32b016440b0c3be11056a78a18eeab46333268407fbb6e6b32f9f4c2debc50f6"
+    },
+    {
+      "path": "/data/aofei/hallucination/Slake/test.json",
+      "bytes": 635829,
+      "sha256": "6be8f7b4c5a46cdbc713a5210a25b6ed5aa1fd1574c83cefb4f998131f17c2c3"
+    },
+    {
+      "path": "/data/aofei/hallucination/VQA_RAD/MED_RAD_test.json",
+      "bytes": 1419295,
+      "sha256": "948b7156059b864cf72344fb10669233526b175c243e5a046d20d4201d297a95"
+    },
+    {
+      "path": "/data/aofei/Medical_datasets/PMC-VQA/test.csv",
+      "bytes": 10710861,
+      "sha256": "3ec50be9a8f5d5bf5dfb16c920968122f4801e2b464f0343115459209386714d"
+    }
+  ],
+  "datasets": {
+    "PubMedVision_instruction": {
+      "n_records": 646759,
+      "answer_screen_counts": {
+        "longitudinal": 76018,
+        "clinical_history": 16762,
+        "external_test_event": 62741,
+        "exact_age": 1553,
+        "answer_age_no_age_pattern_in_question": 1369
+      },
+      "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+      "random_sample_n": 4000,
+      "numeric_age_provenance": {
+        "answer_numeric_age": 1553,
+        "answer_age_absent_question": 1376,
+        "source_shared_age_absent_question": 993,
+        "absent_question_not_found_in_caption": 395
+      },
+      "age_caveat": "Exact numeric matches only. Image OCR, hypotheticals, patient identity, and clinical derivability are not verified by this count."
+    },
+    "PubMedVision_original_captions": {
+      "n_records": 636092,
+      "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_Original_Caption.json"
+    },
+    "MIMIC_CXR_training": {
+      "n_records": 1911,
+      "counts": {
+        "one_image_record": 1911,
+        "longitudinal": 938,
+        "explicit_comparison_reference": 584,
+        "clinical_history": 13,
+        "external_test_event": 5
+      },
+      "source": "/data/aofei/hallucination/MIMIC_CXR/data_report/training.json",
+      "unit": "record, not deduplicated patient"
+    },
+    "MIMIC_CXR_test": {
+      "n_records": 441,
+      "counts": {
+        "one_image_record": 441,
+        "longitudinal": 324,
+        "explicit_comparison_reference": 198,
+        "clinical_history": 6,
+        "external_test_event": 1
+      },
+      "source": "/data/aofei/hallucination/MIMIC_CXR/data_report/test.json",
+      "unit": "record, not deduplicated patient"
+    },
+    "IU_Xray_training": {
+      "n_records": 2069,
+      "counts": {
+        "one_image_record": 2069,
+        "longitudinal": 391,
+        "explicit_comparison_reference": 61,
+        "external_test_event": 1,
+        "clinical_history": 5
+      },
+      "source": "/data/aofei/hallucination/IU_Xray/data_report/training.json",
+      "unit": "record, not deduplicated patient"
+    },
+    "IU_Xray_test": {
+      "n_records": 590,
+      "counts": {
+        "one_image_record": 590,
+        "longitudinal": 70,
+        "explicit_comparison_reference": 15,
+        "clinical_history": 1
+      },
+      "source": "/data/aofei/hallucination/IU_Xray/data_report/test.json",
+      "unit": "record, not deduplicated patient"
+    },
+    "SLAKE_train": {
+      "n_records_all_languages": 9835,
+      "n_english": 4919,
+      "english_base_types": {
+        "vqa": 4337,
+        "kvqa": 582
+      },
+      "english_content_types": {
+        "Modality": 534,
+        "Position": 847,
+        "Organ": 1269,
+        "Size": 323,
+        "Abnormality": 716,
+        "Quantity": 220,
+        "Plane": 249,
+        "Shape": 42,
+        "Color": 137,
+        "KG": 582
+      },
+      "unique_english_images": 450,
+      "source": "/data/aofei/hallucination/Slake/train.json"
+    },
+    "SLAKE_validate": {
+      "n_records_all_languages": 2099,
+      "n_english": 1053,
+      "english_base_types": {
+        "vqa": 898,
+        "kvqa": 155
+      },
+      "english_content_types": {
+        "Modality": 110,
+        "Position": 183,
+        "Abnormality": 132,
+        "Size": 59,
+        "Organ": 254,
+        "Quantity": 56,
+        "Plane": 62,
+        "Shape": 11,
+        "Color": 31,
+        "KG": 155
+      },
+      "unique_english_images": 96,
+      "source": "/data/aofei/hallucination/Slake/validate.json"
+    },
+    "SLAKE_test": {
+      "n_records_all_languages": 2094,
+      "n_english": 1061,
+      "english_base_types": {
+        "vqa": 913,
+        "kvqa": 148
+      },
+      "english_content_types": {
+        "Modality": 108,
+        "Position": 186,
+        "Organ": 253,
+        "Size": 65,
+        "Abnormality": 150,
+        "Quantity": 52,
+        "Plane": 58,
+        "Shape": 7,
+        "Color": 34,
+        "KG": 148
+      },
+      "unique_english_images": 96,
+      "source": "/data/aofei/hallucination/Slake/test.json"
+    },
+    "VQA_RAD_local_file": {
+      "n_records": 2248,
+      "n_closed": 1297,
+      "closed_answer_counts": {
+        "yes": 586,
+        "no": 606,
+        "asymmetric": 2,
+        "diffuse": 3,
+        "hypodense": 1,
+        "enlarged": 1,
+        "one": 1,
+        "superior": 1,
+        "left side": 2,
+        "small bowel": 1,
+        "left kidney": 1,
+        "both": 2,
+        "more dense": 1,
+        "less dense": 2,
+        "surrounding tissue": 1,
+        "the surrounding tissue": 1,
+        "right side": 2,
+        "left": 4,
+        "smaller": 1,
+        "just one": 1,
+        "solid": 2,
+        "supratentorial": 1,
+        "female": 3,
+        "white matter": 3,
+        "abscess": 1,
+        "medical process": 2,
+        "pa": 4,
+        "mri": 3,
+        "contrast ct with gi and iv contrast": 1,
+        "non-contrast ct": 1,
+        "with contrast": 3,
+        "heterogeneous": 3,
+        "right": 3,
+        "bilateral frontal lobes": 1,
+        "hyperintense": 3,
+        "contrast": 2,
+        "multilobulated": 1,
+        "in the vasculature": 1,
+        "cystic": 2,
+        "abnormal": 3,
+        "in the bowels": 1,
+        "radiolucent": 1,
+        "bilateral": 2,
+        "ct": 2,
+        "non-enhanced": 1,
+        "ap": 1,
+        "flair": 5,
+        "normal": 3,
+        "base": 1,
+        "axial": 1,
+        "non-contrast": 1,
+        "hyperinflation": 1,
+        "pleural effusion": 2,
+        "genetic": 1,
+        "vascular": 1,
+        "not sure": 1,
+        "maybe": 1,
+        "gray matter": 2,
+        "both sides": 1,
+        "exterior": 1,
+        "outside": 1,
+        "irregular": 1,
+        "on top of the patient": 1,
+        "superficial to the patient's skin": 1
+      },
+      "unique_images": 314,
+      "source": "/data/aofei/hallucination/VQA_RAD/MED_RAD_test.json",
+      "split_warning": "Filename says test, but 2248 rows resembles the complete original corpus; do not assume official held-out split."
+    },
+    "PMC_VQA_test": {
+      "n_records": 50000,
+      "question_answer_screen_counts": {
+        "external_test_event": 534,
+        "longitudinal": 260,
+        "clinical_history": 113,
+        "exact_age": 149
+      },
+      "source": "/data/aofei/Medical_datasets/PMC-VQA/test.csv"
+    },
+    "LLaVA_Med_local": {
+      "data_instruct_files": 0,
+      "data_pmc_articles_files": 0,
+      "note": "Code repository exists; these expected training-data directories are empty. No local training QA audit is claimed."
+    }
+  }
+}

@@ -1,0 +1,130 @@
+huatuo all {'image_identity_gain': 0.1279, 'image_vs_none': 0.0935, 'image_vs_blank': 0.1027, 'prefix_gain': 0.8007, 'prefix_gain_no_image': 0.7868, 'prefix_specificity_no_image': 0.7743, 'prefix_image_interaction': -0.0225, 'caption_rescue': 0.431, 'caption_specificity': 0.4065, 'source_over_image': 0.2786, 'image_top1': 0.625}
+huatuo external_context {'image_identity_gain': 0.0744, 'image_vs_none': 0.0522, 'image_vs_blank': 0.0633, 'prefix_gain': 0.8103, 'prefix_gain_no_image': 0.803, 'prefix_specificity_no_image': 0.8117, 'prefix_image_interaction': -0.0217, 'caption_rescue': 0.5981, 'caption_specificity': 0.5982, 'source_over_image': 0.5238, 'image_top1': 0.625}
+huatuo diagnostic_inference {'image_identity_gain': 0.0713, 'image_vs_none': 0.0155, 'image_vs_blank': 0.0356, 'prefix_gain': 0.877, 'prefix_gain_no_image': 0.8178, 'prefix_specificity_no_image': 0.7419, 'prefix_image_interaction': -0.003, 'caption_rescue': 0.3726, 'caption_specificity': 0.3321, 'source_over_image': 0.2608, 'image_top1': 0.5312}
+huatuo visual_description {'image_identity_gain': 0.2378, 'image_vs_none': 0.2128, 'image_vs_blank': 0.2091, 'prefix_gain': 0.7147, 'prefix_gain_no_image': 0.7395, 'prefix_specificity_no_image': 0.7693, 'prefix_image_interaction': -0.0428, 'caption_rescue': 0.3221, 'caption_specificity': 0.289, 'source_over_image': 0.0512, 'image_top1': 0.7188}
+medsight all {'image_identity_gain': 0.1732, 'image_vs_none': 0.1018, 'image_vs_blank': 0.138, 'prefix_gain': 1.2023, 'prefix_gain_no_image': 1.234, 'prefix_specificity_no_image': 1.125, 'prefix_image_interaction': -0.0853, 'caption_rescue': 0.56, 'caption_specificity': 0.5097, 'source_over_image': 0.3365, 'image_top1': 0.6354}
+medsight external_context {'image_identity_gain': 0.1242, 'image_vs_none': 0.0882, 'image_vs_blank': 0.1186, 'prefix_gain': 1.2192, 'prefix_gain_no_image': 1.2422, 'prefix_specificity_no_image': 1.1087, 'prefix_image_interaction': -0.076, 'caption_rescue': 0.8014, 'caption_specificity': 0.762, 'source_over_image': 0.6378, 'image_top1': 0.625}
+medsight diagnostic_inference {'image_identity_gain': 0.1277, 'image_vs_none': 0.0513, 'image_vs_blank': 0.1009, 'prefix_gain': 1.2349, 'prefix_gain_no_image': 1.2596, 'prefix_specificity_no_image': 1.108, 'prefix_image_interaction': -0.0913, 'caption_rescue': 0.4809, 'caption_specificity': 0.413, 'source_over_image': 0.2853, 'image_top1': 0.5625}
+medsight visual_description {'image_identity_gain': 0.2677, 'image_vs_none': 0.1659, 'image_vs_blank': 0.1946, 'prefix_gain': 1.1526, 'prefix_gain_no_image': 1.2002, 'prefix_specificity_no_image': 1.1582, 'prefix_image_interaction': -0.0885, 'caption_rescue': 0.3977, 'caption_specificity': 0.3542, 'source_over_image': 0.0865, 'image_top1': 0.7188}
+[
+  {
+    "model": "huatuo",
+    "metric": "image_identity_gain",
+    "contrast": "external_context_minus_visual_description",
+    "mean": -0.16341849975287914,
+    "ci95": [
+      -0.2885821237694472,
+      -0.05119061856530608
+    ]
+  },
+  {
+    "model": "huatuo",
+    "metric": "caption_specificity",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.30920402705669403,
+    "ci95": [
+      0.13616382544860245,
+      0.47965484810993075
+    ]
+  },
+  {
+    "model": "huatuo",
+    "metric": "source_over_image",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.4726225268095732,
+    "ci95": [
+      0.2671328153926879,
+      0.6846609535161405
+    ]
+  },
+  {
+    "model": "huatuo",
+    "metric": "prefix_gain_no_image",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.06347110122442245,
+    "ci95": [
+      -0.11277649169787764,
+      0.2411924560088662
+    ]
+  },
+  {
+    "model": "huatuo",
+    "metric": "prefix_specificity_no_image",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.04240250959992409,
+    "ci95": [
+      -0.15314019443467258,
+      0.22784706028178334
+    ]
+  },
+  {
+    "model": "huatuo",
+    "metric": "prefix_image_interaction",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.021169859915971756,
+    "ci95": [
+      -0.03941241709981113,
+      0.08140269685536622
+    ]
+  },
+  {
+    "model": "medsight",
+    "metric": "image_identity_gain",
+    "contrast": "external_context_minus_visual_description",
+    "mean": -0.14350144378840923,
+    "ci95": [
+      -0.2568607520777732,
+      -0.03063442581333223
+    ]
+  },
+  {
+    "model": "medsight",
+    "metric": "caption_specificity",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.4078561635687947,
+    "ci95": [
+      0.15697082786355168,
+      0.6578240409726277
+    ]
+  },
+  {
+    "model": "medsight",
+    "metric": "source_over_image",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.551357607357204,
+    "ci95": [
+      0.277316625835374,
+      0.8123650762718163
+    ]
+  },
+  {
+    "model": "medsight",
+    "metric": "prefix_gain_no_image",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.04195681097917259,
+    "ci95": [
+      -0.2574100182391703,
+      0.33554308681050315
+    ]
+  },
+  {
+    "model": "medsight",
+    "metric": "prefix_specificity_no_image",
+    "contrast": "external_context_minus_visual_description",
+    "mean": -0.049545585410669446,
+    "ci95": [
+      -0.31967578544863495,
+      0.22046472639776746
+    ]
+  },
+  {
+    "model": "medsight",
+    "metric": "prefix_image_interaction",
+    "contrast": "external_context_minus_visual_description",
+    "mean": 0.012569861661177129,
+    "ci95": [
+      -0.09309573251957773,
+      0.11397691088204723
+    ]
+  }
+]

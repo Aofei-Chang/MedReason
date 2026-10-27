@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "runs": {
+    "primary/huatuo": {
+      "rows": 2412,
+      "task_counts": {
+        "ladder": 216,
+        "fact": 1296,
+        "generation": 24,
+        "features": 12,
+        "anatomy": 864
+      },
+      "manifest_hashes_match": true,
+      "runner_hash_matches": true,
+      "native_checks_passed": true
+    },
+    "primary/medsight": {
+      "rows": 2412,
+      "task_counts": {
+        "ladder": 216,
+        "fact": 1296,
+        "generation": 24,
+        "features": 12,
+        "anatomy": 864
+      },
+      "manifest_hashes_match": true,
+      "runner_hash_matches": true,
+      "native_checks_passed": true
+    },
+    "adaptive/huatuo": {
+      "rows": 1092,
+      "task_counts": {
+        "fact": 648,
+        "generation": 12,
+        "anatomy": 432
+      },
+      "manifest_hashes_match": true,
+      "runner_hash_matches": true,
+      "native_checks_passed": true
+    },
+    "adaptive/medsight": {
+      "rows": 1092,
+      "task_counts": {
+        "fact": 648,
+        "generation": 12,
+        "anatomy": 432
+      },
+      "manifest_hashes_match": true,
+      "runner_hash_matches": true,
+      "native_checks_passed": true
+    }
+  },
+  "total_task_counts": {
+    "ladder": 432,
+    "fact": 3888,
+    "generation": 72,
+    "features": 24,
+    "anatomy": 2592
+  },
+  "local_report_links_checked": 19,
+  "theory_identity_residual": 0.0,
+  "limitations": "Mechanical integrity checks do not validate clinical labels, independence of subjects, or experimental generalization."
+}

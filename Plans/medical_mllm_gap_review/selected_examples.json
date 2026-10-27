@@ -1,0 +1,374 @@
+[
+  {
+    "dataset": "PubMedVision",
+    "id": "Instruction-Tuning_422538",
+    "question": "I noticed the mass in the image seems quite large and different in texture. Does this indicate something malignant or harmful?",
+    "answer": "It's understandable to be concerned about the appearance of the mass. However, the detailed characteristics you notice in the MRI, such as the well-defined borders and the internal structure, are typical of a fibroadenoma, especially with lactational changes in a breastfeeding patient. Fibroadenomas are benign breast tumors, meaning they are not cancerous. They can change in size and feel during hormonal changes like pregnancy or lactation. The size and texture changes you see are expected under these conditions, and it doesn't usually indicate malignancy. Our biopsy results confirm this diagnosis, which helps us ensure accurate treatment and monitoring.",
+    "caption": "A 34-year-old lactating patient complained of a rapidly growing mass in the left breast. T2 (A) and post-contrast T1 (B) weighted MRI images showed a complex solid and cystic mass in the upper quadrants of the left breast, in the same topography of a previous biopsy compatible with fibroadenoma. A new percutaneous biopsy confirmed the diagnosis of fibroadenoma with lactational changes.",
+    "image_paths": [
+      "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_422538_0.jpg"
+    ],
+    "selection": "pre-existing pilot case or first record",
+    "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+    "screen_flags": [
+      "external_test_event"
+    ],
+    "case_id": "C01",
+    "title": "Biopsy confirmation in an MRI-only answer",
+    "evidence_label": "missing patient-specific test result",
+    "assessment": "The answer asserts that biopsy results confirmed the diagnosis. Only a breast MR image and a concern about the mass are supplied. The published source caption separately reports the biopsy.",
+    "aligned_target": "Describe the supplied image; distinguish a differential from biopsy confirmation. State that the biopsy result was not supplied.",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7720671/",
+    "article_locator": "Figure 5",
+    "proposed_test": "Add or withhold the actual biopsy report; test whether confirmation language changes while visual description remains stable.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C01_pmc_422538_0.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_422538_0.jpg",
+        "size": [
+          397,
+          353
+        ],
+        "sha256": "84a34d7407f21af10078b6bba0fb6f81a9efa3914ace33fab645b8fb63940e7c"
+      }
+    ]
+  },
+  {
+    "dataset": "PubMedVision",
+    "id": "Instruction-Tuning_141171",
+    "question": "What is the likely diagnosis based on the findings in this CT scan?",
+    "answer": "Based on the findings in the CT scan, the likely diagnosis is non-small cell lung adenocarcinoma. The presence of a cavitary lesion with an irregular and thick wall is a characteristic feature of lung cancer, particularly adenocarcinoma. The reference information provided indicates that a CT-guided biopsy was performed, and the histological evaluation confirmed the diagnosis of non-small cell adenocarcinoma. Lung cancer can present with a variety of radiographic findings, including cavitary lesions, and the CT features in this case are highly suggestive of a malignant process.",
+    "caption": "Axial CT scan at the level of the upper lobes with a lung window setting showing a cavitary lesion with an irregular and thick wall. A CT-guided biopsy was taken from the thick wall, and histological evaluation confirmed non-small cell adenocarcinoma.",
+    "image_paths": [
+      "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_141171_0.jpg"
+    ],
+    "selection": "pre-existing pilot case or first record",
+    "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+    "screen_flags": [
+      "external_test_event"
+    ],
+    "case_id": "C02",
+    "title": "CT morphology and a histology event",
+    "evidence_label": "missing patient-specific test result",
+    "assessment": "The CT may support a malignant differential, but it does not establish that a CT-guided biopsy was performed or what histology it returned.",
+    "aligned_target": "Describe cavitary morphology and a differential; attribute a confirmed subtype only when the histology result is supplied.",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7462690/",
+    "article_locator": "Figure 1",
+    "proposed_test": "Supply a pathology result with an alternative subtype; evaluate appropriate attribution rather than requiring CT appearance to change.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C02_pmc_141171_0.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_141171_0.jpg",
+        "size": [
+          636,
+          465
+        ],
+        "sha256": "9ab390b455eb83890b2a8df87a618c219f7fd3bbadf5e0267b7ea0974ffaeccc"
+      }
+    ]
+  },
+  {
+    "dataset": "PubMedVision",
+    "id": "Instruction-Tuning_572961",
+    "question": "What is the main pathological finding observed in this medical image?",
+    "answer": "The main pathological finding observed in this medical image is the presence of an intraocular enhancing retinoblastoma combined with focal choroidal thickening and a discontinuity of the normal choroidal enhancement pattern adjacent to the tumor mass. This discontinuity of the normal choroidal enhancement is a leading criterion for indicating tumor invasion, as confirmed by the histopathological examination of the eye, which showed massive choroidal invasion.",
+    "caption": "Postcontrast transaxial T1-weighted (TR/TE, 305/15 ms) MRI. Intraocular enhancing retinoblastoma combined with focal choroidal thickening and a discontinuity of the linear enhancement pattern of the choroid (arrowheads) adjacent to the tumor mass is suspicious for tumor invasion. Histopathological examination of this eye showed massive choroidal invasion",
+    "image_paths": [
+      "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_572961_0.jpg"
+    ],
+    "selection": "pre-existing pilot case or first record",
+    "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+    "screen_flags": [
+      "external_test_event"
+    ],
+    "case_id": "C03",
+    "title": "Suspicion on MRI versus confirmed invasion",
+    "evidence_label": "missing patient-specific test result",
+    "assessment": "The source distinguishes an MRI appearance suspicious for invasion from subsequent histopathological confirmation. The student answer combines them without access to pathology.",
+    "aligned_target": "Keep image-supported suspicion separate from histological confirmation.",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3256324/",
+    "article_locator": "Figure 13",
+    "proposed_test": "Withhold/add the pathology report; score the confirmed-event claim separately from the visible finding.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C03_pmc_572961_0.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_572961_0.jpg",
+        "size": [
+          511,
+          602
+        ],
+        "sha256": "b20d7036fbcaec96730d402ecc65609112c85a7faa506415c1cf4fe6dd442b04"
+      }
+    ]
+  },
+  {
+    "dataset": "PubMedVision",
+    "id": "Instruction-Tuning_544331",
+    "question": "As an intern, I noticed an irregular enhancement in the left insular cortex on this MRI. Can you explain what this might indicate in the context of breast cancer metastasis and follow-up treatment?",
+    "answer": "This irregular enhancement in the left insular cortex is highly suggestive of a recurrence of breast cancer metastasis, particularly when noted one year after stereotactic radiosurgery (SRS) treatment with a dose of 20 Gy. The enhanced area likely represents in-field recurrence where the original breast cancer metastasis was treated. The increased relative cerebral blood volume (rCBV) in the perfusion study, as seen in this MRI scan, likely indicates neo-angiogenesis, which is a process of new blood vessel formation commonly associated with tumor growth. This new vessel formation increases the blood volume feeding the tumor, contributing to its growth and progression. This scenario requires prompt confirmation via further diagnostic procedures, like a biopsy, followed by therapeutic adjustment which might include more targeted radiotherapy or chemotherapy to manage disease progression.",
+    "caption": "(a) Contrast enhanced T1-weighted magnetic resonance imaging (MRI) showing a suspected in-field recurrence one year after SRS (20 Gy) for a breast cancer metastasis in the left insular cortex; (b) the perfusion study is suggestive of disease progression because of relative cerebral blood volume (rCBV) increase due to the neo-angiogenesis within the insular cortex tissue.",
+    "image_paths": [
+      "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_544331_0.jpg"
+    ],
+    "selection": "reservoir within lexical stratum: clinical_history",
+    "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+    "screen_flags": [
+      "external_test_event",
+      "clinical_history"
+    ],
+    "case_id": "C04",
+    "title": "A caption references a perfusion panel absent from the supplied image",
+    "evidence_label": "missing image panel and treatment details",
+    "assessment": "The supplied file shows one structural MR view. The source caption describes both structural panel (a) and perfusion panel (b); the answer asserts increased rCBV and a 20 Gy treatment dose. Neither is supplied in the question.",
+    "aligned_target": "Discuss the visible enhancement with uncertainty; request perfusion data for the rCBV claim and history for treatment timing/dose.",
+    "article_url": "https://www.mdpi.com/2075-4426/10/3/59",
+    "article_locator": "Figure 1(a,b)",
+    "proposed_test": "Present structural image alone versus structural plus original perfusion panel; independently add the treatment history.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C04_pmc_544331_0.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_544331_0.jpg",
+        "size": [
+          752,
+          707
+        ],
+        "sha256": "e4f7c391460c3f03f16a5032053005573ccea88b409cb0c51ecb55859c8bdc5d"
+      }
+    ]
+  },
+  {
+    "dataset": "PubMedVision",
+    "id": "Instruction-Tuning_394494",
+    "question": "What does this MRI result mean for my knee health, and is there any specific treatment needed?",
+    "answer": "The MRI scans show bone marrow edema-like changes in the patella area of the knee, which is often seen after increased physical activity, such as running a marathon. For the right knee (31-year-old woman), there's been some improvement in the edema but not a complete return to the initial state before the marathon. This suggests that some residual inflammation or stress response is still present. For the left knee (34-year-old woman), the edema has completely resolved, which is excellent news. Typically, treatment for bone marrow edema would include rest, avoiding strenuous activity, possibly ice and anti-inflammatory medications. It's also important to gradually increase knee-loading activities to allow the knee to adapt without overwhelming it. Recovery can vary by individual, but with appropriate management, most people see improvements.",
+    "caption": "Axial proton-density fat-saturated MR images of two different knees that showed reversibility at 6-month follow-up (MRI 3) in the extent of subchondral bone marrow oedema-like signal of the patella that previously developed from the pre-marathon scan to the 2 weeks post-marathon scan (MRI 1 to MRI 2): A) reversibility but not to the MRI 1 grading status, in the right knee of a 31-year old woman; B) complete resolution to the MRI 1 grading status, in the left knee of a 34-year-old woman. Bone marrow oedema-like signal is indicated by arrows and the lesion grade (G) is included in the left bottom corner and is defined in the KOSS scoring system [18] (see Table 2); KOSS, Knee Osteoarthritis Scoring System",
+    "image_paths": [
+      "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_394494_0.jpg"
+    ],
+    "selection": "pre-existing pilot case or first record",
+    "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+    "screen_flags": [
+      "exact_age"
+    ],
+    "case_id": "C05",
+    "title": "Exact ages and longitudinal interpretation from a tiny crop",
+    "evidence_label": "missing demographics and temporal evidence",
+    "assessment": "The supplied 215×123-pixel file matches the rightmost (MRI 3) column of the original two-row, three-timepoint figure. Earlier MRI 1/MRI 2 columns and the timepoint headings are absent. The answer describes recovery over time and exact ages. The source caption supplies both. Structural image inspection establishes the missing timepoints; it does not adjudicate lesion grading.",
+    "aligned_target": "Report what the supplied crop supports; request dates/prior images for change and a patient record for exact age.",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7300102/",
+    "article_locator": "Figure 3",
+    "proposed_test": "Restore the full original figure and dates, then add demographic metadata; separate temporal and demographic gains.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C05_pmc_394494_0.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_394494_0.jpg",
+        "size": [
+          215,
+          123
+        ],
+        "sha256": "51d6fe3cd7e7b1f5d69b80fd07e0f066d0610bf627a4a6c5d7f698beea6d6e19"
+      }
+    ],
+    "original_figure_asset": "assets/original_knee_figure.jpg",
+    "original_image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d9ec/7300102/9762213f8348/256_2020_3391_Fig3_HTML.jpg"
+  },
+  {
+    "dataset": "PubMedVision",
+    "id": "Instruction-Tuning_1",
+    "question": "What is the size of the inferior mesenteric artery aneurysm (IMAA) based on the CT angiography scan?",
+    "answer": "According to the measurements provided in the image, the inferior mesenteric artery aneurysm (IMAA) has a length of 4.87 cm and a width of 5.93 cm. The reference information indicates that this represents a 57% reduction in the volume of the IMAA compared to a previous scan, suggesting the embolization procedure was effective in decreasing the size of the aneurysm.",
+    "caption": "Computed tomography (CT) angiography 2 years after the embolization procedure, in axial view, revealing an overall decrease in the dimensions of the inferior mesenteric artery aneurysm (IMAA).",
+    "image_paths": [
+      "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_1_0.jpg"
+    ],
+    "selection": "pre-existing pilot case or first record",
+    "source": "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json",
+    "screen_flags": [
+      "longitudinal"
+    ],
+    "case_id": "C06",
+    "title": "Readable dimensions plus an unsupported longitudinal percentage",
+    "evidence_label": "mixed grounded and unavailable claims",
+    "assessment": "The image visibly prints lengths of 4.87 cm and 5.93 cm. The answer additionally asserts a 57% volume reduction from a previous scan; no previous scan is supplied.",
+    "aligned_target": "Retain the readable measurements. Do not report a percentage change without baseline dimensions/volume and a valid calculation.",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6298940/",
+    "article_locator": "Follow-up CT figure",
+    "proposed_test": "Supply baseline volume and specify the volume definition; test correct updating. This example is not an argument for blanket abstention.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C06_pmc_1_0.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_1_0.jpg",
+        "size": [
+          647,
+          430
+        ],
+        "sha256": "d66d1329915481b78f8a39e20e63c4c4146fa8349675d6c1007df20e9df58f92"
+      }
+    ]
+  },
+  {
+    "dataset": "SLAKE",
+    "id": "12276",
+    "question": "What is the effect of the main organ in this picture?",
+    "answer": "Breathe",
+    "base_type": "kvqa",
+    "content_type": "KG",
+    "image_paths": [
+      "/data/aofei/hallucination/Slake/imgs/xmlab299/source.jpg"
+    ],
+    "source": "/data/aofei/hallucination/Slake/test.json",
+    "selection": "first knowledge question examples",
+    "case_id": "C07",
+    "title": "A knowledge question can legitimately use medical priors",
+    "evidence_label": "counterexample: intended knowledge task",
+    "assessment": "The question asks the function of the main organ, with answer Breathe. General medical knowledge is part of the intended task; identifying the organ can still require the image.",
+    "aligned_target": "Separate organ identification from knowledge of its function. Text-only success here is not automatically hallucination.",
+    "article_url": "",
+    "article_locator": "SLAKE base_type=kvqa",
+    "proposed_test": "Pair different organ images under a fixed generic question; evaluate organ-dependent function changes.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C07_source.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/hallucination/Slake/imgs/xmlab299/source.jpg",
+        "size": [
+          1024,
+          1024
+        ],
+        "sha256": "66f9cb615ae61abdcc987046c3076d0f1f74a6ef95f476521095d98e1f2ffe28"
+      }
+    ]
+  },
+  {
+    "dataset": "SLAKE",
+    "id": "11934",
+    "question": "What modality is used to take this image?",
+    "answer": "CT",
+    "image_paths": [
+      "/data/aofei/hallucination/Slake/imgs/xmlab102/source.jpg"
+    ],
+    "base_type": "vqa",
+    "content_type": "Modality",
+    "selection": "first examples by base_type",
+    "source": "/data/aofei/hallucination/Slake/test.json",
+    "case_id": "C08",
+    "title": "A visually answerable control",
+    "evidence_label": "counterexample: visual evidence present",
+    "assessment": "The CT image supports modality recognition. This is a positive visual control, distinct from off-image patient history.",
+    "aligned_target": "Answer the modality confidently when the evidence is adequate.",
+    "article_url": "",
+    "article_locator": "SLAKE test qid 11934",
+    "proposed_test": "Use same-anatomy CT/MRI pairs and retain original labels.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C08_source.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/hallucination/Slake/imgs/xmlab102/source.jpg",
+        "size": [
+          512,
+          512
+        ],
+        "sha256": "cbca7fe963c4baab6f0af76f22d594aaa02481338cf332b88adb745c1cca07fd"
+      }
+    ]
+  },
+  {
+    "dataset": "PMC_VQA",
+    "id": "test.csv:9",
+    "question": "What is shown in image d? ",
+    "answer": "Positive immunohistochemical staining for β-catenin (nuclear and cytoplasmic)",
+    "options": {
+      "Choice A": " A:A cystic growth pattern with a partial solid area ",
+      "Choice B": " B:A tumorlet in the omentum ",
+      "Choice C": " C:Negative immunohistochemical staining for β-catenin ",
+      "Choice D": " D:Positive immunohistochemical staining for β-catenin (nuclear and cytoplasmic) "
+    },
+    "image_paths": [
+      "/data/aofei/Medical_datasets/PMC-VQA/images/PMC8157402_Fig2.jpg"
+    ],
+    "source": "/data/aofei/Medical_datasets/PMC-VQA/test.csv",
+    "selection": "first external-test keyword hits",
+    "case_id": "C09",
+    "title": "An IHC keyword does not establish absent evidence",
+    "evidence_label": "counterexample with a remaining specificity question",
+    "assessment": "The provided multi-panel figure actually includes histology and brown immunohistochemistry panels. A keyword screen alone cannot declare that all IHC content is missing. Exact marker identity may still need the caption or stain protocol.",
+    "aligned_target": "Distinguish a visible staining pattern from the identity of the stain and pathology context.",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8157402/",
+    "article_locator": "Figure 2; test.csv data row 9",
+    "proposed_test": "Audit the marker name separately from nuclear/cytoplasmic localization; provide/remove the stain label.",
+    "review_status": "Researcher structural review; images visually inspected. No specialist adjudication of fine diagnostic findings.",
+    "assets": [
+      "assets/C09_PMC8157402_Fig2.jpg"
+    ],
+    "image_metadata": [
+      {
+        "path": "/data/aofei/Medical_datasets/PMC-VQA/images/PMC8157402_Fig2.jpg",
+        "size": [
+          709,
+          606
+        ],
+        "sha256": "f1ebf30783cf26e694fb56092beefc05ac7e098574ebe604a5afd6c36a365391"
+      }
+    ]
+  },
+  {
+    "case_id": "C10",
+    "dataset": "MIMIC_CXR",
+    "id": "0",
+    "split": "training",
+    "row_index": 0,
+    "source": "/data/aofei/hallucination/MIMIC_CXR/data_report/training.json",
+    "image_relative": [
+      "p14/p14090353/s53605505/abd28b40-48759275-f983e673-5ca480ba-42208726.jpg"
+    ],
+    "question": "<image>\nAnalyze the chest X-ray and generate a concise medical report.",
+    "answer": "As compared to the previous radiograph, no relevant change has occurred. The lung parenchyma is clear and the current image shows no evidence of pneumonia. A minimal atelectasis at the right hilus is less severe than on the previous exam.  No larger pleural effusions.  No pneumothorax.  Normal size of the cardiac silhouette.",
+    "title": "Single current image, prior-comparison target",
+    "evidence_label": "missing prior study / history",
+    "assessment": "The stored record supplies one current image and a generic report prompt. Its target explicitly compares with another study. This establishes an input–target mismatch in this local packaging, without requiring a diagnosis of the current image.",
+    "aligned_target": "Keep current-study findings and uncertainty. Remove unsupported comparison wording or supply the prior image and dates.",
+    "proposed_test": "Provide the prior study versus current image only; compare correct current findings and unsupported comparison claims separately.",
+    "review_status": "Input/schema review; current radiograph not reproduced or independently clinically adjudicated."
+  },
+  {
+    "case_id": "C11",
+    "dataset": "MIMIC_CXR",
+    "id": "1",
+    "split": "training",
+    "row_index": 1,
+    "source": "/data/aofei/hallucination/MIMIC_CXR/data_report/training.json",
+    "image_relative": [
+      "p11/p11437346/s50230660/d1cc6d29-75679294-5623aa61-9bd1e229-a46efaaf.jpg"
+    ],
+    "question": "<image>\nAnalyze the chest X-ray and generate a concise medical report.",
+    "answer": "In comparison with the study of ___, the tip of the PICC line now appears to be at the level of the cavoatrial junction.  Pulmonary vascularity is essentially within normal limits.  Opacification at the left base is again seen, representing pleural fluid and either atelectasis or superimposed pneumonia given the clinical history.",
+    "title": "Single current image, prior-comparison target",
+    "evidence_label": "missing prior study / history",
+    "assessment": "The stored record supplies one current image and a generic report prompt. Its target explicitly compares with another study. This establishes an input–target mismatch in this local packaging, without requiring a diagnosis of the current image.",
+    "aligned_target": "Keep current-study findings and uncertainty. Remove unsupported comparison wording or supply the prior image and dates.",
+    "proposed_test": "Provide the prior study versus current image only; compare correct current findings and unsupported comparison claims separately.",
+    "review_status": "Input/schema review; current radiograph not reproduced or independently clinically adjudicated."
+  }
+]

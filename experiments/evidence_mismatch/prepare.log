@@ -1,0 +1,41 @@
+{
+  "seed": 20261018,
+  "per_cell": 16,
+  "counts": {
+    "full": {
+      "records": 646759,
+      "single_image": 504510,
+      "any_answer_marker": 49851,
+      "answer_marker_category_absent_question": 48543,
+      "question_absent_reference": 25921,
+      "question_absent_history": 4071,
+      "question_absent_external_test": 17686,
+      "question_absent_outcome": 3187,
+      "question_absent_age": 1296
+    },
+    "medsight_60k": {
+      "records": 60000,
+      "single_image": 46805,
+      "any_answer_marker": 4720,
+      "answer_marker_category_absent_question": 4592,
+      "question_absent_outcome": 316,
+      "question_absent_external_test": 1685,
+      "question_absent_reference": 2458,
+      "question_absent_history": 376,
+      "question_absent_age": 126
+    }
+  },
+  "selection_version": 2,
+  "pilot_excludes": "Reference-only markers and advisory language; missing source captions; unavailable exact-basename images",
+  "subset_exact_record_matches": 60000,
+  "subset_ids_missing_from_full": [],
+  "candidate_pool_sizes": {
+    "full_only/visual_description": 56288,
+    "full_only/diagnostic_inference": 77569,
+    "medsight_60k/diagnostic_inference": 7905,
+    "medsight_60k/visual_description": 5687,
+    "full_only/external_context": 1917,
+    "medsight_60k/external_context": 205
+  },
+  "pilot_n": 96
+}

@@ -1,0 +1,15 @@
+{
+  "distribution": "A~Bern(.5), B~Bern(.3), C~Bern(.2), E~Bern(.1), independently; I=(A,B), Z=A, Y=A xor B xor C xor E.",
+  "units": "nats",
+  "terms": {
+    "intrinsic": 0.325082973391448,
+    "missing_context": 0.2479739437399724,
+    "lost_encoding": 0.10154331358346369,
+    "not_extracted": 0.31843901418677467
+  },
+  "cross_entropy": 0.9930392449016587,
+  "decomposition_residual": 0.0,
+  "true_image_mutual_information": 0.12009026342852491,
+  "fixed_predictor_image_ablation_gain": -0.29989206434171345,
+  "conclusion": "Ablation gain can be negative while true image information is positive. It measures this predictor and intervention, not missing evidence or an entropy component. V-usable information also requires a defined predictor family and appropriate fitting/evaluation; it is not interchangeable with Shannon terms."
+}

@@ -1,0 +1,103 @@
+Loading MedSIGHT from /home/avc6555/.cache/huggingface/hub/models--Caf0914--MedSIGHT-Comp/snapshots/971ed4e6826b0bd59d6cde6ae6588642f2e52699
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 71.22it/s]
+/data/aofei/conda/env/med_edit/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Loaded 296 bundled vision-tower tensors into the UniMed-CLIP encoder.
+{"validation": "native_forward_loss_agreement", "error": 0.0, "n_tokens": 29}
+medsight 1/96 Instruction-Tuning_219192 diagnostic_inference elapsed=2.5s
+medsight 2/96 Instruction-Tuning_360799 diagnostic_inference elapsed=4.7s
+medsight 3/96 Instruction-Tuning_70099 diagnostic_inference elapsed=6.6s
+medsight 4/96 Instruction-Tuning_499774 diagnostic_inference elapsed=8.6s
+medsight 5/96 Instruction-Tuning_125908 diagnostic_inference elapsed=10.7s
+medsight 6/96 Instruction-Tuning_549429 diagnostic_inference elapsed=12.7s
+medsight 7/96 Instruction-Tuning_241603 diagnostic_inference elapsed=14.6s
+medsight 8/96 Instruction-Tuning_595998 diagnostic_inference elapsed=16.6s
+medsight 9/96 Instruction-Tuning_298378 diagnostic_inference elapsed=18.6s
+medsight 10/96 Instruction-Tuning_61619 diagnostic_inference elapsed=20.5s
+medsight 11/96 Instruction-Tuning_202483 diagnostic_inference elapsed=22.6s
+medsight 12/96 Instruction-Tuning_280185 diagnostic_inference elapsed=24.6s
+medsight 13/96 Instruction-Tuning_590337 diagnostic_inference elapsed=26.5s
+medsight 14/96 Instruction-Tuning_629433 diagnostic_inference elapsed=28.5s
+medsight 15/96 Instruction-Tuning_555935 diagnostic_inference elapsed=30.6s
+medsight 16/96 Instruction-Tuning_120765 diagnostic_inference elapsed=32.8s
+medsight 17/96 Instruction-Tuning_220158 external_context elapsed=34.9s
+medsight 18/96 Instruction-Tuning_240720 external_context elapsed=37.1s
+medsight 19/96 Instruction-Tuning_542571 external_context elapsed=39.1s
+medsight 20/96 Instruction-Tuning_394494 external_context elapsed=41.1s
+medsight 21/96 Instruction-Tuning_239276 external_context elapsed=43.1s
+medsight 22/96 Instruction-Tuning_584022 external_context elapsed=45.2s
+medsight 23/96 Instruction-Tuning_626950 external_context elapsed=47.1s
+medsight 24/96 Instruction-Tuning_430854 external_context elapsed=49.3s
+medsight 25/96 Instruction-Tuning_411746 external_context elapsed=51.3s
+medsight 26/96 Instruction-Tuning_294756 external_context elapsed=53.3s
+medsight 27/96 Instruction-Tuning_421261 external_context elapsed=55.4s
+medsight 28/96 Instruction-Tuning_512675 external_context elapsed=57.4s
+medsight 29/96 Instruction-Tuning_68061 external_context elapsed=59.5s
+medsight 30/96 Instruction-Tuning_502647 external_context elapsed=61.7s
+medsight 31/96 Instruction-Tuning_357717 external_context elapsed=63.8s
+medsight 32/96 Instruction-Tuning_43585 external_context elapsed=65.8s
+medsight 33/96 Instruction-Tuning_267596 visual_description elapsed=67.8s
+medsight 34/96 Instruction-Tuning_313172 visual_description elapsed=69.8s
+medsight 35/96 Instruction-Tuning_510685 visual_description elapsed=71.9s
+medsight 36/96 Instruction-Tuning_93371 visual_description elapsed=74.1s
+medsight 37/96 Instruction-Tuning_241269 visual_description elapsed=76.3s
+medsight 38/96 Instruction-Tuning_422758 visual_description elapsed=78.4s
+medsight 39/96 Instruction-Tuning_271890 visual_description elapsed=80.4s
+medsight 40/96 Instruction-Tuning_624195 visual_description elapsed=82.3s
+medsight 41/96 Instruction-Tuning_232178 visual_description elapsed=84.5s
+medsight 42/96 Instruction-Tuning_21707 visual_description elapsed=86.4s
+medsight 43/96 Instruction-Tuning_276355 visual_description elapsed=88.3s
+medsight 44/96 Instruction-Tuning_431868 visual_description elapsed=90.3s
+medsight 45/96 Instruction-Tuning_351561 visual_description elapsed=92.3s
+medsight 46/96 Instruction-Tuning_72474 visual_description elapsed=94.4s
+medsight 47/96 Instruction-Tuning_4441 visual_description elapsed=96.5s
+medsight 48/96 Instruction-Tuning_302346 visual_description elapsed=98.7s
+medsight 49/96 Instruction-Tuning_538222 diagnostic_inference elapsed=100.9s
+medsight 50/96 Instruction-Tuning_333301 diagnostic_inference elapsed=102.9s
+medsight 51/96 Instruction-Tuning_642375 diagnostic_inference elapsed=105.0s
+medsight 52/96 Instruction-Tuning_27460 diagnostic_inference elapsed=107.2s
+medsight 53/96 Instruction-Tuning_129660 diagnostic_inference elapsed=109.4s
+medsight 54/96 Instruction-Tuning_11279 diagnostic_inference elapsed=111.5s
+medsight 55/96 Instruction-Tuning_392502 diagnostic_inference elapsed=113.5s
+medsight 56/96 Instruction-Tuning_601232 diagnostic_inference elapsed=115.7s
+medsight 57/96 Instruction-Tuning_590767 diagnostic_inference elapsed=117.9s
+medsight 58/96 Instruction-Tuning_179557 diagnostic_inference elapsed=120.0s
+medsight 59/96 Instruction-Tuning_445212 diagnostic_inference elapsed=122.0s
+medsight 60/96 Instruction-Tuning_192622 diagnostic_inference elapsed=124.3s
+medsight 61/96 Instruction-Tuning_608236 diagnostic_inference elapsed=126.4s
+medsight 62/96 Instruction-Tuning_518709 diagnostic_inference elapsed=128.6s
+medsight 63/96 Instruction-Tuning_18629 diagnostic_inference elapsed=130.6s
+medsight 64/96 Instruction-Tuning_507637 diagnostic_inference elapsed=132.9s
+medsight 65/96 Instruction-Tuning_584682 external_context elapsed=134.9s
+medsight 66/96 Instruction-Tuning_422538 external_context elapsed=137.0s
+medsight 67/96 Instruction-Tuning_173357 external_context elapsed=139.2s
+medsight 68/96 Instruction-Tuning_343164 external_context elapsed=141.5s
+medsight 69/96 Instruction-Tuning_210842 external_context elapsed=143.7s
+medsight 70/96 Instruction-Tuning_22244 external_context elapsed=145.9s
+medsight 71/96 Instruction-Tuning_479828 external_context elapsed=147.9s
+medsight 72/96 Instruction-Tuning_141171 external_context elapsed=150.0s
+medsight 73/96 Instruction-Tuning_388573 external_context elapsed=152.1s
+medsight 74/96 Instruction-Tuning_37172 external_context elapsed=154.3s
+medsight 75/96 Instruction-Tuning_156678 external_context elapsed=156.5s
+medsight 76/96 Instruction-Tuning_455491 external_context elapsed=158.6s
+medsight 77/96 Instruction-Tuning_160931 external_context elapsed=160.8s
+medsight 78/96 Instruction-Tuning_479043 external_context elapsed=162.8s
+medsight 79/96 Instruction-Tuning_572961 external_context elapsed=164.8s
+medsight 80/96 Instruction-Tuning_260899 external_context elapsed=167.0s
+medsight 81/96 Instruction-Tuning_506255 visual_description elapsed=169.2s
+medsight 82/96 Instruction-Tuning_9854 visual_description elapsed=171.4s
+medsight 83/96 Instruction-Tuning_555054 visual_description elapsed=173.6s
+medsight 84/96 Instruction-Tuning_315864 visual_description elapsed=175.7s
+medsight 85/96 Instruction-Tuning_208989 visual_description elapsed=177.8s
+medsight 86/96 Instruction-Tuning_498875 visual_description elapsed=179.9s
+medsight 87/96 Instruction-Tuning_325670 visual_description elapsed=181.9s
+medsight 88/96 Instruction-Tuning_26649 visual_description elapsed=183.9s
+medsight 89/96 Instruction-Tuning_363837 visual_description elapsed=186.0s
+medsight 90/96 Instruction-Tuning_155456 visual_description elapsed=188.2s
+medsight 91/96 Instruction-Tuning_170777 visual_description elapsed=190.4s
+medsight 92/96 Instruction-Tuning_377549 visual_description elapsed=192.4s
+medsight 93/96 Instruction-Tuning_128565 visual_description elapsed=194.6s
+medsight 94/96 Instruction-Tuning_563223 visual_description elapsed=196.7s
+medsight 95/96 Instruction-Tuning_458520 visual_description elapsed=198.8s
+medsight 96/96 Instruction-Tuning_636717 visual_description elapsed=200.8s
+COMPLETE

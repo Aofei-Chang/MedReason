@@ -1,0 +1,17 @@
+{
+  "model": "huatuo",
+  "checkpoint": "/data/aofei/output/MedProbe/models/huatuogpt-vision-7b",
+  "manifest_hashes": {
+    "facts.jsonl": "648ed875de7dd56c81aedfb6ce1ae053f9592c35222abd3c6e554560439c8161",
+    "anatomy.jsonl": "d642a47d5cd41e35d503de9dbc4ca3d00be686ca2c9e057f3b30d0e24439ea75",
+    "protocol.json": "9a82e1cd23e423c44ac5afe801897166c66e06fdb041912b88dea69ab908aca8"
+  },
+  "started": 1792390459.6191654,
+  "torch": "2.9.1+cu126",
+  "transformers": "4.52.4",
+  "visible_devices": "1",
+  "gpu": "NVIDIA RTX A6000",
+  "template": "huatuo",
+  "medprobe_commit": "9d4d7de7ffb6b876480372e1084555cd06231e03",
+  "runner_sha256": "7d7fe8af438a987c3a190e3259cb45d3335c20e7f66c9b8d42fe427828b7c6f1"
+}

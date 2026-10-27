@@ -1,0 +1,167 @@
+Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models - ACL Anthology Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models Dain Kim , Jiwoo Lee , Jaehoon Yun , Yong Hoe Koo , Qingyu Chen , Hyunjae Kim , Jaewoo Kang Correct Metadata for Use this form to create a GitHub issue with structured data describing the correction. You will need a GitHub account.
+Once you create that issue, the correction will be reviewed by a staff member. ⚠️ Mobile Users: Submitting this form to create a new issue will only work with github.com, not the GitHub Mobile app. Important : The Anthology treat PDFs as authoritative. Please use this form only to correct data
+that is out of line with the PDF. See our corrections
+guidelines if you need to change the PDF. Title Adjust the title. Retain tags such as
+<fixed-case>. Authors Adjust author names and order to match the
+PDF. Add Author Abstract Correct abstract if needed. Retain XML formatting tags such as <tex-math>. You may use <b>...</b> for bold , <i>...</i> for italic , <u>...</u> for underline , <sc>...</sc> for small-caps , <tt>...<tt> for typewriter text , <url>...</url> for URLs, <a href=...> for hyperlinks, and <par/> for paragraph breaks. Verification against PDF Ensure that the new title/authors match the snapshot below. (If there
+is no snapshot or it is too small, consult the PDF .) Authors concatenated from the text boxes above: ALL author names match the snapshot above—including
+middle initials, hyphens, and accents. Create GitHub issue for staff review Abstract Large vision-language models (LVLMs) are gaining traction in clinical tasks such as diagnostic support, report generation, and medical question answering. Among post-training techniques, Direct Preference Optimization (DPO) has shown promise in aligning model outputs with human preferences, yet its effectiveness in high-stakes medical contexts remains underexplored. In this work, we present the first systematic evaluation of nine DPO variants applied to two leading medical LVLMs, LLaVA-Med and HuatuoGPT-Vision. We benchmark these models on five curated datasets covering diverse clinical tasks. Evaluations include both automated metrics and expert assessments. Our results show that while DPO improves alignment and reduces severe hallucinations, it yields inconsistent gains over supervised fine-tuning. We further introduce DPO variant that better handles visual misinterpretations and enhances clinical understanding. These findings reveal both the potential and limitations of DPO in medical AI. To support future research, we will release all DPO training data, model checkpoints, and expert annotations upon acceptance. Anthology ID: 2026.findings-eacl.267 Volume: Findings of the Association for Computational Linguistics: EACL 2026 Month: March Year: 2026 Address: Rabat, Morocco Editors: Vera Demberg , Kentaro Inui , Lluís Marquez Venue: Findings SIG: Publisher: Association for Computational Linguistics Note: Pages: 5052–5067 Language: URL: https://aclanthology.org/2026.findings-eacl.267/ DOI: 10.18653/v1/2026.findings-eacl.267 Bibkey: kim-etal-2026-benchmarking Cite (ACL): Dain Kim, Jiwoo Lee, Jaehoon Yun, Yong Hoe Koo, Qingyu Chen, Hyunjae Kim, and Jaewoo Kang. 2026. Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models . In Findings of the Association for Computational Linguistics: EACL 2026 , pages 5052–5067, Rabat, Morocco. Association for Computational Linguistics. Cite (Informal): Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models (Kim et al., Findings 2026) Copy Citation: BibTeX Markdown MODS XML Endnote More
+options… PDF: https://aclanthology.org/2026.findings-eacl.267.pdf Checklist: 2026.findings-eacl.267.checklist.pdf PDF Cite Search Checklist Fix data Export citation BibTeX MODS XML Endnote Preformatted @inproceedings{kim-etal-2026-benchmarking,
+    title = "Benchmarking Direct Preference Optimization for Medical Large Vision{--}Language Models",
+    author = "Kim, Dain  and
+      Lee, Jiwoo  and
+      Yun, Jaehoon  and
+      Koo, Yong Hoe  and
+      Chen, Qingyu  and
+      Kim, Hyunjae  and
+      Kang, Jaewoo",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EACL} 2026",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-eacl.267/",
+    doi = "10.18653/v1/2026.findings-eacl.267",
+    pages = "5052--5067",
+    ISBN = "979-8-89176-386-9",
+    abstract = "Large vision-language models (LVLMs) are gaining traction in clinical tasks such as diagnostic support, report generation, and medical question answering. Among post-training techniques, Direct Preference Optimization (DPO) has shown promise in aligning model outputs with human preferences, yet its effectiveness in high-stakes medical contexts remains underexplored. In this work, we present the first systematic evaluation of nine DPO variants applied to two leading medical LVLMs, LLaVA-Med and HuatuoGPT-Vision. We benchmark these models on five curated datasets covering diverse clinical tasks. Evaluations include both automated metrics and expert assessments. Our results show that while DPO improves alignment and reduces severe hallucinations, it yields inconsistent gains over supervised fine-tuning. We further introduce DPO variant that better handles visual misinterpretations and enhances clinical understanding. These findings reveal both the potential and limitations of DPO in medical AI. To support future research, we will release all DPO training data, model checkpoints, and expert annotations upon acceptance."
+} Download as
+File Copy to Clipboard <?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="kim-etal-2026-benchmarking">
+    <titleInfo>
+        <title>Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Dain</namePart>
+        <namePart type="family">Kim</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jiwoo</namePart>
+        <namePart type="family">Lee</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jaehoon</namePart>
+        <namePart type="family">Yun</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Yong</namePart>
+        <namePart type="given">Hoe</namePart>
+        <namePart type="family">Koo</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Qingyu</namePart>
+        <namePart type="family">Chen</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Hyunjae</namePart>
+        <namePart type="family">Kim</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jaewoo</namePart>
+        <namePart type="family">Kang</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2026-03</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Findings of the Association for Computational Linguistics: EACL 2026</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Vera</namePart>
+            <namePart type="family">Demberg</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">Kentaro</namePart>
+            <namePart type="family">Inui</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">Lluís</namePart>
+            <namePart type="family">Marquez</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Association for Computational Linguistics</publisher>
+            <place>
+                <placeTerm type="text">Rabat, Morocco</placeTerm>
+            </place>
+        </originInfo>
+        <genre authority="marcgt">conference publication</genre>
+        <identifier type="isbn">979-8-89176-386-9</identifier>
+    </relatedItem>
+    <abstract>Large vision-language models (LVLMs) are gaining traction in clinical tasks such as diagnostic support, report generation, and medical question answering. Among post-training techniques, Direct Preference Optimization (DPO) has shown promise in aligning model outputs with human preferences, yet its effectiveness in high-stakes medical contexts remains underexplored. In this work, we present the first systematic evaluation of nine DPO variants applied to two leading medical LVLMs, LLaVA-Med and HuatuoGPT-Vision. We benchmark these models on five curated datasets covering diverse clinical tasks. Evaluations include both automated metrics and expert assessments. Our results show that while DPO improves alignment and reduces severe hallucinations, it yields inconsistent gains over supervised fine-tuning. We further introduce DPO variant that better handles visual misinterpretations and enhances clinical understanding. These findings reveal both the potential and limitations of DPO in medical AI. To support future research, we will release all DPO training data, model checkpoints, and expert annotations upon acceptance.</abstract>
+    <identifier type="citekey">kim-etal-2026-benchmarking</identifier>
+    <identifier type="doi">10.18653/v1/2026.findings-eacl.267</identifier>
+    <location>
+        <url>https://aclanthology.org/2026.findings-eacl.267/</url>
+    </location>
+    <part>
+        <date>2026-03</date>
+        <extent unit="page">
+            <start>5052</start>
+            <end>5067</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection> Download as
+File Copy to Clipboard %0 Conference Proceedings
+%T Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models
+%A Kim, Dain
+%A Lee, Jiwoo
+%A Yun, Jaehoon
+%A Koo, Yong Hoe
+%A Chen, Qingyu
+%A Kim, Hyunjae
+%A Kang, Jaewoo
+%Y Demberg, Vera
+%Y Inui, Kentaro
+%Y Marquez, Lluís
+%S Findings of the Association for Computational Linguistics: EACL 2026
+%D 2026
+%8 March
+%I Association for Computational Linguistics
+%C Rabat, Morocco
+%@ 979-8-89176-386-9
+%F kim-etal-2026-benchmarking
+%X Large vision-language models (LVLMs) are gaining traction in clinical tasks such as diagnostic support, report generation, and medical question answering. Among post-training techniques, Direct Preference Optimization (DPO) has shown promise in aligning model outputs with human preferences, yet its effectiveness in high-stakes medical contexts remains underexplored. In this work, we present the first systematic evaluation of nine DPO variants applied to two leading medical LVLMs, LLaVA-Med and HuatuoGPT-Vision. We benchmark these models on five curated datasets covering diverse clinical tasks. Evaluations include both automated metrics and expert assessments. Our results show that while DPO improves alignment and reduces severe hallucinations, it yields inconsistent gains over supervised fine-tuning. We further introduce DPO variant that better handles visual misinterpretations and enhances clinical understanding. These findings reveal both the potential and limitations of DPO in medical AI. To support future research, we will release all DPO training data, model checkpoints, and expert annotations upon acceptance.
+%R 10.18653/v1/2026.findings-eacl.267
+%U https://aclanthology.org/2026.findings-eacl.267/
+%U https://doi.org/10.18653/v1/2026.findings-eacl.267
+%P 5052-5067 Download as
+File Copy to Clipboard Markdown (Informal) [Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models](https://aclanthology.org/2026.findings-eacl.267/) (Kim et al., Findings 2026) Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models (Kim et al., Findings 2026) ACL Dain Kim, Jiwoo Lee, Jaehoon Yun, Yong Hoe Koo, Qingyu Chen, Hyunjae Kim, and Jaewoo Kang. 2026. Benchmarking Direct Preference Optimization for Medical Large Vision–Language Models . In Findings of the Association for Computational Linguistics: EACL 2026 , pages 5052–5067, Rabat, Morocco. Association for Computational Linguistics. Copy Markdown to
+Clipboard Copy ACL to
+Clipboard ACL materials are Copyright © 1963–2026 ACL; other materials are copyrighted by their respective copyright holders. Materials prior to 2016 here are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 International License . Permission is granted to make copies for the purposes of teaching and research. Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License . The ACL Anthology is managed and built by the ACL Anthology team of volunteers. Site last built on 19 October 2026 at 13:00 UTC with commit 0d4dd55 .

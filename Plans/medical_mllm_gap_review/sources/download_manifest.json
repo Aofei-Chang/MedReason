@@ -1,0 +1,103 @@
+[
+  {
+    "id": "lingshu",
+    "url": "https://arxiv.org/html/2506.07044v1",
+    "status": 200,
+    "chars": 195148,
+    "title": "Lingshu: A Generalist Foundation Model for Unified Multimodal Medical Understanding and Reasoning"
+  },
+  {
+    "id": "huatuo",
+    "url": "https://arxiv.org/html/2406.19280v2",
+    "status": 200,
+    "chars": 68881,
+    "title": "HuatuoGPT-Vision, Towards Injecting Medical Visual Knowledge into Multimodal LLMs at Scale"
+  },
+  {
+    "id": "llava_med",
+    "url": "https://arxiv.org/html/2306.00890v2",
+    "error": "404 Client Error: Not Found for url: https://arxiv.org/html/2306.00890v2"
+  },
+  {
+    "id": "medvlm_r1",
+    "url": "https://arxiv.org/html/2502.19634v2",
+    "status": 200,
+    "chars": 34166,
+    "title": "MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning"
+  },
+  {
+    "id": "med_r1",
+    "url": "https://arxiv.org/html/2503.13939v1",
+    "status": 200,
+    "chars": 43453,
+    "title": "Med-R1: Reinforcement Learning for Generalizable Medical Reasoning in Vision-Language Models"
+  },
+  {
+    "id": "medvlthinker",
+    "url": "https://arxiv.org/html/2508.02669v1",
+    "status": 200,
+    "chars": 55196,
+    "title": "MedVLThinker: Simple Baselines for Multimodal Medical Reasoning"
+  },
+  {
+    "id": "beyond_accuracy",
+    "url": "https://arxiv.org/html/2603.03437v1",
+    "status": 200,
+    "chars": 39150,
+    "title": "Beyond Accuracy: Evaluating VisualGrounding in Multimodal Medical Reasoning"
+  },
+  {
+    "id": "mirage",
+    "url": "https://arxiv.org/html/2603.21687v2",
+    "status": 200,
+    "chars": 69223,
+    "title": "Mirage: The Illusion of Visual Understanding"
+  },
+  {
+    "id": "medgemma15",
+    "url": "https://arxiv.org/html/2604.05081v1",
+    "status": 200,
+    "chars": 63301,
+    "title": "MedGemma 1.5 Technical Report"
+  },
+  {
+    "id": "clinical_cxr",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13574732/",
+    "status": 200,
+    "chars": 53179,
+    "title": "\n            Comparative evaluation of generative AI models for chest radiograph report generation in the emergency department - PMC\n        "
+  },
+  {
+    "id": "medbench",
+    "url": "https://arxiv.org/html/2606.24155v1",
+    "status": 200,
+    "chars": 119989,
+    "title": "MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark for Clinical Multimodal Models"
+  },
+  {
+    "id": "wound",
+    "url": "https://arxiv.org/html/2606.20723v1",
+    "error": "404 Client Error: Not Found for url: https://arxiv.org/html/2606.20723v1"
+  },
+  {
+    "id": "consistent_reasoning",
+    "url": "https://aclanthology.org/2026.acl-long.81/",
+    "status": 200,
+    "chars": 17815,
+    "title": "Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering - ACL Anthology"
+  },
+  {
+    "id": "dpo_benchmark",
+    "url": "https://aclanthology.org/2026.findings-eacl.267/",
+    "status": 200,
+    "chars": 14073,
+    "title": "Benchmarking Direct Preference Optimization for Medical Large Vision\u2013Language Models - ACL Anthology"
+  },
+  {
+    "id": "priors_dpo",
+    "url": "https://arxiv.org/html/2406.06496v1",
+    "status": 200,
+    "chars": 50800,
+    "title": "Direct Preference Optimization for Suppressing Hallucinated Prior Exams in Radiology Report Generation"
+  }
+]

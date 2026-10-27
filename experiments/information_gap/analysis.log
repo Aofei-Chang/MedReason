@@ -1,0 +1,5143 @@
+{
+  "units": "Target log-likelihood contrasts: nats/token. Choice probabilities normalized over A/B/C only; not clinical confidence.",
+  "models": {
+    "huatuo": {
+      "counts": {
+        "ladder": 216,
+        "fact": 1296,
+        "generation": 24,
+        "features": 12,
+        "anatomy": 864
+      },
+      "ladder": {
+        "mean_logp": {
+          "original_minus_visual_only": {
+            "n": 12,
+            "mean": 0.5351807773113251,
+            "ci95": [
+              0.42721836815277736,
+              0.6395686941842237
+            ]
+          },
+          "positive_paraphrase_minus_visual_only": {
+            "n": 12,
+            "mean": 0.17149815956751505,
+            "ci95": [
+              0.07254313031832378,
+              0.27060698519150406
+            ]
+          },
+          "positive_minus_negative_paraphrase": {
+            "n": 12,
+            "mean": 0.10837475458780925,
+            "ci95": [
+              0.03718519931038221,
+              0.1952427218357721
+            ]
+          },
+          "original_caption_gain": {
+            "n": 12,
+            "mean": 0.6913062532742819,
+            "ci95": [
+              0.5572645535071691,
+              0.8377774243553479
+            ]
+          },
+          "visual_context_gain": {
+            "n": 12,
+            "mean": 0.15612547596295676,
+            "ci95": [
+              0.05642264112830162,
+              0.25302149280905717
+            ]
+          },
+          "image_identity_without_context": {
+            "n": 12,
+            "mean": 0.07721973458925883,
+            "ci95": [
+              0.0005749175945917783,
+              0.1600913013021151
+            ]
+          },
+          "image_identity_with_positive_context": {
+            "n": 12,
+            "mean": -0.002431333065032959,
+            "ci95": [
+              -0.03114303946495056,
+              0.021833233286937065
+            ]
+          },
+          "image_gain_without_context": {
+            "n": 12,
+            "mean": 0.07544402281443278,
+            "ci95": [
+              0.02380084022879601,
+              0.11886522769927978
+            ]
+          },
+          "image_gain_with_positive_context": {
+            "n": 12,
+            "mean": 0.17996390660603842,
+            "ci95": [
+              0.1306215189397335,
+              0.22697193001707391
+            ]
+          }
+        },
+        "fact_logp": {
+          "original_minus_visual_only": {
+            "n": 12,
+            "mean": 1.1543498615113397,
+            "ci95": [
+              1.0073278898140416,
+              1.3014680765142352
+            ]
+          },
+          "positive_paraphrase_minus_visual_only": {
+            "n": 12,
+            "mean": 0.4614734972516696,
+            "ci95": [
+              0.20620962437242268,
+              0.7086619554708399
+            ]
+          },
+          "positive_minus_negative_paraphrase": {
+            "n": 12,
+            "mean": 0.3987431352337201,
+            "ci95": [
+              0.20058095287531616,
+              0.6043834513053297
+            ]
+          },
+          "original_caption_gain": {
+            "n": 12,
+            "mean": 1.3727224299994607,
+            "ci95": [
+              1.164517499653933,
+              1.588386797066778
+            ]
+          },
+          "visual_context_gain": {
+            "n": 12,
+            "mean": 0.21837256848812103,
+            "ci95": [
+              0.05116102620959282,
+              0.44012593540052575
+            ]
+          },
+          "image_identity_without_context": {
+            "n": 12,
+            "mean": 0.12889251112937927,
+            "ci95": [
+              0.04033799866835277,
+              0.2448823481798171
+            ]
+          },
+          "image_identity_with_positive_context": {
+            "n": 12,
+            "mean": 0.0007433270414670309,
+            "ci95": [
+              -0.08265547510236501,
+              0.0647038405761122
+            ]
+          },
+          "image_gain_without_context": {
+            "n": 12,
+            "mean": -0.0126857856909434,
+            "ci95": [
+              -0.12275598645210267,
+              0.07549439792831732
+            ]
+          },
+          "image_gain_with_positive_context": {
+            "n": 12,
+            "mean": 0.03647032876809438,
+            "ci95": [
+              -0.09915264286100864,
+              0.1592572203526894
+            ]
+          }
+        }
+      },
+      "choice_groups": [
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.47344293550946553,
+            "ci95": [
+              0.3986933972691193,
+              0.5531617209736369
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.7083333333333334,
+            "ci95": [
+              0.5555555555555556,
+              0.8472222222222223
+            ]
+          },
+          "mean_option_mass": 0.9982455687390432
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8373861244985678,
+            "ci95": [
+              0.7632099578467686,
+              0.9001170139825523
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9990002405312328
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.16666666666666666,
+            "ci95": [
+              0.0,
+              0.4166666666666667
+            ],
+            "successes": 2,
+            "wilson95": [
+              0.04696514218385531,
+              0.4480308622529653
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.2895378219785983,
+            "ci95": [
+              0.21274315636510352,
+              0.37158139132685236
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.20833333333333334,
+            "ci95": [
+              0.06944444444444443,
+              0.36111111111111116
+            ]
+          },
+          "mean_option_mass": 0.9979899095164404
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.5833333333333334,
+            "ci95": [
+              0.3333333333333333,
+              0.8333333333333334
+            ],
+            "successes": 7,
+            "wilson95": [
+              0.3195113125495559,
+              0.8067396863412393
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.5503387599439252,
+            "ci95": [
+              0.3434532625500415,
+              0.7484219619948841
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5833333333333334,
+            "ci95": [
+              0.3333333333333333,
+              0.8333333333333334
+            ],
+            "successes": 7,
+            "wilson95": [
+              0.3195113125495559,
+              0.8067396863412393
+            ]
+          },
+          "mean_option_mass": 0.9978890005085205
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.509753447769192,
+            "ci95": [
+              0.41797776891893873,
+              0.6058107133395101
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.7777777777777778,
+            "ci95": [
+              0.611111111111111,
+              0.902777777777778
+            ]
+          },
+          "mean_option_mass": 0.9980470124218198
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.9166666666666666,
+            "ci95": [
+              0.75,
+              1.0
+            ],
+            "successes": 11,
+            "wilson95": [
+              0.646120088858892,
+              0.9851349055950824
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.836587681307026,
+            "ci95": [
+              0.7234988550790848,
+              0.913253240716947
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9305555555555555,
+            "ci95": [
+              0.7916666666666666,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9988680390848054
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.7717308941841298,
+            "ci95": [
+              0.7019202283152247,
+              0.8353336756811169
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9861111111111112,
+            "ci95": [
+              0.9583333333333334,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9990773970882098
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.16666666666666666,
+            "ci95": [
+              0.0,
+              0.4166666666666667
+            ],
+            "successes": 2,
+            "wilson95": [
+              0.04696514218385531,
+              0.4480308622529653
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.3439264385534097,
+            "ci95": [
+              0.232844335580786,
+              0.46752698986715785
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.2638888888888889,
+            "ci95": [
+              0.08333333333333333,
+              0.48611111111111116
+            ]
+          },
+          "mean_option_mass": 0.9991672991050614
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8496586671522284,
+            "ci95": [
+              0.807087727745993,
+              0.8875101273250389
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9994038823578092
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.4166666666666667,
+            "ci95": [
+              0.16666666666666666,
+              0.6666666666666666
+            ],
+            "successes": 5,
+            "wilson95": [
+              0.19326031365876087,
+              0.6804886874504443
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.4205786973803036,
+            "ci95": [
+              0.30370637507361675,
+              0.535314760793151
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.38888888888888884,
+            "ci95": [
+              0.23611111111111113,
+              0.5416666666666666
+            ]
+          },
+          "mean_option_mass": 0.9995160458816423
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.7524641973108169,
+            "ci95": [
+              0.6718879364566349,
+              0.8208568776729388
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9305555555555555,
+            "ci95": [
+              0.8333333333333331,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9989622202184464
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.25,
+            "ci95": [
+              0.0,
+              0.5
+            ],
+            "successes": 3,
+            "wilson95": [
+              0.08894166839405718,
+              0.5323053349335582
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.37291307338927765,
+            "ci95": [
+              0.2539658814606999,
+              0.4963421043873657
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.3055555555555556,
+            "ci95": [
+              0.11111111111111112,
+              0.5277777777777778
+            ]
+          },
+          "mean_option_mass": 0.9990049401919047
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8643648090353513,
+            "ci95": [
+              0.8083416523992438,
+              0.9078044838723
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.998977191746235
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8212005794348051,
+            "ci95": [
+              0.7308263569353157,
+              0.899775389844199
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9987322431471615
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9211918781496143,
+            "ci95": [
+              0.8916090827026727,
+              0.9463346314169
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9990590454803572
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.926803079409014,
+            "ci95": [
+              0.8562472340746922,
+              0.9713696038179187
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9991057953900763
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8276179185685968,
+            "ci95": [
+              0.7662258474111718,
+              0.8820907469192241
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9987751535243459
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8151252110712743,
+            "ci95": [
+              0.7306046624561173,
+              0.8881096665783794
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9985787603590222
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9004407083775116,
+            "ci95": [
+              0.842565210170334,
+              0.9459255372753986
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9978502169251441
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8797578339469684,
+            "ci95": [
+              0.8275564633397207,
+              0.9241632947658865
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9985214720169703
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.25852279123590255,
+            "ci95": [
+              0.25852279123590255,
+              0.25852279123590255
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          },
+          "mean_option_mass": 0.9979400634765625
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.7547745860209424,
+            "ci95": [
+              0.7547745860209424,
+              0.7547745860209424
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9990511635939279
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8917005589642493,
+            "ci95": [
+              0.8298767952615982,
+              0.9422253538801
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9967146292328835
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.85211860647864,
+            "ci95": [
+              0.7743069757796464,
+              0.9156319496767841
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9967501511176428
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.22211732148005958,
+            "ci95": [
+              0.22211732148005958,
+              0.22211732148005958
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          },
+          "mean_option_mass": 0.9982601404190063
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.7057155394174007,
+            "ci95": [
+              0.7057155394174007,
+              0.7057155394174007
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9989231328169503
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.967996447988467,
+            "ci95": [
+              0.9609872591701325,
+              0.9743991237602098
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9983731963568262
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9222217405415142,
+            "ci95": [
+              0.904199982485933,
+              0.9385694250694433
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9980975530213779
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.3839099272318432,
+            "ci95": [
+              0.3839099272318432,
+              0.3839099272318432
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.6666666666666666,
+            "ci95": [
+              0.6666666666666666,
+              0.6666666666666666
+            ]
+          },
+          "mean_option_mass": 0.9971575339635215
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.5861592894528062,
+            "ci95": [
+              0.5861592894528062,
+              0.5861592894528062
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9986436764399209
+        }
+      ],
+      "fact_joint_context_update": [
+        {
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.16666666666666666,
+            "ci95": [
+              0.0,
+              0.4166666666666667
+            ],
+            "successes": 2,
+            "wilson95": [
+              0.04696514218385531,
+              0.4480308622529653
+            ]
+          }
+        },
+        {
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.25,
+            "ci95": [
+              0.0,
+              0.5
+            ],
+            "successes": 3,
+            "wilson95": [
+              0.08894166839405718,
+              0.5323053349335582
+            ]
+          }
+        },
+        {
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.4166666666666667,
+            "ci95": [
+              0.16666666666666666,
+              0.6666666666666666
+            ],
+            "successes": 5,
+            "wilson95": [
+              0.19326031365876087,
+              0.6804886874504443
+            ]
+          }
+        }
+      ],
+      "policy_effects": [
+        {
+          "task": "fact",
+          "context": "missing",
+          "probability_difference": {
+            "n": 12,
+            "mean": 0.3639431889891022,
+            "ci95": [
+              0.30858593930040273,
+              0.4165937850094532
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": 0.16666666666666666,
+            "ci95": [
+              0.0,
+              0.4166666666666667
+            ],
+            "successes": 2,
+            "wilson95": [
+              0.04696514218385531,
+              0.4480308622529653
+            ]
+          }
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.04316422960054619,
+            "ci95": [
+              -0.08821496576382341,
+              -0.004741511141915854
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          }
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.42780445563072017,
+            "ci95": [
+              -0.5187987361333928,
+              -0.3339227377317441
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": -0.8333333333333334,
+            "ci95": [
+              -1.0,
+              -0.5833333333333334
+            ]
+          }
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.045774707446952806,
+            "ci95": [
+              -0.057645265408821145,
+              -0.03613832393498668
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          }
+        },
+        {
+          "task": "anatomy",
+          "context": "congruent",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.04390921712099346,
+            "ci95": [
+              -0.0674126665673781,
+              -0.02039206719284494
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          }
+        },
+        {
+          "task": "anatomy",
+          "context": "conflicting",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.01635560979515943,
+            "ci95": [
+              -0.02241156228050465,
+              -0.01111869463029191
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          }
+        }
+      ],
+      "anatomy_regimes": [
+        {
+          "policy": "baseline",
+          "regime": "neutral",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.967996447988467,
+            "ci95": [
+              0.9607823361272226,
+              0.9742631105300994
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "baseline",
+          "regime": "congruent",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.8331016864911186,
+            "ci95": [
+              0.7708592195994318,
+              0.8872827180047207
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "baseline",
+          "regime": "conflicting",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.9590395808506424,
+            "ci95": [
+              0.9539917855892959,
+              0.9647692477782335
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "provenance",
+          "regime": "neutral",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.9222217405415142,
+            "ci95": [
+              0.9037092090545185,
+              0.938042316964593
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "provenance",
+          "regime": "congruent",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.789192469370125,
+            "ci95": [
+              0.7261433317849081,
+              0.8464893155704906
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "provenance",
+          "regime": "conflicting",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.9426839710554832,
+            "ci95": [
+              0.9329748929573154,
+              0.9508586743734914
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        }
+      ],
+      "anatomy_pairs": [
+        {
+          "context": "neutral",
+          "policy": "baseline",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "head",
+          "policy": "baseline",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "chest",
+          "policy": "baseline",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "neutral",
+          "policy": "provenance",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "head",
+          "policy": "provenance",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "chest",
+          "policy": "provenance",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        }
+      ],
+      "features": [
+        {
+          "layer": "encoder_selected",
+          "accuracy": 0.8333333333333334,
+          "correct": 10,
+          "n": 12,
+          "permutation_p": 0.030303030303030304,
+          "dimension": 1024,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "projector",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.010822510822510822,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_7_image_mean",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.012987012987012988,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_7_last_prompt",
+          "accuracy": 0.6666666666666666,
+          "correct": 8,
+          "n": 12,
+          "permutation_p": 0.15367965367965367,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_455491",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "layer": "llm_14_image_mean",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.008658008658008658,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_14_last_prompt",
+          "accuracy": 0.16666666666666666,
+          "correct": 2,
+          "n": 12,
+          "permutation_p": 0.9653679653679653,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_220158",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "layer": "llm_21_image_mean",
+          "accuracy": 0.8333333333333334,
+          "correct": 10,
+          "n": 12,
+          "permutation_p": 0.01948051948051948,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_21_last_prompt",
+          "accuracy": 0.25,
+          "correct": 3,
+          "n": 12,
+          "permutation_p": 0.9047619047619048,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_220158",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_455491",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_220158",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_28_image_mean",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.015151515151515152,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_28_last_prompt",
+          "accuracy": 0.6666666666666666,
+          "correct": 8,
+          "n": 12,
+          "permutation_p": 0.18398268398268397,
+          "dimension": 3584,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_455491",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_455491",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        }
+      ],
+      "generation_truncated": 0
+    },
+    "medsight": {
+      "counts": {
+        "ladder": 216,
+        "fact": 1296,
+        "generation": 24,
+        "features": 12,
+        "anatomy": 864
+      },
+      "ladder": {
+        "mean_logp": {
+          "original_minus_visual_only": {
+            "n": 12,
+            "mean": 0.6276169170935949,
+            "ci95": [
+              0.45546072721481323,
+              0.8570320090899859
+            ]
+          },
+          "positive_paraphrase_minus_visual_only": {
+            "n": 12,
+            "mean": 0.22803672154744467,
+            "ci95": [
+              0.10871676256259283,
+              0.341852499047915
+            ]
+          },
+          "positive_minus_negative_paraphrase": {
+            "n": 12,
+            "mean": 0.20263972878456116,
+            "ci95": [
+              0.0728506162762642,
+              0.36993132407466556
+            ]
+          },
+          "original_caption_gain": {
+            "n": 12,
+            "mean": 0.9996186544497808,
+            "ci95": [
+              0.7171388141810895,
+              1.3119483477125562
+            ]
+          },
+          "visual_context_gain": {
+            "n": 12,
+            "mean": 0.3720017373561859,
+            "ci95": [
+              0.18105927829941115,
+              0.5624728168050447
+            ]
+          },
+          "image_identity_without_context": {
+            "n": 12,
+            "mean": 0.11696018775304158,
+            "ci95": [
+              -0.016285380721092223,
+              0.25953241089979806
+            ]
+          },
+          "image_identity_with_positive_context": {
+            "n": 12,
+            "mean": -0.007012287775675456,
+            "ci95": [
+              -0.06641972114642461,
+              0.04921987578272812
+            ]
+          },
+          "image_gain_without_context": {
+            "n": 12,
+            "mean": 0.11890630920728047,
+            "ci95": [
+              -0.0023518274227778114,
+              0.2470155715942382
+            ]
+          },
+          "image_gain_with_positive_context": {
+            "n": 12,
+            "mean": 0.15437900026639303,
+            "ci95": [
+              0.0873906100789706,
+              0.22392311915755272
+            ]
+          }
+        },
+        "fact_logp": {
+          "original_minus_visual_only": {
+            "n": 12,
+            "mean": 1.299414434004575,
+            "ci95": [
+              0.9304592108159947,
+              1.6949477051695188
+            ]
+          },
+          "positive_paraphrase_minus_visual_only": {
+            "n": 12,
+            "mean": 0.4056076928973198,
+            "ci95": [
+              0.026019932702183734,
+              0.8423313001170755
+            ]
+          },
+          "positive_minus_negative_paraphrase": {
+            "n": 12,
+            "mean": 0.6903090650836626,
+            "ci95": [
+              0.361380323022604,
+              1.0321440503622092
+            ]
+          },
+          "original_caption_gain": {
+            "n": 12,
+            "mean": 1.5969556549874444,
+            "ci95": [
+              1.0809849381175203,
+              2.1467981911846428
+            ]
+          },
+          "visual_context_gain": {
+            "n": 12,
+            "mean": 0.29754122098286945,
+            "ci95": [
+              0.07288331836462021,
+              0.5373978488147255
+            ]
+          },
+          "image_identity_without_context": {
+            "n": 12,
+            "mean": 0.26662133385737735,
+            "ci95": [
+              0.09501865257819495,
+              0.4660610996186732
+            ]
+          },
+          "image_identity_with_positive_context": {
+            "n": 12,
+            "mean": 0.01781749352812767,
+            "ci95": [
+              -0.08062458857893944,
+              0.137679635795454
+            ]
+          },
+          "image_gain_without_context": {
+            "n": 12,
+            "mean": 0.18684547767043114,
+            "ci95": [
+              -0.0054652365234990905,
+              0.3783733942856389
+            ]
+          },
+          "image_gain_with_positive_context": {
+            "n": 12,
+            "mean": 0.10293430835008621,
+            "ci95": [
+              0.021208006516098978,
+              0.20793069725235278
+            ]
+          }
+        }
+      },
+      "choice_groups": [
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.5,
+            "ci95": [
+              0.25,
+              0.75
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.2537815976337112,
+              0.7462184023662888
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.5809180768769209,
+            "ci95": [
+              0.40050278418997504,
+              0.7712306750851795
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.6250000000000001,
+            "ci95": [
+              0.4305555555555556,
+              0.8194444444444445
+            ]
+          },
+          "mean_option_mass": 0.9884307848082647
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9265577031833705,
+            "ci95": [
+              0.8645669293649109,
+              0.9739161978825057
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9583333333333334,
+            "ci95": [
+              0.875,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9839912793702547
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.08333333333333333,
+              0.5833333333333334
+            ],
+            "successes": 4,
+            "wilson95": [
+              0.13812009109121645,
+              0.6093779111271937
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.34908913465954305,
+            "ci95": [
+              0.22200058716173154,
+              0.48950987272942326
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.375,
+            "ci95": [
+              0.23611111111111108,
+              0.5277777777777778
+            ]
+          },
+          "mean_option_mass": 0.9892822777231536
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.9166666666666666,
+            "ci95": [
+              0.75,
+              1.0
+            ],
+            "successes": 11,
+            "wilson95": [
+              0.646120088858892,
+              0.9851349055950824
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8231744267699962,
+            "ci95": [
+              0.7099034484118327,
+              0.9150761720155777
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.8472222222222223,
+            "ci95": [
+              0.7083333333333335,
+              0.9444444444444446
+            ]
+          },
+          "mean_option_mass": 0.9401056613359186
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.5833333333333334,
+            "ci95": [
+              0.3333333333333333,
+              0.8333333333333334
+            ],
+            "successes": 7,
+            "wilson95": [
+              0.3195113125495559,
+              0.8067396863412393
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.5818327154266931,
+            "ci95": [
+              0.38998226424586596,
+              0.7713120357423684
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5972222222222222,
+            "ci95": [
+              0.40277777777777773,
+              0.7916666666666666
+            ]
+          },
+          "mean_option_mass": 0.987766499320666
+        },
+        {
+          "task": "fact",
+          "context": "missing",
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9302808834323759,
+            "ci95": [
+              0.8728386393189542,
+              0.9772028203079208
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9861111111111112,
+            "ci95": [
+              0.9583333333333334,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9829208031296731
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.6767859226802692,
+            "ci95": [
+              0.5459909679228827,
+              0.7906574196935531
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.6944444444444445,
+            "ci95": [
+              0.5277777777777778,
+              0.8333333333333334
+            ]
+          },
+          "mean_option_mass": 0.9803014521797496
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.75,
+            "ci95": [
+              0.5,
+              1.0
+            ],
+            "successes": 9,
+            "wilson95": [
+              0.46769466506644175,
+              0.9110583316059429
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.606556367018132,
+            "ci95": [
+              0.453689047196969,
+              0.7518716301966079
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.611111111111111,
+            "ci95": [
+              0.4305555555555555,
+              0.7916666666666665
+            ]
+          },
+          "mean_option_mass": 0.9777468393246335
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.9166666666666666,
+            "ci95": [
+              0.75,
+              1.0
+            ],
+            "successes": 11,
+            "wilson95": [
+              0.646120088858892,
+              0.9851349055950824
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8008626943308762,
+            "ci95": [
+              0.6907178822972544,
+              0.8971772021009181
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.8194444444444445,
+            "ci95": [
+              0.6944444444444443,
+              0.9305555555555557
+            ]
+          },
+          "mean_option_mass": 0.8503216922593614
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.7902979917297368,
+            "ci95": [
+              0.6557404668587071,
+              0.9079485849818564
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.8472222222222223,
+            "ci95": [
+              0.7083333333333334,
+              0.9583333333333334
+            ]
+          },
+          "mean_option_mass": 0.9102595821540388
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.75,
+            "ci95": [
+              0.5,
+              1.0
+            ],
+            "successes": 9,
+            "wilson95": [
+              0.46769466506644175,
+              0.9110583316059429
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.6405420201221823,
+            "ci95": [
+              0.5106477014305473,
+              0.7740262258343928
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.6666666666666666,
+            "ci95": [
+              0.5000000000000001,
+              0.8055555555555557
+            ]
+          },
+          "mean_option_mass": 0.9716113383571306
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.5833333333333334,
+            "ci95": [
+              0.3333333333333333,
+              0.8333333333333334
+            ],
+            "successes": 7,
+            "wilson95": [
+              0.3195113125495559,
+              0.8067396863412393
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.541509891620381,
+            "ci95": [
+              0.39192048549785724,
+              0.6937525093814988
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5555555555555555,
+            "ci95": [
+              0.375,
+              0.736111111111111
+            ]
+          },
+          "mean_option_mass": 0.9733657663067182
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.969902016796401,
+            "ci95": [
+              0.9557269424367596,
+              0.9831434895896134
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9907181097401513
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.8389303278948442,
+            "ci95": [
+              0.759593910371651,
+              0.906889862034413
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.888888888888889,
+            "ci95": [
+              0.8333333333333334,
+              0.9444444444444445
+            ]
+          },
+          "mean_option_mass": 0.971383930908309
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9775359223841144,
+            "ci95": [
+              0.9482361527893802,
+              0.9951566033472
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9861111111111112,
+            "ci95": [
+              0.9583333333333334,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9504217497176595
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9377401125291788,
+            "ci95": [
+              0.9016390635835109,
+              0.9684303535574159
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9583333333333334,
+            "ci95": [
+              0.9166666666666669,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9736191733843751
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9441381134092831,
+            "ci95": [
+              0.9174184790962102,
+              0.968325141757771
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9861111111111112,
+            "ci95": [
+              0.9583333333333334,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9890009818805588
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.9166666666666666,
+            "ci95": [
+              0.75,
+              1.0
+            ],
+            "successes": 11,
+            "wilson95": [
+              0.646120088858892,
+              0.9851349055950824
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.7793471865169899,
+            "ci95": [
+              0.6801808095265872,
+              0.8570072200193775
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.8194444444444446,
+            "ci95": [
+              0.6805555555555555,
+              0.9166666666666669
+            ]
+          },
+          "mean_option_mass": 0.9696217419372665
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9830108673780465,
+            "ci95": [
+              0.9613262420838649,
+              0.9975799545939855
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9972832625110944
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.16666666666666666,
+            "ci95": [
+              0.0,
+              0.4166666666666667
+            ],
+            "successes": 2,
+            "wilson95": [
+              0.04696514218385531,
+              0.4480308622529653
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.40405283690942834,
+            "ci95": [
+              0.35700271420839247,
+              0.4495111981838388
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.38888888888888884,
+            "ci95": [
+              0.3055555555555555,
+              0.4586805555555505
+            ]
+          },
+          "mean_option_mass": 0.9328169996539751
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.3751422147526364,
+            "ci95": [
+              0.3751422147526364,
+              0.3751422147526364
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.3333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "mean_option_mass": 0.857858101526896
+        },
+        {
+          "task": "anatomy",
+          "context": "chest",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.7184337913068731,
+            "ci95": [
+              0.7184337913068731,
+              0.7184337913068731
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333335,
+            "ci95": [
+              0.8333333333333335,
+              0.8333333333333335
+            ]
+          },
+          "mean_option_mass": 0.8899187743663788
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9541756695149953,
+            "ci95": [
+              0.8756653991064993,
+              0.996046947828184
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9722222222222222,
+            "ci95": [
+              0.9166666666666665,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9969914356867472
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.4166666666666667,
+            "ci95": [
+              0.16666666666666666,
+              0.6666666666666666
+            ],
+            "successes": 5,
+            "wilson95": [
+              0.19326031365876087,
+              0.6804886874504443
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.48962175502226685,
+            "ci95": [
+              0.3836446415206954,
+              0.6074436320564834
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5277777777777777,
+            "ci95": [
+              0.3611111111111111,
+              0.6944444444444445
+            ]
+          },
+          "mean_option_mass": 0.9419918126530117
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.26958066471980474,
+            "ci95": [
+              0.26958066471980474,
+              0.26958066471980474
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.3333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "mean_option_mass": 0.9054384082555771
+        },
+        {
+          "task": "anatomy",
+          "context": "head",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.6774657376765859,
+            "ci95": [
+              0.6774657376765859,
+              0.6774657376765859
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.6666666666666666,
+            "ci95": [
+              0.6666666666666666,
+              0.6666666666666666
+            ]
+          },
+          "mean_option_mass": 0.9304590225219727
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.9968737191953466,
+            "ci95": [
+              0.9930763304136898,
+              0.999143898757802
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "mean_option_mass": 0.9975196578436428
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.5961473559514934,
+            "ci95": [
+              0.5468247113738032,
+              0.6427548567138107
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5972222222222222,
+            "ci95": [
+              0.5138888888888888,
+              0.6805555555555555
+            ]
+          },
+          "mean_option_mass": 0.9171975147393013
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.3678129689644341,
+            "ci95": [
+              0.3678129689644341,
+              0.3678129689644341
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.3333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "mean_option_mass": 0.8755775988101959
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "expected_probability": {
+            "n": 12,
+            "mean": 0.6446756536558002,
+            "ci95": [
+              0.6446756536558002,
+              0.6446756536558002
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5,
+            "ci95": [
+              0.5,
+              0.5
+            ]
+          },
+          "mean_option_mass": 0.9291467368602753
+        }
+      ],
+      "fact_joint_context_update": [
+        {
+          "image": "correct",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          }
+        },
+        {
+          "image": "correct",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.75,
+            "ci95": [
+              0.5,
+              1.0
+            ],
+            "successes": 9,
+            "wilson95": [
+              0.46769466506644175,
+              0.9110583316059429
+            ]
+          }
+        },
+        {
+          "image": "swap",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.75,
+            "ci95": [
+              0.5,
+              1.0
+            ],
+            "successes": 9,
+            "wilson95": [
+              0.46769466506644175,
+              0.9110583316059429
+            ]
+          }
+        },
+        {
+          "image": "swap",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.5833333333333334,
+            "ci95": [
+              0.3333333333333333,
+              0.8333333333333334
+            ],
+            "successes": 7,
+            "wilson95": [
+              0.3195113125495559,
+              0.8067396863412393
+            ]
+          }
+        },
+        {
+          "image": "none",
+          "policy": "baseline",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.9166666666666666,
+            "ci95": [
+              0.75,
+              1.0
+            ],
+            "successes": 11,
+            "wilson95": [
+              0.646120088858892,
+              0.9851349055950824
+            ]
+          }
+        },
+        {
+          "image": "none",
+          "policy": "provenance",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          }
+        }
+      ],
+      "policy_effects": [
+        {
+          "task": "fact",
+          "context": "missing",
+          "probability_difference": {
+            "n": 12,
+            "mean": 0.34563962630644945,
+            "ci95": [
+              0.19792804985033344,
+              0.4940652364138903
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": 0.5,
+            "ci95": [
+              0.25,
+              0.75
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.2537815976337112,
+              0.7462184023662888
+            ]
+          }
+        },
+        {
+          "task": "fact",
+          "context": "positive",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.13097168890155667,
+            "ci95": [
+              -0.2023268134733891,
+              -0.06975904510015858
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.24249400665523077
+            ]
+          }
+        },
+        {
+          "task": "fact",
+          "context": "negative",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.07022955566213711,
+            "ci95": [
+              -0.1686462878741153,
+              0.019249528740872678
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": -0.08333333333333333,
+            "ci95": [
+              -0.3333333333333333,
+              0.16666666666666666
+            ]
+          }
+        },
+        {
+          "task": "anatomy",
+          "context": "neutral",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.4007263632438531,
+            "ci95": [
+              -0.4509588856762889,
+              -0.3511005641172816
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": -0.16666666666666666,
+            "ci95": [
+              -0.4166666666666667,
+              0.0
+            ]
+          }
+        },
+        {
+          "task": "anatomy",
+          "context": "congruent",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.4349272150255333,
+            "ci95": [
+              -0.5405421124944229,
+              -0.3234019822823838
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": -0.5,
+            "ci95": [
+              -0.75,
+              -0.25
+            ]
+          }
+        },
+        {
+          "task": "anatomy",
+          "context": "conflicting",
+          "probability_difference": {
+            "n": 12,
+            "mean": -0.6085847299358135,
+            "ci95": [
+              -0.6526186593129467,
+              -0.5639957993479278
+            ]
+          },
+          "accuracy_difference": {
+            "n": 12,
+            "mean": -0.9166666666666666,
+            "ci95": [
+              -1.0,
+              -0.75
+            ]
+          }
+        }
+      ],
+      "anatomy_regimes": [
+        {
+          "policy": "baseline",
+          "regime": "neutral",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.9968737191953466,
+            "ci95": [
+              0.9932203498447554,
+              0.9991613884549216
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "baseline",
+          "regime": "congruent",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.9377452612663716,
+            "ci95": [
+              0.8566139134371271,
+              0.9865673793660599
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.9722222222222222,
+            "ci95": [
+              0.9166666666666665,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "baseline",
+          "regime": "conflicting",
+          "accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.9994412756266705,
+            "ci95": [
+              0.9991886524762534,
+              0.9996727988665987
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 12,
+            "wilson95": [
+              0.7575059933447693,
+              1.0
+            ]
+          }
+        },
+        {
+          "policy": "provenance",
+          "regime": "neutral",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.8333333333333334,
+            "ci95": [
+              0.5833333333333334,
+              1.0
+            ],
+            "successes": 10,
+            "wilson95": [
+              0.5519691377470349,
+              0.9530348578161448
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.5961473559514934,
+            "ci95": [
+              0.5477970943985919,
+              0.6422114884796482
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5972222222222222,
+            "ci95": [
+              0.5138888888888888,
+              0.6666666666666666
+            ]
+          }
+        },
+        {
+          "policy": "provenance",
+          "regime": "congruent",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.5,
+            "ci95": [
+              0.25,
+              0.75
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.2537815976337112,
+              0.7462184023662888
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.5028180462408381,
+            "ci95": [
+              0.4001737982358108,
+              0.6146962940930598
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.5555555555555555,
+            "ci95": [
+              0.3888888888888889,
+              0.7222222222222222
+            ]
+          }
+        },
+        {
+          "policy": "provenance",
+          "regime": "conflicting",
+          "accuracy": {
+            "n": 12,
+            "mean": 0.08333333333333333,
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "successes": 1,
+            "wilson95": [
+              0.014865094404917678,
+              0.35387991114110795
+            ]
+          },
+          "probability": {
+            "n": 12,
+            "mean": 0.390856545690857,
+            "ci95": [
+              0.3454025151237783,
+              0.4351041466513574
+            ]
+          },
+          "order_accuracy": {
+            "n": 12,
+            "mean": 0.3611111111111111,
+            "ci95": [
+              0.27777777777777773,
+              0.4444444444444444
+            ]
+          }
+        }
+      ],
+      "anatomy_pairs": [
+        {
+          "context": "neutral",
+          "policy": "baseline",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "head",
+          "policy": "baseline",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "chest",
+          "policy": "baseline",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "successes": 6,
+            "wilson95": [
+              0.6096657120978477,
+              1.0
+            ]
+          }
+        },
+        {
+          "context": "neutral",
+          "policy": "provenance",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 0.6666666666666666,
+            "ci95": [
+              0.3333333333333333,
+              1.0
+            ],
+            "successes": 4,
+            "wilson95": [
+              0.29999331513839955,
+              0.9032285888942164
+            ]
+          }
+        },
+        {
+          "context": "head",
+          "policy": "provenance",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.39033428790215224
+            ]
+          }
+        },
+        {
+          "context": "chest",
+          "policy": "provenance",
+          "joint_accuracy": {
+            "n": 6,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "successes": 0,
+            "wilson95": [
+              0.0,
+              0.39033428790215224
+            ]
+          }
+        }
+      ],
+      "features": [
+        {
+          "layer": "encoder_selected",
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12,
+          "permutation_p": 0.0021645021645021645,
+          "dimension": 1024,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "projector",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.0021645021645021645,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_9_image_mean",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.0021645021645021645,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_351561",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_9_last_prompt",
+          "accuracy": 0.75,
+          "correct": 9,
+          "n": 12,
+          "permutation_p": 0.0670995670995671,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_18_image_mean",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.008658008658008658,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_18_last_prompt",
+          "accuracy": 0.5,
+          "correct": 6,
+          "n": 12,
+          "permutation_p": 0.49134199134199136,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_220158",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_27_image_mean",
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12,
+          "permutation_p": 0.0021645021645021645,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_27_last_prompt",
+          "accuracy": 0.5,
+          "correct": 6,
+          "n": 12,
+          "permutation_p": 0.48484848484848486,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_220158",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_36_image_mean",
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12,
+          "permutation_p": 0.008658008658008658,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_542571",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "layer": "llm_36_last_prompt",
+          "accuracy": 0.75,
+          "correct": 9,
+          "n": 12,
+          "permutation_p": 0.0670995670995671,
+          "dimension": 4096,
+          "neighbors": [
+            {
+              "id": "Instruction-Tuning_202483",
+              "neighbor": "Instruction-Tuning_392502",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_219192",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_542571",
+              "neighbor": "Instruction-Tuning_363837",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_298378",
+              "neighbor": "Instruction-Tuning_219192",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_351561",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_555935",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_392502",
+              "neighbor": "Instruction-Tuning_202483",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_220158",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_455491",
+              "neighbor": "Instruction-Tuning_298378",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_357717",
+              "neighbor": "Instruction-Tuning_241269",
+              "correct": true
+            },
+            {
+              "id": "Instruction-Tuning_363837",
+              "neighbor": "Instruction-Tuning_555935",
+              "correct": false
+            },
+            {
+              "id": "Instruction-Tuning_241269",
+              "neighbor": "Instruction-Tuning_357717",
+              "correct": true
+            }
+          ]
+        }
+      ],
+      "generation_truncated": 10
+    }
+  }
+}

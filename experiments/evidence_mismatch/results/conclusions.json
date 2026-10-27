@@ -1,0 +1,40 @@
+{
+  "outcome": "Both models show lower image identity gain and higher caption specificity for externally screened targets than visual-description controls; prefix specificity does not separate these groups in this pilot.",
+  "supported": "Source-dependent supervision is a concrete and measurable audit target. Explicit biopsy-event and patient-history examples provide stronger structural evidence than low image sensitivity alone.",
+  "unsupported": "No verified population mismatch rate, no evidence that this training data caused the model behavior, no general model ranking, and no validated mismatch detector.",
+  "recommended_measurement": "A claim-level evidence-provenance profile: image identity gain, source-context specificity, and their contrast, accompanied by an independent evidence-sufficiency label. Use prefix dependence as a control or mechanism probe.",
+  "decisions": [
+    {
+      "model": "huatuo",
+      "external_less_image_sensitive": true,
+      "external_more_caption_sensitive": true,
+      "prefix_specificity_distinguishes_groups": false,
+      "source_over_image_contrast": {
+        "model": "huatuo",
+        "metric": "source_over_image",
+        "contrast": "external_context_minus_visual_description",
+        "mean": 0.4726225268095732,
+        "ci95": [
+          0.2671328153926879,
+          0.6846609535161405
+        ]
+      }
+    },
+    {
+      "model": "medsight",
+      "external_less_image_sensitive": true,
+      "external_more_caption_sensitive": true,
+      "prefix_specificity_distinguishes_groups": false,
+      "source_over_image_contrast": {
+        "model": "medsight",
+        "metric": "source_over_image",
+        "contrast": "external_context_minus_visual_description",
+        "mean": 0.551357607357204,
+        "ci95": [
+          0.277316625835374,
+          0.8123650762718163
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,639 @@
+{
+  "pattern": "\\b(\\d{1,3})[ -]years?[ -]old\\b|\\baged?\\s+(\\d{1,3})\\b",
+  "counts": {
+    "full": {
+      "answer_numeric_age": 1553,
+      "answer_age_absent_question": 1376,
+      "source_shared_age_absent_question": 993,
+      "absent_question_not_found_in_caption": 395
+    },
+    "medsight_60k": {
+      "answer_numeric_age": 150,
+      "answer_age_absent_question": 128,
+      "source_shared_age_absent_question": 88,
+      "absent_question_not_found_in_caption": 41
+    }
+  },
+  "caveat": "Numeric exact-match provenance only. Does not check image text, approximate-age questions, hypothetical examples, or whether the same age refers to the patient.",
+  "examples": [
+    {
+      "id": "Instruction-Tuning_226740",
+      "subset": "full_only",
+      "question": "What does the PET/CT scan reveal about the condition of the patient\u2019s oropharynx and neck lymph nodes?",
+      "answer": "The PET/CT scan reveals significant findings in a 51-year-old male patient with tonsillar follicular dendritic cell sarcoma (FDCS). In the oropharynx, there is extensive hypermetabolic activity on the left side, indicated by a high SUVmax of 17.7. This high level of metabolic activity suggests a malignancy in the oropharynx area. Additionally, the scan shows extensive hypermetabolism in the left neck's lymph nodes, specifically in regions II, III, IV, and Vb, with an SUVmax of 14.1. This hypermetabolic activity in the lymph nodes is indicative of metastatic spread, meaning the cancer has likely spread from the primary site in the oropharynx to these lymph nodes. These findings are crucial for understanding the extent of the disease and determining appropriate treatment strategies.",
+      "caption": "A 51-year-old male patient with tonsillar follicular dendritic cell sarcoma (FDCS). (A) PET/CT scan shows extensive hypermetabolic activity on the left side of the oropharynx (SUVmax 17.7). (B) PET/CT scan shows extensive hypermetabolism in the left neck II, III, IV, and Vb lymph nodes (SUVmax 14.1). CT, computed tomography; PET, positron emission tomography; SUVmax, standardized uptake value maximum.",
+      "shared_ages": [
+        51
+      ],
+      "image": [
+        "images/pmc_226740_0.jpg",
+        "images/pmc_226740_1.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Brain"
+    },
+    {
+      "id": "Instruction-Tuning_58542",
+      "subset": "full_only",
+      "question": "Doctor, based on the imaging findings, what is your assessment of this patient's condition, and what implications does it have for their vision and treatment plan?",
+      "answer": "Based on the provided imaging, this 65-year-old male patient appears to have neovascular age-related macular degeneration (nAMD) in the left eye, which is a severe and sight-threatening condition. The presence of a choroidal neovascular membrane (CNVM) with a classic component, as seen on the fundus fluorescein angiography (FFA) and indocyanine green angiography (ICGA) images, indicates the growth of abnormal blood vessels beneath the retina. These abnormal vessels can leak fluid and blood, leading to vision loss if left untreated. Additionally, the optical coherence tomography (OCT) scans reveal the development and persistence of subretinal hyperreflective material (SHRM) and denovo multilayered pigment epithelial detachment (DN-MLPED) over a 28-month period, which are associated with the progression of nAMD and further vision impairment. Given the central location of the lesion, this condition can significantly impact the patient's central vision, making tasks like reading, driving, and recognizing faces increasingly difficult. Prompt treatment with intravitreal anti-VEGF injections, combined with regular monitoring and potential consideration of other therapies like photodynamic therapy or laser treatment, is crucial to stabilize the condition and preserve as much vision as possible.",
+      "caption": "Left eye of a 65-year-old male with neovascular age-related macular degeneration (nAMD), and denovo multilayered pigment epithelial detachment (DN-MLPED). Fundus fluorescein angiography (FFA) shows occult choroidal neovascular membrane (CNVM) with a classic component and a well-defined neovascular network with feeder vessel on indocyanine green angiography (ICGA; A). Serial cross-sectional optical coherence tomography (OCT) images over 28\u00a0months demonstrate the onset and persistence of subretinal hyperreflective material (SHRM; arrows) along with multilayering (Arrowheads) (A\u2013F).",
+      "shared_ages": [
+        65
+      ],
+      "image": [
+        "images/pmc_58542_0.jpg",
+        "images/pmc_58542_1.jpg",
+        "images/pmc_58542_2.jpg"
+      ],
+      "modality": "Optical Coherence Tomography",
+      "body_part": "Eye"
+    },
+    {
+      "id": "Instruction-Tuning_313617",
+      "subset": "full_only",
+      "question": "Can you describe the key findings from the medical images and explain what they might suggest about the patient's condition?",
+      "answer": "Based on the provided medical images, there are several significant findings that could indicate a potential malignant bone tumor or metastatic lesion in the 58-year-old male patient.\n\nThe periosteal reaction seen on the X-ray (a) is a non-specific finding that can occur in various bone conditions, including malignancies, infections, and trauma. However, when combined with other findings, it may raise suspicion for a bone tumor.\n\nThe CT scan (b) reveals endosteal scalloping and a cortical defect, which are characteristic features of bone destruction. These findings are highly suggestive of an aggressive bone lesion, potentially a malignant tumor.\n\nThe MRI images (c) demonstrate an extraskeletal mass, a multilobular mass, and abnormal signal intensity in the adjacent soft tissue and bone marrow. These findings are concerning for a malignant bone tumor with potential soft tissue involvement and bone marrow infiltration.\n\nFurthermore, the increased uptake on the bone scan (d) and 201Tl scan (e) compared to the anterior iliac crest indicates increased metabolic activity in the area of interest, which is often seen in malignant lesions.\n\nCollectively, these imaging findings are highly suggestive of a primary bone malignancy, such as osteosarcoma or chondrosarcoma, or a metastatic lesion from another primary cancer. The combination of bone destruction, soft tissue involvement, and increased metabolic activity on nuclear medicine scans is concerning for an aggressive malignant process.\n\nTo confirm the diagnosis and determine the appropriate treatment plan, further investigation, such as a biopsy and additional staging studies, would be warranted. The imaging findings presented in this case raise significant concern for a potentially serious bone malignancy requiring prompt evaluation and management.",
+      "caption": "Case 3. A 58-year-old man showed a periosteal reaction on X-ray (a); endosteal scalloping and cortical defect on CT (b); and extraskeletal mass, multilobular mass, and abnormal signal intensity in adjacent soft tissue and bone marrow on MRI (c). Increased uptake greater than the anterior iliac crest on the bone scan and 201Tl scan were also seen (d,e). Based on the findings, the overall radiological score rate was calculated as follows: [1 point (X-ray) + 3 points (CT) + 8 points (MRI) + 2 points (bone scan) + 2 points (201Tl scan)]/16 points (full marks) = 100% (f,g) The microscopic image showed bimorphic appearance of grade 1\u20132 chondrosarcoma and fibrosarcoma components. The final histological diagnosis of the tumor was dedifferentiated chondrosarcoma.",
+      "shared_ages": [
+        58
+      ],
+      "image": [
+        "images/pmc_313617_0.jpg",
+        "images/pmc_313617_1.jpg",
+        "images/pmc_313617_2.jpg",
+        "images/pmc_313617_3.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Lower limb"
+    },
+    {
+      "id": "Instruction-Tuning_393342",
+      "subset": "full_only",
+      "question": "What does the highlighted area in the mammogram suggest, and what further steps should be taken to confirm the diagnosis?",
+      "answer": "The highlighted area in the mammogram suggests a region of denser tissue, which could indicate the presence of a mass. Given the context of a 55-year-old woman with invasive lobular carcinoma, this area likely correlates with the site of the cancer detected by AI. The malignancy score provided (23.9) suggests a significant likelihood of malignancy. To confirm the diagnosis, further imaging studies such as ultrasound (US) and magnetic resonance imaging (MRI) should be performed to evaluate the extent of the lesion. Additionally, a biopsy should be conducted to obtain a histopathologic diagnosis. The biopsy results will help determine the nature of the lesion, its receptor status (estrogen receptor-positive, progesterone receptor-positive, and HER2 status), and guide the treatment plan. Surgical consultation might also be necessary to discuss potential treatment options, including lumpectomy or mastectomy, depending on the size and spread of the tumor.",
+      "caption": "A 55-year-old woman with invasive lobular carcinoma in the left breast. a, b. No abnormal finding was detected in the mammography of both breasts by a radiologist. c\u2013e AI diffusely highlighted the central portion of the left breast, which correlated with the location of the cancer in US and MRI. The malignancy score of the cancer was 23.9. Surgical histopathologic examination showed a node-positive, low histologic grade invasive lobular carcinoma that was estrogen receptor-positive, progesterone receptor-positive, and human epidermal growth factor receptor-2-negative by left lumpectomy",
+      "shared_ages": [
+        55
+      ],
+      "image": [
+        "images/pmc_393342_0.jpg"
+      ],
+      "modality": "Others",
+      "body_part": "Breast"
+    },
+    {
+      "id": "Instruction-Tuning_58863",
+      "subset": "medsight_60k",
+      "question": "What type of tumor is depicted in this medical image?",
+      "answer": "Based on the detailed description in the reference, the medical image depicts a giant cell tumor (GCT) of the breast. The image shows a mass with prominent spiculated margins and desmoplasia, which are characteristic features of a GCT. Pathological confirmation has been provided, confirming the diagnosis of a GCT in this 20-year-old female patient.",
+      "caption": "Tomosynthesis, in a mediolateral oblique view, of a 20-year-old woman (case 3)\u2014same case as MRI shown in Figure 7\u2014with GCT of the breast showing a mass with prominent spiculated margins, together with desmoplasia, which is highly suggestive of malignancy. Pathology confirmed the diagnosis of GCT.",
+      "shared_ages": [
+        20
+      ],
+      "image": [
+        "images/pmc_58863_0.jpg"
+      ],
+      "modality": "Others",
+      "body_part": "Breast"
+    },
+    {
+      "id": "Instruction-Tuning_385458",
+      "subset": "full_only",
+      "question": "Can you identify any subtle or difficult-to-detect abnormalities in the SPECT scans shown in this image?",
+      "answer": "The SPECT scans show subtle changes in regional cerebral blood flow, with decreased perfusion in the left inferior frontal and left anterior temporal lobe regions of the brain in the 50-year-old patient. While the MRI scan of this patient was normal, the SPECT scan was able to detect these functional changes, which could be indicative of mild traumatic brain injury (TBI) or other neurological conditions. In the case of the 18-year-old patient, the SPECT scan provides more detailed information about regional brain perfusion compared to a traditional MRI, which may be useful for evaluating the extent and impact of the head injury sustained from the mountain biking accident. The use of the newer 99mTc-HMPAO radiotracer and dual-headed gamma camera technology also allows for higher-quality SPECT imaging that can help identify more subtle abnormalities in brain function and perfusion.",
+      "caption": "Mild TBI. (A) Example of SPECT scans cited in TTASAAN report. Anatomical details are lacking. 50-year-old male with minor head trauma after a motor vehicle accident showed decreased perfusion of the left inferior frontal and left anterior temporal lobe, whilst MRI scan was normal [The figure was originally published in JNM. \u00a9 SNMMI (28)]. (B\u2013G) A 2019 SPECT scan using a dual-headed gamma camera of an 18-year-old male who struck a tree while mountain biking and briefly lost consciousness. A modern 99mmTc-HMPAO perfusion SPECT scan was performed with a dual-head gamma camera. (B) Horizontal tomograms show detail of thalamus, anterior cingulate, caudate, and lentiform nuclei. A focal area of hypoperfusion can be seen in the right parietal cortex (red arrow). Color scale is the same as in Figure 1B. (C) Sagittal tomograms reveal decreased inferior frontal perfusion and decreased medial temporal perfusion bilaterally (green arrow). (D\u2013G) 3-D representation of SPECT scan data showing left lateral (D), right lateral showing the area of hypoperfusion in the right parietal cortex (red arrow) (E), superior (F), and inferior views (G). (H\u2013J) The patient's data is compared to a normative database using Segami Inc. Oasis software. The color scale is the same as in Figure 2D. Areas of relatively decreased perfusion are more evident, such as the area of hypoperfusion in the right parietal cortex (red arrow).",
+      "shared_ages": [
+        18,
+        50
+      ],
+      "image": [
+        "images/pmc_385458_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Brain"
+    },
+    {
+      "id": "Instruction-Tuning_617064",
+      "subset": "full_only",
+      "question": "What is the primary abnormality observed in the MRI image?",
+      "answer": "The primary abnormality observed in the MRI image is the contrast enhancement of the endometrium and inner myometrial layer, which is indicative of endometritis or inflammation of the endometrium. This pattern of enhancement suggests an underlying pelvic inflammatory process in the 38-year-old patient presenting with pelvic pain.",
+      "caption": "MRI appearance of endometritis in a 38-year-old woman with pelvic pain. Sagittal gadolinium-enhanced fat-suppressed T1-weighted image shows contrast enhancement of the endometrium and inner myometrial layer (arrowheads)",
+      "shared_ages": [
+        38
+      ],
+      "image": [
+        "images/pmc_617064_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Foot"
+    },
+    {
+      "id": "Instruction-Tuning_199059",
+      "subset": "medsight_60k",
+      "question": "What are the signs visible in this MRI image and how do they relate to the patient\u2019s condition?",
+      "answer": "The MRI image displays bilateral thalamic microbleeds, which appear as small dark spots on the susceptibility weighted image, located symmetrically around the thalamus region. These microbleeds, indicated by a score of 1 (meaning microbleeds are present), suggest the presence of small vessel disease (SVD), a condition that reflects capillary wall pathology and increased susceptibility to microvascular damage in the brain. Thalamic microbleeds are significant because they can impact the neuronal pathways traversing through the thalamus, potentially leading to various neurological symptoms and disorders. The presence of these microbleeds in a 60-year-old male patient as referenced, helps in directing the clinical approach, including further diagnostic testing and targeted therapies to manage and monitor the small vessel disease and its potential complications in cerebral regions.",
+      "caption": "MRI examples of SVD features in Fabry Disease patient cohort. (A) Axial susceptibility weighted image shows the presence of bilateral thalamic microbleeds for an SVD microbleed score of 1 (microbleeds present) in 60-year-old male patient. (B) Axial FLAIR shows confluent subcortical white matter disease for a Fazekas score of 3 in 81-year-old female. A chronic right parietal infarction involving a portion of the right MCA territory is also partially imaged. (C) Axial T2 fat saturated image shows a pontine lacunar infarction in 64-year-old female. (D) Axial T2 fat saturated image in the same patient as image C shows another lacunar infarction in the left corona radiata. An additional lacunar infarction of the genu of the corpus callosum in this patient (not shown) results in an SVD lacunar score of 2 (3\u20135 lacunes).",
+      "shared_ages": [
+        60
+      ],
+      "image": [
+        "images/pmc_199059_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Brain"
+    },
+    {
+      "id": "Instruction-Tuning_157703",
+      "subset": "full_only",
+      "question": "What is the likely diagnosis based on the imaging features observed?",
+      "answer": "Based on the imaging features, the most likely diagnosis is a stage IV neuroblastoma. Neuroblastoma is a common childhood cancer that typically arises from the adrenal glands or sympathetic nervous system. The large, primary tumor with heterogeneous enhancement, vascular encasement, and restricted diffusion on diffusion-weighted imaging are all characteristic of a neuroblastoma. The patient's age of 4 years old is also consistent with the presentation of this pediatric malignancy.",
+      "caption": "A 4-year-old girl diagnosed with stage IV neuroblastoma. Coronal acquired 3D T2-weighted image (a) with axial reconstruction (c) demonstrates the primary tumour arising from the left adrenal gland (arrows) with compression upon the left kidney, vascular encasement and lifting of the aorta (arrowhead). The post-contrast T1-weighted image illustrates heterogeneous enhancement (b). There is diffusion restriction seen as high signal at the b1000 image (d) with corresponding low signal at the ADC map (e)",
+      "shared_ages": [
+        4
+      ],
+      "image": [
+        "images/pmc_157703_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Abdomen"
+    },
+    {
+      "id": "Instruction-Tuning_437242",
+      "subset": "full_only",
+      "question": "Family member: Doctor, can you explain what these images show? Is it something serious?",
+      "answer": "Doctor: These images show the progression of a non-ossifying fibroma (NOF) in the right proximal tibia over several years. NOFs are benign bone lesions commonly found in children and adolescents. In the first image, we see the lesion when the girl was 10 years old. It has a distinct, sclerotic border and a polycyclic shape. By the time of the second image, three years later, the lesion shows signs of ossification, indicating it is starting to heal. In the final image, at 17 years old, the lesion has completely ossified and become homogeneously sclerotic, meaning it has fully healed and integrated into the bone. NOFs are generally not serious and typically resolve on their own without treatment. However, they are monitored to ensure they do not cause any complications.",
+      "caption": "(a) A girl aged 10\u00a0years at the first presentation. Lateral radiographs of the right proximal tibia showing a typical NOF in stage B: distant from the epiphysis, polycyclic shaped and with clearly sclerotic borders. The cortex is protruding like the shape of an hourglass. (b) Three years later typical ossification beginning at the diaphysis is evident, representing a stage C lesion. (c) Complete homogeneous sclerosis of the lesion at the patient age of 17\u00a0years",
+      "shared_ages": [
+        10
+      ],
+      "image": [
+        "images/pmc_437242_0.jpg",
+        "images/pmc_437242_1.jpg",
+        "images/pmc_437242_2.jpg"
+      ],
+      "modality": "Others",
+      "body_part": "Lower limb"
+    },
+    {
+      "id": "Instruction-Tuning_169220",
+      "subset": "full_only",
+      "question": "Can you describe what you see in the X-ray images regarding the condition of the right clavicle in both 'A' and 'C' panels?",
+      "answer": "In the X-ray image labeled 'A', it shows a non-union fracture of the right clavicle in an 8-year-old female child. The fracture is approximately one and a half years old, and the lack of bone healing is evident, with the bone segments remaining unaligned. This condition indicates that the bone has not successfully fused over this extended period. In the 'C' panel, which is a post-operative radiograph after the removal of a surgical plate, the previously fractured clavicle shows signs of healing. The fixation device is no longer present, suggesting that the surgical procedure to remove the plate has been completed. The right clavicle now appears better aligned, although there may be some ongoing bone remodeling and slight residual markers from the prior intervention. These findings reveal significant progress in the healing process post-operatively.",
+      "caption": "X-ray of shoulder antero- posterior view of an 8 years old female child shows. A) 1\u00bd years old non-union fracture right clavicle. B) Post operative radiograph. C) Radiograph after removal of plate",
+      "shared_ages": [
+        8
+      ],
+      "image": [
+        "images/pmc_169220_0.jpg",
+        "images/pmc_169220_1.jpg"
+      ],
+      "modality": "Others",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_367385",
+      "subset": "full_only",
+      "question": "What type of medical condition is evident in this chest CT image?",
+      "answer": "Based on the provided information, the consolidative opacity in the left inferior lobe of the lung without an air bronchogram is consistent with pulmonary tuberculosis. The reference states that this chest CT image is from an 84-year-old man with a proven diagnosis of pulmonary tuberculosis. The consolidative opacity is a characteristic radiographic finding in pulmonary tuberculosis, where the lung parenchyma becomes filled with inflammatory exudates, leading to a homogeneous increased opacity on the CT scan.",
+      "caption": "Mediastinal window of axial thin-section unenhanced chest CT images in a 84-year-old man with proven diagnosis of pulmonary tuberculosis. (a) Chest CT image shows, in the left inferior lobe, a consolidative opacity without air bronchogram. (b) The same image showing the consolidative opacity after radiomic volumetric segmentation (in green).",
+      "shared_ages": [
+        84
+      ],
+      "image": [
+        "images/pmc_367385_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_525091",
+      "subset": "full_only",
+      "question": "What abnormal findings are visible in the CT scan?",
+      "answer": "The CT scan shows a slightly enlarged reactive-appearing node (open arrow) and a cluster of small non-enlarged nodes (arrows) in the left upper internal jugular chain. These findings are consistent with the presence of a parotid MALT lymphoma and associated nodal disease in this 77-year-old female patient.",
+      "caption": "Computed tomography of a 77-year-old woman with left parotid MALToma and nodal disease. Axial contrast-enhanced image shows a slightly enlarged reactive appearing node (open arrow) and a cluster of small non-enlarged nodes (arrows) in the left upper internal jugular chain",
+      "shared_ages": [
+        77
+      ],
+      "image": [
+        "images/pmc_525091_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_281235",
+      "subset": "full_only",
+      "question": "What condition is indicated by the MRI findings in this image?",
+      "answer": "The MRI findings in this image are indicative of tuberculous spondylodiscitis, a type of spinal tuberculosis affecting the vertebral bodies and intervertebral discs. The key features include bone and disc involvement, as well as the presence of multiple large paravertebral abscesses, which are characteristic of this condition. The non-specific bone marrow signal changes, with patchy high T2 and low T1 signal, are also commonly seen in tuberculous spondylodiscitis. Overall, the MRI findings strongly support a diagnosis of tuberculous spondylodiscitis in this 84-year-old female patient.",
+      "caption": "Tuberculous spondylodiscitis (T12-L2) in an 84-year-old woman. MRI detects bone and disks involvement together with several voluminous paravertebral abscesses (arrows).",
+      "shared_ages": [
+        84
+      ],
+      "image": [
+        "images/pmc_281235_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Abdomen"
+    },
+    {
+      "id": "Instruction-Tuning_236479",
+      "subset": "full_only",
+      "question": "What is the purpose of measuring the perineal position in this image?",
+      "answer": "The purpose of measuring the perineal position in this image is to evaluate the presence and extent of pelvic organ prolapse. The perineal position, which is the distance between the pubococcygeal line and the caudal margin of the sphincter ani muscle, provides important diagnostic information about the degree of pelvic floor descent and can help in the assessment and management of pelvic floor disorders such as pelvic organ prolapse in this 62-year-old female patient.",
+      "caption": "MR image obtained at rest. Dynamic midsagittal half-Fourier acquisition single-shot turbo spin-echo (2000/90; 150\u00b0) through the pelvis of a 62-year-old woman with symptoms of pelvic organ prolapse. The image shows the measurement of the perineal position in relation to the reference line used. PCL pubococcygeal line",
+      "shared_ages": [
+        62
+      ],
+      "image": [
+        "images/pmc_236479_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Pelvic cavity"
+    },
+    {
+      "id": "Instruction-Tuning_533581",
+      "subset": "full_only",
+      "question": "What type of lesion is present in the MRI images?",
+      "answer": "The lesion present in the MRI images is a thymoma, a type of tumor that originates in the thymus gland. This can be determined from the information provided in the reference, which states that the images demonstrate a thymoma in a 52-year-old man with myasthenia gravis. The lack of change in signal intensity between the in-phase and opposed-phase images is a characteristic feature of thymomas.",
+      "caption": "Thymoma in a 52-year-old man with myasthenia gravis. Transverse in-phase (155/4.6) and opposed-phase (155/2.1) gradient-echo T1-weighted MR images demonstrate no change in signal intensity of the lesion on the opposed-phase image relative to the in-phase image (arrows). The CSR is of 1.050.",
+      "shared_ages": [
+        52
+      ],
+      "image": [
+        "images/pmc_533581_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_458001",
+      "subset": "full_only",
+      "question": "What is the medical condition observed in this patient's cerebral MRI images?",
+      "answer": "Based on the provided information, the cerebral MRI images of the 7-year-old patient show subtle restricted diffusion involving the right occipital cortex and the immediately subjacent subcortical white matter, which is consistent with an acute ischemic cerebrovascular accident (stroke) in this region of the brain. The restricted diffusion observed on the DWI and ADC images, along with the changes seen on the T2 FLAIR image, indicate the presence of an acute ischemic stroke in the right occipital lobe of the patient's brain.",
+      "caption": "Cerebral MRI images of Patient 1 at age 7 years old. DWI (Figure\u00a01A), ADC (Figure\u00a01B), and T2 FLAIR (Figure\u00a01C) images demonstrate subtle restricted diffusion involving the right occipital cortex and the immediately subjacent subcortical white matter, consistent with an acute ischemic cerebrovascular accident.",
+      "shared_ages": [
+        7
+      ],
+      "image": [
+        "images/pmc_458001_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Brain"
+    },
+    {
+      "id": "Instruction-Tuning_375779",
+      "subset": "full_only",
+      "question": "What is the primary radiographic finding observed in this thoracic CT image?",
+      "answer": "The primary radiographic finding observed in this thoracic CT image is a bronchopneumonic aspect, characterized by areas of lung consolidation or increased density, indicating an inflammatory or infectious process in the lungs. This finding, along with the presence of enlarged mediastinal lymph nodes and lymph node calcifications, is consistent with the clinical history provided for this 72-year-old female patient with rheumatoid arthritis who has been receiving treatment with adalimumab.",
+      "caption": "Thoracic computed tomography (CT) image from a 72-year old female patient with rheumatoid arthritis, obtained following 6 months of treatment with 40 mg/day adalimumab, every 2 weeks: CT image shows bronchopneumonic aspect, mediastinal lymphadenopathies between 12 and 20 mm, and straight lymph node calcifications",
+      "shared_ages": [
+        72
+      ],
+      "image": [
+        "images/pmc_375779_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_417672",
+      "subset": "full_only",
+      "question": "I noticed the arrow in the image pointing towards the gallbladder, what does that indicate and how is it relevant to the patient's treatment history?",
+      "answer": "The arrow in the CT scan points to tumefactive sludge within the lumen of the gallbladder. This finding is clinically significant, especially in the context of this 60-year-old female patient who has been undergoing a multi-drug chemotherapy regimen for recurrent ovarian cancer. Tumefactive sludge typically consists of thick bile that can accumulate due to biliary stasis, which might be aggravated by certain chemotherapy drugs like gemcitabine. Such changes in the gallbladder could potentially lead to complications such as cholecystitis if not monitored closely. Therefore, the identification of this sludge is relevant for assessing the impact of chemotherapy on her biliary system and guiding further treatment decisions to prevent possible adverse effects.",
+      "caption": "A 60-year-old female with recurrent ovarian cancer treated with a multi-drug chemotherapy regimen, which included gemcitabine. a Coronal contrast-enhanced CT following chemotherapy shows initial presentation of tumefactive sludge (arrow) within the gall bladder lumen. b Repeat coronal contrast-enhanced CT 6\u00a0months later shows progression of tumefactive sludge (arrows) and enhancing mildly thickened gallbladder wall changes, consistent with biliary stasis",
+      "shared_ages": [
+        60
+      ],
+      "image": [
+        "images/pmc_417672_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Abdomen"
+    },
+    {
+      "id": "Instruction-Tuning_244845",
+      "subset": "full_only",
+      "question": "Based on the medical images provided, could you please explain the clinical scenario and the significance of the various interventions depicted?",
+      "answer": "The medical images depict a complex case involving a 25-year-old male patient who sustained a trans-abdominal gunshot wound (GSW) resulting in a grade 4 liver injury, duodenal, and small bowel injuries. Image A, not provided, likely showed an intrahepatic abscess detected on a CT scan around post-injury day 12. The ERCP image (B) revealed a bile leak from both the right and left hepatic ducts, indicating a significant biliary injury. This finding necessitated further interventions to manage the bile leak and potential complications.\n\nImage C demonstrates the successful drainage of intrahepatic bilomas, which are collections of bile within the liver parenchyma, using percutaneous drains (drains 1 and 2). This intervention aimed to decompress the bilomas and prevent further complications.\n\nHowever, the persistence of the bile leak prompted the placement of a Percutaneous Transhepatic Biliary Drainage (PTBD) catheter, as seen in Image D. The PTBD is a tube inserted through the liver and into the biliary system, allowing for continuous drainage of bile and potentially facilitating healing of the bile duct injuries. The placement of the PTBD suggests that the bile leak was not adequately controlled by the percutaneous drainage alone, and further intervention was required to address the underlying biliary injury.",
+      "caption": "A 25 year old male suffered a trans-abdominal GSW with grade 4 liver injury, duodenal and small bowel injuries. On PID 12 intrahepatic abscess was found on CT scan (A, arrow). A bile leak developed following percutaneous drainage. An ERCP (B) was performed and showed a leak from both right and left hepatic ducts (GB - gallbladder, CBD - common bile duct, leak from both ducts is encircled). Following image (C) showed well-drained intrahepatic bilomas (percutaneous drains 1 and 2). PTBD was inserted instead of a percutaneous drainage (D). It was removed 4 months later when no contrast leak was found and the patient tolerated closure of the external part of the PTBD.",
+      "shared_ages": [
+        25
+      ],
+      "image": [
+        "images/pmc_244845_0.jpg",
+        "images/pmc_244845_1.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Abdomen"
+    },
+    {
+      "id": "Instruction-Tuning_202633",
+      "subset": "full_only",
+      "question": "What does this CT scan show?",
+      "answer": "This CT scan shows a dilated stomach in a 74-year-old woman with recurrent Mycobacterium avium complex (MAC) pulmonary disease. Additionally, the patient exhibits classic features of MAC pulmonary disease, including pectus excavatum, and signs of bronchiectasis in the right middle lobe and lingula, along with infiltrate.",
+      "caption": "Computed tomography scan from a 74-year-old woman with recurrent Mycobacterium avium complex (MAC) pulmonary disease. This thin woman has classic features of MAC pulmonary disease, including pectus excavatum and right middle lobe and lingula bronchiectasis with infiltrate.",
+      "shared_ages": [
+        74
+      ],
+      "image": [
+        "images/pmc_202633_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_638590",
+      "subset": "full_only",
+      "question": "What does the CT scan reveal about the pleura in this patient?",
+      "answer": "The CT scan reveals nodular thickening of the pleura at the right lung base in this 79-year-old male patient, who has a history of crocidolite mining. This nodular thickening is irregular and extends along the pleural surface, which is indicative of pleural pathology. The appearance and location of this thickening suggest a malignant process involving the pleura. The lack of contrast enhancement helps in clearly visualizing the pleural structures. The rest of the lung parenchyma appears normal, with no visible signs of consolidation, masses, or significant interstitial changes. There is no prominent lymphadenopathy noted in the visible mediastinal regions. The clinical history and these imaging findings are consistent with a diagnosis of epithelioid mesothelioma, which was confirmed by image-guided fine-needle aspiration.",
+      "caption": "Non-contrast enhanced computed tomography of the chest in a 79-year-old man involved in the mining of crocidolite demonstrating nodular thickening of the pleura in the right base. Image guided fine need aspiration confirmed the presence of epithelioid mesothelioma.",
+      "shared_ages": [
+        79
+      ],
+      "image": [
+        "images/pmc_638590_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Abdomen"
+    },
+    {
+      "id": "Instruction-Tuning_180809",
+      "subset": "full_only",
+      "question": "What is the cause of the diffuse circumscribed fat density masses observed in the chest wall on the CT scan?",
+      "answer": "The diffuse circumscribed fat density masses observed in the chest wall on the CT scan are secondary to the migration of mineral oil that was previously injected into the breast for augmentation purposes in the 41-year-old transgender woman. The mineral oil has spread from the breast tissue and accumulated in the chest wall, leading to the appearance of these distinctive fat density masses on the imaging study.",
+      "caption": "Chest wall migration of mineral oil incidentally seen on a CT scan in a 41-year-old transgender woman with a history of breast augmentation with free mineral oil self-injections (arrows)",
+      "shared_ages": [
+        41
+      ],
+      "image": [
+        "images/pmc_180809_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_562308",
+      "subset": "full_only",
+      "question": "What type of spinal injury is shown in the images?",
+      "answer": "The images show a 15-year-old girl with an A3.3 L1 fracture and an A3.1 L2 fracture after a suicide attempt by jumping from a bridge. The patient underwent posterior stabilization of the spine, which was followed by implant removal and full consolidation of the fractures.",
+      "caption": "Images 5 and 6 illustrate a sagittal and axial CT scan of a 15-year-old girl with an A3.3 L1 fracture and an A3.1 L2 fracture after a suicide attempt by jumping from a bridge (height > 3 m). Images 7 and 8 show post-operative radiographs of the posterior stabilisation. Images 9 and 10 are the last radiographs obtained after implant removal (7 months post-operative), showing a fully consolidated fracture.",
+      "shared_ages": [
+        15
+      ],
+      "image": [
+        "images/pmc_562308_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Others"
+    },
+    {
+      "id": "Instruction-Tuning_619454",
+      "subset": "full_only",
+      "question": "What medical condition is depicted in the provided image?",
+      "answer": "The provided medical image depicts tracheal sarcoidosis in a 59-year-old female patient with a history of pulmonary sarcoidosis. The MDCT scan shows diffuse and irregular tracheal wall thickening and narrowing of the lumen, which are characteristic features of tracheal involvement in sarcoidosis. The virtual and direct bronchoscopy images corroborate these findings, and the photomicrograph confirms the presence of small epithelioid granulomas without necrosis, which is a typical histological finding in sarcoidosis.",
+      "caption": "Tracheal sarcoidosis in a 59-year-old female with a history of pulmonary sarcoidosis. (i) Axial MDCT scan shows diffuse and irregular trachea. (ii) Virtual bronchoscopy and (iii) direct bronchoscopy have excellent correlation. (iv) Photomicrograph (original magnification, \u00d72; haematoxylin-eosin stain) shows small epithelioid granulomas without necrosis",
+      "shared_ages": [
+        59
+      ],
+      "image": [
+        "images/pmc_619454_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_215721",
+      "subset": "full_only",
+      "question": "What is the likely cause of the foreign body granuloma observed in the CT scan?",
+      "answer": "According to the reference information provided, the foreign body granuloma observed in the CT scan is likely the result of paraffin injection into both cheeks of a 49-year-old woman 20 years ago. Paraffinoma, a type of foreign body granuloma caused by paraffin injection, typically appears on CT scans as an ill-defined infiltration in the buccal fat pad and subcutaneous fat with multiple punctate calcifications, as seen in the image.",
+      "caption": "Foreign body granuloma in a 49-year-old woman with a history of paraffin injection into both cheeks 20 years ago. A transverse enhanced CT scan shows the ill-defined infiltration (arrows) and several small calcifications around the bilateral buccal spaces.",
+      "shared_ages": [
+        49
+      ],
+      "image": [
+        "images/pmc_215721_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_265003",
+      "subset": "full_only",
+      "question": "What anatomical region is being examined in these medical images?",
+      "answer": "The medical images are focused on the right femoral head and surrounding region of a 38-year-old female nonprofessional runner. The key findings include transient edema, a small irregularity in the cortical bone profile, and a pronounced edematous pattern in the subchondral area of the femoral head, along with a small subchondral fracture.",
+      "caption": "Clinical cases of nonprofessional runner. Female nonprofessional runner, 38 years old. MRI images in STIR show transient edema; T1 images (thick arrow) show small irregularity of cortical bone profile. Dual energy CT confirms the edematous pattern of the right femoral head, with BME appearing green against a purple background of normal bone (thin arrow). However, the edema appears more conspicuous in the subchondral area, where a large hypodense area appears on the partition images, with a small subchondral fracture well confirmed on the coronal (thick arrow) and sagittal (yellow arrow) reconstructions.",
+      "shared_ages": [
+        38
+      ],
+      "image": [
+        "images/pmc_265003_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Pelvic cavity"
+    },
+    {
+      "id": "Instruction-Tuning_48723",
+      "subset": "full_only",
+      "question": "Can you describe the progression of the humeral fracture healing process in the provided images and what changes are observed over time?",
+      "answer": "The provided images demonstrate the progression of healing in an 18-year-old female with an OTA type 12-A3 humeral fracture. Initially, the radiograph (a) shows a transverse fracture of the humeral shaft. After open reduction and internal fixation (ORIF) using an anterior limited contact dynamic compression plate (LCDCP), the postoperative radiographs (b) confirm proper alignment of the bone fragments secured by the plate and screws. At the six-month mark (c), radiographs reveal callus formation around the fracture site, indicating secondary bone healing despite the initial goal for primary healing. This suggests that some motion at the fracture site facilitated this natural repair process. One year post-operation, radiographs (d) show complete healing of the fracture and the removal of the hardware. The bone appears to have healed well without any misalignment or other complications, signifying a successful recovery and the proper integration of the bone segments.",
+      "caption": "a\u2013d. An 18-year-old female patient with an OTA type 12-A3 humeral fracture (a). Postoperative radiographs after open reduction and internal fixation (ORIF) utilizing an anterior limited contact dynamic compression plate (LCDCP) (b). Fracture healing in the same patient six months after ORIF. Although we aimed for absolute stability and primary fracture healing, callus formation, a sign of secondary fracture healing, was observed. c Radiographs one year after the index procedure and implant removal (d)",
+      "shared_ages": [
+        18
+      ],
+      "image": [
+        "images/pmc_48723_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Upper limb"
+    },
+    {
+      "id": "Instruction-Tuning_319646",
+      "subset": "full_only",
+      "question": "Radiologist: Based on the imaging findings, I observe an irregularly shaped, enhancing mass-like structure located within the pelvic cavity, likely arising from or involving the rectum. There also appear to be linear, tubular structures extending from the mass, which could represent vascular invasion or involvement. These findings raise concern for a potential rectal malignancy with extramural venous invasion.\n\nClinician: Thank you for the detailed radiologic interpretation. Given the imaging findings suggestive of a rectal mass with vascular involvement, it would be crucial to correlate with the patient's clinical presentation and history. Can you provide any information about the patient's symptoms, risk factors, or prior treatments related to rectal cancer?",
+      "answer": "Radiologist: The provided reference information indicates that this is a 58-year-old male patient with a history of rectal cancer who has undergone surgical treatment. The imaging findings suggest a local recurrence of the cancer, with residual disease associated with a positive circumferential margin due to extramural venous invasion (EMVI). The nodular structure on the right side extending into the mesorectal fat tissue, and the worm-shaped structure on the left with tumor signal intensity arising from the primary lesion, are consistent with EMVI extending beyond the mesorectal fascia.\n\nClinician: Thank you for the comprehensive radiologic assessment and correlation with the patient's clinical history. Based on the imaging findings of a locally recurrent rectal mass with EMVI, and the patient's history of rectal cancer treated surgically, the most likely diagnosis is a local recurrence of rectal cancer after surgery, likely due to residual disease associated with a positive circumferential margin and EMVI. This scenario underscores the importance of multidisciplinary collaboration between radiology and clinical teams in accurately interpreting imaging findings in the context of the patient's clinical presentation and history to arrive at an appropriate diagnosis and guide further management.",
+      "caption": "Local recurrence after surgery from residual disease associated with positive circumferential margin due to extramural venous invasion. A 58-year-old man with rectal cancer. T2-weighted (a) and postcontrast (b) coronal image before treatment demonstrate nodular-shaped structure (black arrows) on the right extending to the mesorectal fat tissue, and worm-shaped (white arrows) structure on the left with tumor signal intensity arising from the primary lesion, indicating extramural venous invasion (EMVI) extending the mesorectal fascia\u00a0(arrow heads). Axial T2-weighted image shows a primary tumor (c asterisk) and an irregular tumoral deposit in and abutting the mesorectal facia near the left pelvic sidewall (c arrow). Axial and coronal 18F-FDG-PET/MRI\u00a0images 23\u00a0months after surgery following neoadjuvant therapy show FDG avidity corresponding to a developed nodular recurrence at the same location (d\u2013f arrows)",
+      "shared_ages": [
+        58
+      ],
+      "image": [
+        "images/pmc_319646_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Pelvic cavity"
+    },
+    {
+      "id": "Instruction-Tuning_257664",
+      "subset": "full_only",
+      "question": "What are the key findings on these breast MRI scans, and what is the likely diagnosis based on the imaging features?",
+      "answer": "The key findings on these breast MRI scans include the presence of a lesion in the right breast, as seen on the fat and water-only sequences (images A and B). The lesion demonstrates strong enhancement on the post-contrast T1-weighted image (image C), which is a characteristic feature of malignant tumors. Additionally, the lesion exhibits high signal intensity on the diffusion-weighted image (DWI) with b = 900 (image D), indicating restricted diffusion, which is another hallmark of malignancy. Based on these imaging characteristics, the most likely diagnosis is right breast carcinoma in this 42-year-old female patient. The strong enhancement and high signal on DWI suggest an aggressive tumor biology, and further evaluation with biopsy or surgical resection would be recommended for definitive diagnosis and treatment planning.",
+      "caption": "Breast MRI of a 42-year-old female patient with right breast carcinoma. Axial IDEAL fat only (A) and IDEAL water only (B) images show a right breast carcinoma (arrows) with strong enhancement on post-contrast T1w image (C) and high signal intensity on b = 900 DWI image (D).",
+      "shared_ages": [
+        42
+      ],
+      "image": [
+        "images/pmc_257664_0.jpg",
+        "images/pmc_257664_1.jpg",
+        "images/pmc_257664_2.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Breast"
+    },
+    {
+      "id": "Instruction-Tuning_290994",
+      "subset": "full_only",
+      "question": "What is the location of the focal cortical dysplasia in the patient?",
+      "answer": "According to the information provided, the focal cortical dysplasia is situated in the right posterior frontal lobe of the 24-year-old woman.",
+      "caption": "Fibre-tracking results on a 24-year-old woman with a right focal cortical dysplasia situated in the right posterior frontal lobe (see images in bottom row). These results were obtained using a seed region in the brainstem and target regions in the sensorimotor cortices. DTI-based tractography (blue) and CSD-based tractography (red) were derived from the same diffusion MRI data set); segmented pathology volumes (green) overlaid on T1-weighted image. DTI-based tractography suggests that only the medial aspect of the lesion impinges on the corticospinal tracts, whereas CSD-based tractography suggests that the lesion is enveloped by medial and lateral projections. DTI: Diffusion Tensor Imaging; CSD: constrained spherical deconvolution. Note that while only DTI combined with deterministic tracking is shown in the top-left image, the results of combining DTI with probabilistic tracking are expected to be very similar (cf. left and middle images in Figure 2). Figure modified from a figure previously published in [30], with permission of American Association of Neurological Surgeons, 2013.",
+      "shared_ages": [
+        24
+      ],
+      "image": [
+        "images/pmc_290994_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Brain"
+    },
+    {
+      "id": "Instruction-Tuning_424249",
+      "subset": "full_only",
+      "question": "Doctor, based on the provided images, what appears to be the patient's condition and the treatment approach taken?",
+      "answer": "Based on the radiographic images, it appears that the patient, a 45-year-old female, sustained a proximal humeral fracture with posterior dislocation of the shoulder joint. The preoperative anteroposterior radiograph (a) and computed tomography (CT) scan (b) were performed for assessment and planning. The CT scan (b) revealed an unstable medial column of the humerus, which is a critical component of the shoulder joint structure. This instability likely contributed to the dislocation and required surgical intervention. The postoperative anteroposterior radiograph (c) shows the application of a surgical implant or fixation device, referred to as the LPMP method (d). This procedure appears to have been performed to stabilize the proximal humerus fracture and restore the alignment and stability of the shoulder joint. The LPMP method likely involves the placement of a locking plate and medial positioning of the implant to address the medial column instability observed preoperatively.",
+      "caption": "A 45-year-old female patient sustained a proximal humeral fracture with posterior dislocation of the shoulder joint. Preoperative anteroposterior radiographs (a) and computed tomography (b) scanning were performed. The medial column of the humerus was unstable (b). The postoperative anteroposterior radiograph (c) showed the application of the LPMP method (d)",
+      "shared_ages": [
+        45
+      ],
+      "image": [
+        "images/pmc_424249_0.jpg",
+        "images/pmc_424249_1.jpg",
+        "images/pmc_424249_2.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_269423",
+      "subset": "full_only",
+      "question": "Based on the brain MRI scans, what are some key observations that can be made about the patient's condition?",
+      "answer": "Based on the provided brain MRI scans, several key observations can be made about the patient's condition:\n\n1. Mild global cerebellar atrophy: The scans show a slight shrinkage or volume loss in the cerebellum region of the brain, which is responsible for coordinating motor functions, balance, and cognitive processes.\n\n2. Gliosis and calcifications in the deep cerebellar white matter: The presence of gliosis, or scar-like tissue, and calcifications within the deep white matter regions of the cerebellum is a significant finding. These abnormalities extend towards the peri-dentate region, which surrounds the dentate nucleus, a crucial structure within the cerebellum.\n\n3. Pattern suggestive of a specific condition: The combination of cerebellar atrophy, gliosis, and calcifications in the deep cerebellar white matter extending to the peri-dentate region is a characteristic pattern observed in certain neurological conditions, particularly a rare genetic disorder called Cerebrotendinous Xanthomatosis (CTX).\n\nBased on the provided reference information, this pattern of MRI findings is consistent with the presentation of CTX in a 42-year-old male patient. CTX is a rare inherited metabolic disorder characterized by abnormal accumulation of cholesterol and cholesterol precursors in various tissues, including the brain, leading to neurological manifestations and other systemic complications.\n\nWhile a definitive diagnosis cannot be made solely based on MRI findings, the observed pattern of abnormalities strongly suggests the presence of CTX or a related condition affecting the cerebellum and deep white matter regions. Further clinical evaluation, including biochemical testing and genetic analysis, may be necessary to confirm the diagnosis and guide appropriate treatment and management.",
+      "caption": "Brain MRI findings in a 42-year-old male CTX patient. Along with a mild global cerebellar atrophy, it is present gliosis and calcifications of the deep cerebellar WM, extending to the peri-dentate region (arrows), as shown in the axial FLAIR (a), T1-weighted (b), and SWI (c) sequences",
+      "shared_ages": [
+        42
+      ],
+      "image": [
+        "images/pmc_269423_0.jpg",
+        "images/pmc_269423_1.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Brain"
+    },
+    {
+      "id": "Instruction-Tuning_111539",
+      "subset": "full_only",
+      "question": "What nerves are visible in the healthy and diseased sides of the internal auditory canal in these MRI images?",
+      "answer": "In the left (healthy) image, the facial nerve (FN), cochlear nerve (CN), superior vestibular nerve (SVN), and inferior vestibular nerve (IVN) are all visible and appear normal. However, in the right (diseased) image, the SVN and IVN are missing, and the CN is hypoplastic (underdeveloped). These findings are consistent with a cochlear nerve deficiency, which is a known cause of the unilateral sensorineural hearing loss experienced by this 57-year-old female patient since birth.",
+      "caption": "A 57-year-old female patient with unilateral SNHL from birth. MRI 3D-CISS parasagittal image of the internal auditory canal shows regular facial nerve (FN), cochlear nerve (CN), superior vestibular nerve (SVN), and inferior vestibular nerve on the healthy side (left image) and missing SVN and IVN, as well as a hypoplastic CN on the diseased side (right image)",
+      "shared_ages": [
+        57
+      ],
+      "image": [
+        "images/pmc_111539_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Brain"
+    },
+    {
+      "id": "Instruction-Tuning_286979",
+      "subset": "full_only",
+      "question": "What type of lung disease is indicated by the presence of calcified and cavitated nodules in the patient's lungs?",
+      "answer": "Based on the information provided in the reference, the lung disease indicated by the presence of multiple calcified and cavitated nodules associated with pulmonary cysts is likely Lymphocytic Interstitial Pneumonia (LIP) related to amyloidosis. The reference states that the CT scans show these characteristic radiological findings in a 50-year-old woman with LIP related to amyloidosis. The calcified and cavitated nodules are typical imaging features of this condition, which can help in the diagnosis and management of the patient's lung disease.",
+      "caption": "A 50-year-old woman with LIP related to amyloidosis. Chest CT scans show multiple cavitated nodules associated with pulmonary cysts.",
+      "shared_ages": [
+        50
+      ],
+      "image": [
+        "images/pmc_286979_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_527537",
+      "subset": "full_only",
+      "question": "What is significant about the ragged red fiber marked with an asterisk in this image?",
+      "answer": "The ragged red fiber highlighted with an asterisk in the image is significant as it indicates the presence of abnormal protein deposits and mitochondrial accumulations within the muscle tissue. This aberration is characteristic of mitochondrial myopathies, such as sporadic inclusion body myositis, especially noted in the specimen from a 67-year-old female patient. The ragged appearance and red coloring are due to the Modified Gomori trichrome stain, which specifically binds to mitochondrial proteins, reflecting a disruption in normal muscle fiber biochemistry and structure. The image provides valuable insights into the cellular level manifestations of myopathies, assisting in the diagnosis and understanding of the underlying pathophysiology.",
+      "caption": "Modified Gomori trichrome stain showing a ragged red fibre. A ragged red fibre (asterisk) is present in the quadriceps muscle biopsy of a 67 years old female sporadic inclusion body myositis patient. Magnification \u00d7785 before reduction.",
+      "shared_ages": [
+        67
+      ],
+      "image": [
+        "images/pmc_527537_0.jpg"
+      ],
+      "modality": "Microscopy Images",
+      "body_part": "Cell"
+    },
+    {
+      "id": "Instruction-Tuning_468573",
+      "subset": "full_only",
+      "question": "As a medical educator, analyze the CT scan provided. What abnormalities or pathologies can you identify? Based on your observations, what would be your differential diagnosis?",
+      "answer": "Upon analyzing the CT scan, the student observes that the liver and kidneys appear normal without any visible lesions or abnormalities. The vertebral body is intact, and there is no evidence of lymphadenopathy or fluid accumulation. Given the absence of visible pathology in this particular image, the differential diagnosis would be limited. However, considering the clinical context of a 46-year-old female with a history of pancreatic lymphoma, a detailed review of the complete imaging series is necessary to rule out recurrence or other abnormalities not visible in this single slice.",
+      "caption": "A 46-year-old female patient who had pancreatic lymphoma (a) had a negative PET CT at the end of treatment (b and c). Nine months later, there was local disease recurrence at the pancreatic head on follow-up FDG\u00a0PET CT scan (d and e)",
+      "shared_ages": [
+        46
+      ],
+      "image": [
+        "images/pmc_468573_0.jpg",
+        "images/pmc_468573_1.jpg",
+        "images/pmc_468573_2.jpg",
+        "images/pmc_468573_3.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Abdomen"
+    },
+    {
+      "id": "Instruction-Tuning_500874",
+      "subset": "full_only",
+      "question": "What are the key imaging findings observed in this CT scan of a patient with COVID-19 pneumonia?",
+      "answer": "The key imaging findings observed in this CT scan of a patient with COVID-19 pneumonia are ground-glass opacities associated with a 'crazy paving' pattern. The ground-glass opacities appear as hazy, white areas, while the reticulations, or 'crazy paving' pattern, are indicated by the linear and interlobular septal thickening. These findings are characteristic of COVID-19 pneumonia, where the lungs show increased density and decreased air spaces due to fluid accumulation and inflammation. The patient is a 63-year-old individual presenting with symptoms of dyspnea, fever, chills, and myalgia for four days.",
+      "caption": "A 63-year-old patient with COVID-19, presenting dyspnea, fever, chills and myalgia for four days. Computed tomography showing ground-glass opacities associated with reticulations (crazy paving pattern)",
+      "shared_ages": [
+        63
+      ],
+      "image": [
+        "images/pmc_500874_0.jpg"
+      ],
+      "modality": "Computed Tomography",
+      "body_part": "Chest"
+    },
+    {
+      "id": "Instruction-Tuning_221714",
+      "subset": "full_only",
+      "question": "Based on the data presented in the image, what conclusions can be drawn regarding the impact of sex and specific liver conditions on bile acid levels in both mice and humans?",
+      "answer": "From the image, it's clear that bile acid levels vary significantly by sex and liver condition in both mice and humans. For instance, in humans aged 50-75 years, males consistently show higher bile acid levels in the context of liver fibrosis, cirrhosis, and HCC compared to females. Particularly, TCA and TCDCA levels are notably higher in males with cirrhosis and HCC than in females. This pattern suggests that sex plays a critical role in how bile acids are modulated in response to liver damage and might influence the pathogenesis and progression of liver diseases differently in males versus females.",
+      "caption": " To verify the findings from the animal studies that differentially expressed BAs impact liver carcinogenesis in a sex dependent manner, we profiled the serum BAs in age and BMI matched liver disease patients and healthy participants of men and women. Serum BA measurement in liver fibrosis (n\u2009=\u200930, 15 males and 15 females aged 50\u201375 years), cirrhosis (n\u2009=\u200940, 20 males and 20 females aged 50\u201375 years), and HCC (n\u2009=\u200940, 30 males and 10 females aged 50\u201375 years) patients and healthy participants (n\u2009=\u200940, 20 males and 20 females aged 50\u201375 years) showed that the levels of BAs differentially expressed between healthy men and women were significantly increased in patients (both sexes) but with higher fold changes in men than in women in the development of liver disease (Fig. 6 and Supplementary Fig. S4).\n\nDiscussion\n\n",
+      "shared_ages": [
+        50
+      ],
+      "image": [
+        "images/pmc_221714_0.jpg"
+      ],
+      "modality": "Others",
+      "body_part": "Others"
+    },
+    {
+      "id": "Instruction-Tuning_168423",
+      "subset": "full_only",
+      "question": "What type of fracture is present in the patient's scaphoid bone?",
+      "answer": "The medical images show a non-displaced scaphoid fracture in the 15-year-old male patient. This is evidenced by the subtle linear discontinuity in the scaphoid cortex observed on the coronal CT reconstruction (Fig. 2a), which indicates a non-displaced fracture without any displacement of the bone fragments.",
+      "caption": "A 15-year-old male with a non-displaced scaphoid fracture shown as a subtle line on CT coronal reconstruction with 2 mm slice thickness (Fig.2a) and findings consistent with BME on the coronal VNCa image (Fig. 2b), color coded in green (arrow). Note the epiphyseal line on the distal radius, and the ulna is also color coded in green (arrowhead). MRI with coronal T1-weighted image (Fig. 2c) and coronal fluid-sensitive sequence (Fig. 2d) confirm BME",
+      "shared_ages": [
+        15
+      ],
+      "image": [
+        "images/pmc_168423_0.jpg"
+      ],
+      "modality": "Magnetic Resonance Imaging",
+      "body_part": "Upper limb"
+    }
+  ]
+}

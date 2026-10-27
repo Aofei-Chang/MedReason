@@ -1,0 +1,42 @@
+[
+  {
+    "id": "lingshu_v5",
+    "url": "https://arxiv.org/html/2506.07044v5",
+    "chars": 183369
+  },
+  {
+    "id": "radimagenet",
+    "url": "https://arxiv.org/html/2512.17396v2",
+    "chars": 75554
+  },
+  {
+    "id": "radvlm",
+    "url": "https://arxiv.org/html/2512.10691v1",
+    "chars": 63827
+  },
+  {
+    "id": "medreasoner",
+    "url": "https://arxiv.org/html/2508.08177v1",
+    "chars": 105336
+  },
+  {
+    "id": "llava_med",
+    "url": "https://arxiv.org/pdf/2306.00890",
+    "chars": 55167
+  },
+  {
+    "id": "wound",
+    "url": "https://arxiv.org/pdf/2606.20723",
+    "chars": 35652
+  },
+  {
+    "id": "consistent_reasoning_full",
+    "url": "https://aclanthology.org/2026.acl-long.81.pdf",
+    "chars": 59063
+  },
+  {
+    "id": "dpo_benchmark_full",
+    "url": "https://aclanthology.org/2026.findings-eacl.267.pdf",
+    "chars": 58865
+  }
+]

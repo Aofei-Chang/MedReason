@@ -1,0 +1,18 @@
+Loading MedSIGHT from /home/avc6555/.cache/huggingface/hub/models--Caf0914--MedSIGHT-Comp/snapshots/971ed4e6826b0bd59d6cde6ae6588642f2e52699
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 66.04it/s]
+/data/aofei/conda/env/med_edit/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Loaded 296 bundled vision-tower tensors into the UniMed-CLIP encoder.
+Traceback (most recent call last):
+  File "/home/avc6555/research/MedRL/experiments/evidence_mismatch/run.py", line 135, in <module>
+    main()
+  File "/home/avc6555/research/MedRL/experiments/evidence_mismatch/run.py", line 44, in main
+    records = [json.loads(l) for l in args.manifest.read_text().splitlines()]
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/aofei/conda/env/med_edit/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/aofei/conda/env/med_edit/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/avc6555/research/MedRL/experiments/evidence_mismatch/results/manifest.jsonl'

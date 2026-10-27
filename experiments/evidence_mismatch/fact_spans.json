@@ -1,0 +1,24 @@
+{
+  "review_method": "Assistant review of question, target, source caption and image contact sheets before inspecting model contrasts. Select explicit patient facts or test events beyond a general diagnostic prediction. These are structural missing-context candidates, not clinician-adjudicated labels. All 32 original external-screen records remain in the primary analysis.",
+  "spans": {
+    "Instruction-Tuning_394494": "31-year-old woman",
+    "Instruction-Tuning_294756": "history of recurrent urinary tract infections",
+    "Instruction-Tuning_421261": "without any deterioration in renal function",
+    "Instruction-Tuning_512675": "55-year-old male",
+    "Instruction-Tuning_68061": "history of ovarian serous adenocarcinoma",
+    "Instruction-Tuning_502647": "history of medical treatments with BRAF- and MEK-inhibitors",
+    "Instruction-Tuning_43585": "history of high-grade fever, seizures, and subsequent movement disorders",
+    "Instruction-Tuning_422538": "biopsy results confirm",
+    "Instruction-Tuning_210842": "history of alcoholism",
+    "Instruction-Tuning_141171": "histological evaluation confirmed the diagnosis of non-small cell adenocarcinoma",
+    "Instruction-Tuning_160931": "25-year-old patient with a known histological diagnosis",
+    "Instruction-Tuning_572961": "histopathological examination of the eye, which showed massive choroidal invasion"
+  },
+  "known_screen_false_positives": {
+    "Instruction-Tuning_239276": "General statement about what follow-up x-rays can confirm, rather than a reported case-specific result.",
+    "Instruction-Tuning_260899": "Recommendation to correlate with history and laboratory results, rather than an assertion that those results are known.",
+    "Instruction-Tuning_343164": "The question asks about histopathology and the supplied montage visibly contains histology panels.",
+    "Instruction-Tuning_173357": "The question supplies a four-month comparison and the image visibly includes labeled before/follow-up radiographs."
+  },
+  "other_candidates": "Temporal comparison targets require panel-by-panel and image-text review. They are not automatically missing evidence. One age-marked knee image contains scanner text, so it was excluded from the explicit-fact subset pending OCR review."
+}

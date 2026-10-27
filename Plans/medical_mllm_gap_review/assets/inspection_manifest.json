@@ -1,0 +1,82 @@
+[
+  {
+    "label": "1",
+    "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_1_0.jpg",
+    "size": [
+      647,
+      430
+    ]
+  },
+  {
+    "label": "394494",
+    "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_394494_0.jpg",
+    "size": [
+      215,
+      123
+    ]
+  },
+  {
+    "label": "422538",
+    "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_422538_0.jpg",
+    "size": [
+      397,
+      353
+    ]
+  },
+  {
+    "label": "141171",
+    "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_141171_0.jpg",
+    "size": [
+      636,
+      465
+    ]
+  },
+  {
+    "label": "572961",
+    "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_572961_0.jpg",
+    "size": [
+      511,
+      602
+    ]
+  },
+  {
+    "label": "544331",
+    "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_544331_0.jpg",
+    "size": [
+      752,
+      707
+    ]
+  },
+  {
+    "label": "202483",
+    "path": "/data/aofei/Medical_datasets/PubMedVision/images_all/pmc_202483_0.jpg",
+    "size": [
+      197,
+      243
+    ]
+  },
+  {
+    "label": "SLAKE 11934",
+    "path": "/data/aofei/hallucination/Slake/imgs/xmlab102/source.jpg",
+    "size": [
+      512,
+      512
+    ]
+  },
+  {
+    "label": "PMC_VQA test.csv:9",
+    "path": "/data/aofei/Medical_datasets/PMC-VQA/images/PMC8157402_Fig2.jpg",
+    "size": [
+      709,
+      606
+    ]
+  },
+  {
+    "label": "PMC_VQA test.csv:482",
+    "path": "/data/aofei/Medical_datasets/PMC-VQA/images/PMC8169283_tca13980-fig-0002.jpg",
+    "size": [
+      630,
+      572
+    ]
+  }
+]

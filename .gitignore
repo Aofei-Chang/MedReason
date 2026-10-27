@@ -1,1 +1,3 @@
 Plans/radiopaedia_audit/metadata.jsonl
+__pycache__/
+*.pyc

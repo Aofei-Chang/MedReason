@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Which claims can the supplied evidence justify?",
+    "refs": "Advisor discussion \u00b7 October 19, 2026",
+    "notes": "Assessment of med_mllm_gap_notes.pdf. The framework is reasonable; causal dominance, population prevalence, and the pre/post boundary are hypotheses. New work: read-only data audit, lookup baselines and source-figure inspection. Existing GPU runs are inspected, not rerun."
+  },
+  {
+    "title": "Separate four problems before choosing a method",
+    "refs": "Discussion notes, pp. 2\u20135",
+    "notes": "Medical knowledge remains useful. Missing evidence, missed perception, ambiguity and unused evidence are not interchangeable. A confirmed diagnosis may be a valid probabilistic target while a fabricated visual premise remains defective."
+  },
+  {
+    "title": "Teacher knowledge can exceed student evidence",
+    "refs": "P01 LLaVA-Med \u00b7 P02 HuatuoGPT-Vision \u00b7 P03 Lingshu",
+    "notes": "LLaVA-Med uses caption and inline article mentions with a text teacher. Huatuo uses an image-aware GPT-4V reformatter, so it must not be called caption-only. Lingshu uses image, RoI, metadata and knowledge; reasoning distillation supplies the known answer. Privileged supervision is useful when targets remain answerable or probabilistic; per-claim auditing is needed."
+  },
+  {
+    "title": "Accuracy can rise without stronger visual dependence",
+    "refs": "P08 MedVLM-R1 \u00b7 P11 MedVLThinker \u00b7 P12 Beyond Accuracy",
+    "notes": "Scores are protocol-specific and not cross-paper rankings. MedVLM-R1 reports substantial RL gains. MedVLThinker shows stronger gains from curated text-only training in its comparisons; data quality is a confound. Beyond Accuracy is a small preprint using 100 items per benchmark. Its image-invariance heuristic is not an expert hallucination label; a shuffled image can preserve the correct answer."
+  },
+  {
+    "title": "The latest work narrows the novelty claim",
+    "refs": "P15 MCR \u00b7 P19 Med-OPD \u00b7 P20 MedTRACE \u00b7 P21 spatial/factual RL \u00b7 P22 CARE-MVLM",
+    "notes": "MCR already rewards perceptual and reasoning consistency. Med-OPD weights tokens using teacher image-degradation dependence. MedTRACE models sufficiency and acquisition. CARE-MVLM uses lesion and random-region removals with an answerability selector. New research must add evidence beyond these, not relabel them."
+  },
+  {
+    "title": "Single-image report targets refer to unavailable priors",
+    "refs": "New local-file audit \u00b7 audit_data.py",
+    "notes": "An explicit-comparison lexical screen, not a clinical hallucination rate. All audited report records contain one image and a generic report prompt, with no supplied prior. Local record counts are not full dataset or patient counts. Broader stable/unchanged flags are reported separately in the brief."
+  },
+  {
+    "title": "A traceable report example",
+    "refs": "C10\u2013C11 \u00b7 MIMIC_CXR/data_report/training.json \u00b7 rows 0\u20131",
+    "notes": "Row 0 supplies one image and asks for a concise report. The target compares to a previous radiograph and claims a right-hilar atelectasis is less severe. We do not adjudicate the current radiograph or assert that its present findings are wrong. This case concerns missing comparison evidence in the task wrapper. Missing-prior rewriting and DPO suppression have direct precedents P06\u2013P07."
+  },
+  {
+    "title": "A stronger case: earlier timepoints were cropped away",
+    "refs": "C05 \u00b7 PubMedVision Instruction-Tuning_394494 \u00b7 Original: PMC7300102, Figure 3",
+    "notes": "The local 215\u00d7123 image was visually compared to the published figure and matches its rightmost MRI 3 column. The generated answer discusses improvement versus earlier scans and exact ages. Structural availability is verified; lesion grades are not independently clinically adjudicated. Restore source panels/dates separately from age metadata. Original figure attribution: Horga et al., Skeletal Radiology, 2020; https://pmc.ncbi.nlm.nih.gov/articles/PMC7300102/.",
+    "shrunk_text": [
+      {
+        "text": "Target describes recovery across time. Input contains only the final t",
+        "from": 22,
+        "to": 19.5
+      }
+    ]
+  },
+  {
+    "title": "A true diagnosis can have unsupported provenance",
+    "refs": "C01 \u00b7 PubMedVision Instruction-Tuning_422538 \u00b7 Original: PMC7720671, Figure 5",
+    "notes": "The supplied file is an MR image; question asks about a large mass. The source caption reports a biopsy confirming fibroadenoma with lactational changes, but no biopsy report is supplied to the student. The claim that biopsy confirmation occurred is off-input even if the final diagnosis is true. We do not independently adjudicate diagnostic certainty from this image. Article attribution: Pregnancy-lactation cycle: how to use imaging methods for breast evaluation, Radiologia Brasileira 2020."
+  },
+  {
+    "title": "Local benchmark scores have strong text baselines",
+    "refs": "New SLAKE English train/test lookup \u00b7 benchmark_text_baseline.py",
+    "notes": "Exact normalized train-question lookup with global train-answer fallback; no images, metadata or pretrained language model. Correct: 579/1061 = 54.57%; 95% image-cluster bootstrap interval 51.74\u201357.21%. There are 4919 training QA over 450 images and 1061 test QA over 96 images. Image overlap is zero; 999 test questions occur in train. Type mode is a separate metadata-aware baseline. This does not claim the same performance protocol as published MLLM evaluations."
+  },
+  {
+    "title": "Controls prevent an overbroad \u201clanguage prior\u201d story",
+    "refs": "C06\u2013C09 \u00b7 dataset_audit.json \u00b7 text_baseline.json",
+    "notes": "Exact age, biopsy, and temporal regex hits need human review. PMC-VQA test row 9 actually supplies an IHC-containing image, though the exact marker identity can still require context. SLAKE includes legitimate knowledge QA. The 31.708% PMC-VQA answer-letter baseline includes 10 malformed test labels in its denominator. Broad anatomy is demonstrably retained and used in the archived pilot; small-lesion coverage remains open."
+  },
+  {
+    "title": "Existing pilot: abstention can conceal evidence suppression",
+    "refs": "Archived information_gap pilot \u00b7 12 selected facts \u00b7 no new GPU inference",
+    "notes": "The local Huatuo-labeled checkpoint uses a LLaVA-Qwen2 architecture, not necessarily the original 2024 Huatuo paper checkpoint. Choices are scored across all six answer permutations. The provenance prompt improves abstention when facts are missing but suppresses negative-context updating. The MedSIGHT counterpart also suppresses visual anatomy under conflicting notes. These are exploratory constrained-choice findings, not a clinical model ranking."
+  },
+  {
+    "title": "Keep the decomposition; narrow what it proves",
+    "refs": "Discussion notes \u00a74 \u00b7 T01 usable information / PVI",
+    "notes": "For deterministic Z=g(I), fixed question and finite Y under a specified distribution, the four-term identity is valid. Cross entropy equals H(Y|Z)+KL, then chain rules provide the decomposition. The last term includes approximation, fitting and calibration. A fixed-model ablation does not estimate these terms. A failed probe can reflect finite data, pooling or limited capacity; a successful probe can exploit correlations."
+  },
+  {
+    "title": "A scoped experiment can establish the causal claim",
+    "refs": "Proposed study \u00b7 not an experiment already run",
+    "notes": "Start in a single modality and use source-grounded claims. Prior studies and biopsy reports can be withheld or supplied without editing anatomy. Expert annotation should be blinded and include unavailable, visible, contextual, derived and ambiguous labels. For image changes, use matched cases or validated edits plus irrelevant-region controls. Do not automatically interpret lesion removal as proof of a unique negative diagnosis."
+  },
+  {
+    "title": "The primary outcome must require useful answers",
+    "refs": "Proposed joint evidential success",
+    "notes": "A correct final answer can still contain false premises; evaluate that explicitly. Distinguish withholding evidence from a negative study. If the diagnosis is ambiguous, use acceptable sets or probability labels. Report the four components separately as well as their intersection, clustered by independent patient/article. Pre-register prompts, primary loss, sample-size justification and exclusions before inspecting new model outputs."
+  },
+  {
+    "title": "What would weaken the hypothesis?",
+    "refs": "Pre-specified falsification and go/no-go criteria",
+    "notes": "A method should not pass by refusing everything. Compare aligned cleaning with equal-size random cleaning, standard SFT/DPO and relevant MCR or counterfactual controls. Include patient/article clustering and an external-site evaluation. Representation tests become meaningful on independently annotated lesions rather than only broad head/chest anatomy. Conformal calibration comes after score and loss design, with separate calibration patients."
+  },
+  {
+    "title": "Advisor discussion: approve the testable core",
+    "refs": "Full evidence and reproducible audit: advisor_evidence_brief.html",
+    "notes": "Suggested discussion: choose one modality and clinical annotation partner; define source/evidence labels; agree on a budget-matched 2\u00d72 supervision/objective study and joint outcome. Keep causal dominance, coverage deficits and deployment guarantees open. The project is ready to discuss as a hypothesis supported by traceable examples, not as an already established root-cause finding."
+  },
+  {
+    "title": "Sources: backbones and direct supervision precedents",
+    "refs": "Primary-source links; full locators and limitations in paper_evidence.csv",
+    "notes": "These links identify the primary sources used in the evidence brief. P24 MedBench and P25 the wound study are discussed in the brief with limitations. No cross-paper score ranking is intended."
+  },
+  {
+    "title": "Sources: reasoning and benchmark evidence",
+    "refs": "Primary-source links; full locators and limitations in paper_evidence.csv",
+    "notes": "These links identify the primary sources used in the evidence brief. P24 MedBench and P25 the wound study are discussed in the brief with limitations. No cross-paper score ranking is intended."
+  },
+  {
+    "title": "Sources: close methods",
+    "refs": "Primary-source links; full locators and limitations in paper_evidence.csv",
+    "notes": "These links identify the primary sources used in the evidence brief. P24 MedBench and P25 the wound study are discussed in the brief with limitations. No cross-paper score ranking is intended."
+  },
+  {
+    "title": "Sources: attribution, abstention and calibration",
+    "refs": "Primary-source links; full locators and limitations in paper_evidence.csv",
+    "notes": "These links identify the primary sources used in the evidence brief. P24 MedBench and P25 the wound study are discussed in the brief with limitations. No cross-paper score ranking is intended."
+  }
+]

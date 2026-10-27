@@ -1,0 +1,221 @@
+Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering - ACL Anthology Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering Songtao Jiang , Yuan Wang , Ruizhe Chen , Yan Zhang , Ruilin Luo , Bohan Lei , Yeying Jin , Sibo Song , ZhiBo Yang , Jimeng Sun , Jian Wu , Zuozhu Liu Correct Metadata for Use this form to create a GitHub issue with structured data describing the correction. You will need a GitHub account.
+Once you create that issue, the correction will be reviewed by a staff member. ⚠️ Mobile Users: Submitting this form to create a new issue will only work with github.com, not the GitHub Mobile app. Important : The Anthology treat PDFs as authoritative. Please use this form only to correct data
+that is out of line with the PDF. See our corrections
+guidelines if you need to change the PDF. Title Adjust the title. Retain tags such as
+<fixed-case>. Authors Adjust author names and order to match the
+PDF. Add Author Abstract Correct abstract if needed. Retain XML formatting tags such as <tex-math>. You may use <b>...</b> for bold , <i>...</i> for italic , <u>...</u> for underline , <sc>...</sc> for small-caps , <tt>...<tt> for typewriter text , <url>...</url> for URLs, <a href=...> for hyperlinks, and <par/> for paragraph breaks. Verification against PDF Ensure that the new title/authors match the snapshot below. (If there
+is no snapshot or it is too small, consult the PDF .) Authors concatenated from the text boxes above: ALL author names match the snapshot above—including
+middle initials, hyphens, and accents. Create GitHub issue for staff review Abstract While reinforcement learning from verifiable rewards (RLVR) has been proven highly effective for enhancing reasoning, its application to medical visual question answering (Med-VQA) is hampered by models producing reasoning inconsistent with either the visual evidence or the final answer. Our analysis reveals a critical flaw in RLVR training: it paradoxically encourages models to disregard visual evidence and generate answers that contradict their own reasoning. This degradation is most pronounced in specialized medical modalities (e.g., Fundus, Ultrasound) where base VLMs lack robust understanding, a failure we attribute to a flawed reward mechanism exacerbated by the scarcity of diverse training data. To tackle this, we introduce Med-Zero-17K , a large-scale dataset spanning over 30 modalities and 24 clinically relevant tasks, and the Multi-Consistency Reward (MCR) framework, which explicitly rewards both perceptual grounding and logical coherence. Extensive experiments validate our approach: integrating MCR into the RLVR framework delivers robust performance gains. This success stems from our crucial finding that rewarding internal consistency is significantly more effective than attempting to judge reasoning correctness. Furthermore, MCR proves highly versatile, exhibiting strong generalization across diverse VLM backbones, compatibility with RL algorithms like GRPO and DPO, and extending its effectiveness to 3D VQA tasks and R1-style training paradigms. Code and dataset will be released. Anthology ID: 2026.acl-long.81 Volume: Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) Month: July Year: 2026 Address: San Diego, California, United States Editors: Maria Liakata , Viviane P. Moreira , Jiajun Zhang , David Jurgens Venue: ACL SIG: Publisher: Association for Computational Linguistics Note: Pages: 1788–1805 Language: URL: https://aclanthology.org/2026.acl-long.81/ DOI: 10.18653/v1/2026.acl-long.81 Bibkey: jiang-etal-2026-act Cite (ACL): Songtao Jiang, Yuan Wang, Ruizhe Chen, Yan Zhang, Ruilin Luo, Bohan Lei, Yeying Jin, Sibo Song, ZhiBo Yang, Jimeng Sun, Jian Wu, and Zuozhu Liu. 2026. Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering . In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , pages 1788–1805, San Diego, California, United States. Association for Computational Linguistics. Cite (Informal): Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering (Jiang et al., ACL 2026) Copy Citation: BibTeX Markdown MODS XML Endnote More
+options… PDF: https://aclanthology.org/2026.acl-long.81.pdf Checklist: 2026.acl-long.81.checklist.pdf PDF Cite Search Checklist Fix data Export citation BibTeX MODS XML Endnote Preformatted @inproceedings{jiang-etal-2026-act,
+    title = "Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering",
+    author = "Jiang, Songtao  and
+      Wang, Yuan  and
+      Chen, Ruizhe  and
+      Zhang, Yan  and
+      Luo, Ruilin  and
+      Lei, Bohan  and
+      Jin, Yeying  and
+      Song, Sibo  and
+      Yang, ZhiBo  and
+      Sun, Jimeng  and
+      Wu, Jian  and
+      Liu, Zuozhu",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.81/",
+    doi = "10.18653/v1/2026.acl-long.81",
+    pages = "1788--1805",
+    ISBN = "979-8-89176-390-6",
+    abstract = "While reinforcement learning from verifiable rewards (RLVR) has been proven highly effective for enhancing reasoning, its application to medical visual question answering (Med-VQA) is hampered by models producing reasoning inconsistent with either the visual evidence or the final answer. Our analysis reveals a critical flaw in RLVR training: it paradoxically encourages models to disregard visual evidence and generate answers that contradict their own reasoning. This degradation is most pronounced in specialized medical modalities (e.g., Fundus, Ultrasound) where base VLMs lack robust understanding, a failure we attribute to a flawed reward mechanism exacerbated by the scarcity of diverse training data. To tackle this, we introduce \textbf{Med-Zero-17K}, a large-scale dataset spanning over 30 modalities and 24 clinically relevant tasks, and the \textbf{Multi-Consistency Reward (MCR)} framework, which explicitly rewards both perceptual grounding and logical coherence. Extensive experiments validate our approach: integrating MCR into the RLVR framework delivers robust performance gains. This success stems from our crucial finding that rewarding internal consistency is significantly more effective than attempting to judge reasoning correctness. Furthermore, MCR proves highly versatile, exhibiting strong generalization across diverse VLM backbones, compatibility with RL algorithms like GRPO and DPO, and extending its effectiveness to 3D VQA tasks and R1-style training paradigms. Code and dataset will be released."
+} Download as
+File Copy to Clipboard <?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="jiang-etal-2026-act">
+    <titleInfo>
+        <title>Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Songtao</namePart>
+        <namePart type="family">Jiang</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Yuan</namePart>
+        <namePart type="family">Wang</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ruizhe</namePart>
+        <namePart type="family">Chen</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Yan</namePart>
+        <namePart type="family">Zhang</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ruilin</namePart>
+        <namePart type="family">Luo</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Bohan</namePart>
+        <namePart type="family">Lei</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Yeying</namePart>
+        <namePart type="family">Jin</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Sibo</namePart>
+        <namePart type="family">Song</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">ZhiBo</namePart>
+        <namePart type="family">Yang</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jimeng</namePart>
+        <namePart type="family">Sun</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jian</namePart>
+        <namePart type="family">Wu</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Zuozhu</namePart>
+        <namePart type="family">Liu</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2026-07</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Maria</namePart>
+            <namePart type="family">Liakata</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">Viviane</namePart>
+            <namePart type="given">P</namePart>
+            <namePart type="family">Moreira</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">Jiajun</namePart>
+            <namePart type="family">Zhang</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">David</namePart>
+            <namePart type="family">Jurgens</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Association for Computational Linguistics</publisher>
+            <place>
+                <placeTerm type="text">San Diego, California, United States</placeTerm>
+            </place>
+        </originInfo>
+        <genre authority="marcgt">conference publication</genre>
+        <identifier type="isbn">979-8-89176-390-6</identifier>
+    </relatedItem>
+    <abstract>While reinforcement learning from verifiable rewards (RLVR) has been proven highly effective for enhancing reasoning, its application to medical visual question answering (Med-VQA) is hampered by models producing reasoning inconsistent with either the visual evidence or the final answer. Our analysis reveals a critical flaw in RLVR training: it paradoxically encourages models to disregard visual evidence and generate answers that contradict their own reasoning. This degradation is most pronounced in specialized medical modalities (e.g., Fundus, Ultrasound) where base VLMs lack robust understanding, a failure we attribute to a flawed reward mechanism exacerbated by the scarcity of diverse training data. To tackle this, we introduce Med-Zero-17K, a large-scale dataset spanning over 30 modalities and 24 clinically relevant tasks, and the Multi-Consistency Reward (MCR) framework, which explicitly rewards both perceptual grounding and logical coherence. Extensive experiments validate our approach: integrating MCR into the RLVR framework delivers robust performance gains. This success stems from our crucial finding that rewarding internal consistency is significantly more effective than attempting to judge reasoning correctness. Furthermore, MCR proves highly versatile, exhibiting strong generalization across diverse VLM backbones, compatibility with RL algorithms like GRPO and DPO, and extending its effectiveness to 3D VQA tasks and R1-style training paradigms. Code and dataset will be released.</abstract>
+    <identifier type="citekey">jiang-etal-2026-act</identifier>
+    <identifier type="doi">10.18653/v1/2026.acl-long.81</identifier>
+    <location>
+        <url>https://aclanthology.org/2026.acl-long.81/</url>
+    </location>
+    <part>
+        <date>2026-07</date>
+        <extent unit="page">
+            <start>1788</start>
+            <end>1805</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection> Download as
+File Copy to Clipboard %0 Conference Proceedings
+%T Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering
+%A Jiang, Songtao
+%A Wang, Yuan
+%A Chen, Ruizhe
+%A Zhang, Yan
+%A Luo, Ruilin
+%A Lei, Bohan
+%A Jin, Yeying
+%A Song, Sibo
+%A Yang, ZhiBo
+%A Sun, Jimeng
+%A Wu, Jian
+%A Liu, Zuozhu
+%Y Liakata, Maria
+%Y Moreira, Viviane P.
+%Y Zhang, Jiajun
+%Y Jurgens, David
+%S Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)
+%D 2026
+%8 July
+%I Association for Computational Linguistics
+%C San Diego, California, United States
+%@ 979-8-89176-390-6
+%F jiang-etal-2026-act
+%X While reinforcement learning from verifiable rewards (RLVR) has been proven highly effective for enhancing reasoning, its application to medical visual question answering (Med-VQA) is hampered by models producing reasoning inconsistent with either the visual evidence or the final answer. Our analysis reveals a critical flaw in RLVR training: it paradoxically encourages models to disregard visual evidence and generate answers that contradict their own reasoning. This degradation is most pronounced in specialized medical modalities (e.g., Fundus, Ultrasound) where base VLMs lack robust understanding, a failure we attribute to a flawed reward mechanism exacerbated by the scarcity of diverse training data. To tackle this, we introduce Med-Zero-17K, a large-scale dataset spanning over 30 modalities and 24 clinically relevant tasks, and the Multi-Consistency Reward (MCR) framework, which explicitly rewards both perceptual grounding and logical coherence. Extensive experiments validate our approach: integrating MCR into the RLVR framework delivers robust performance gains. This success stems from our crucial finding that rewarding internal consistency is significantly more effective than attempting to judge reasoning correctness. Furthermore, MCR proves highly versatile, exhibiting strong generalization across diverse VLM backbones, compatibility with RL algorithms like GRPO and DPO, and extending its effectiveness to 3D VQA tasks and R1-style training paradigms. Code and dataset will be released.
+%R 10.18653/v1/2026.acl-long.81
+%U https://aclanthology.org/2026.acl-long.81/
+%U https://doi.org/10.18653/v1/2026.acl-long.81
+%P 1788-1805 Download as
+File Copy to Clipboard Markdown (Informal) [Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering](https://aclanthology.org/2026.acl-long.81/) (Jiang et al., ACL 2026) Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering (Jiang et al., ACL 2026) ACL Songtao Jiang, Yuan Wang, Ruizhe Chen, Yan Zhang, Ruilin Luo, Bohan Lei, Yeying Jin, Sibo Song, ZhiBo Yang, Jimeng Sun, Jian Wu, and Zuozhu Liu. 2026. Act as you think: Reinforcing Consistent Reasoning in Medical Visual Question Answering . In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , pages 1788–1805, San Diego, California, United States. Association for Computational Linguistics. Copy Markdown to
+Clipboard Copy ACL to
+Clipboard ACL materials are Copyright © 1963–2026 ACL; other materials are copyrighted by their respective copyright holders. Materials prior to 2016 here are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 International License . Permission is granted to make copies for the purposes of teaching and research. Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License . The ACL Anthology is managed and built by the ACL Anthology team of volunteers. Site last built on 19 October 2026 at 13:00 UTC with commit 0d4dd55 .

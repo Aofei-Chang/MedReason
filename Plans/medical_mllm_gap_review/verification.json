@@ -1,0 +1,73 @@
+{
+  "MIMIC_CXR_training": {
+    "n_records": 1911,
+    "explicit_comparison_references": 584
+  },
+  "MIMIC_CXR_test": {
+    "n_records": 441,
+    "explicit_comparison_references": 198
+  },
+  "IU_Xray_training": {
+    "n_records": 2069,
+    "explicit_comparison_references": 61
+  },
+  "IU_Xray_test": {
+    "n_records": 590,
+    "explicit_comparison_references": 15
+  },
+  "SLAKE_question_only": {
+    "correct": 579,
+    "n": 1061
+  },
+  "archived_pilot_choice_reaggregation": {
+    "huatuo/baseline/missing": {
+      "correct": 10,
+      "n": 12
+    },
+    "huatuo/baseline/positive": {
+      "correct": 12,
+      "n": 12
+    },
+    "huatuo/baseline/negative": {
+      "correct": 12,
+      "n": 12
+    },
+    "huatuo/provenance/missing": {
+      "correct": 12,
+      "n": 12
+    },
+    "huatuo/provenance/positive": {
+      "correct": 12,
+      "n": 12
+    },
+    "huatuo/provenance/negative": {
+      "correct": 2,
+      "n": 12
+    },
+    "medsight/baseline/missing": {
+      "correct": 6,
+      "n": 12
+    },
+    "medsight/baseline/positive": {
+      "correct": 12,
+      "n": 12
+    },
+    "medsight/baseline/negative": {
+      "correct": 10,
+      "n": 12
+    },
+    "medsight/provenance/missing": {
+      "correct": 12,
+      "n": 12
+    },
+    "medsight/provenance/positive": {
+      "correct": 12,
+      "n": 12
+    },
+    "medsight/provenance/negative": {
+      "correct": 9,
+      "n": 12
+    }
+  },
+  "scope": "This verifies arithmetic, input schema and archived choice aggregation. It does not verify clinical labels or rerun model inference."
+}

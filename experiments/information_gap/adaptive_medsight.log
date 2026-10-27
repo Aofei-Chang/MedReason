@@ -1,0 +1,32 @@
+Loading MedSIGHT from /home/avc6555/.cache/huggingface/hub/models--Caf0914--MedSIGHT-Comp/snapshots/971ed4e6826b0bd59d6cde6ae6588642f2e52699
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 87.23it/s]
+/data/aofei/conda/env/med_edit/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Loaded 296 bundled vision-tower tensors into the UniMed-CLIP encoder.
+choice_forward_check 0.0
+greedy_cache_check PASS
+facts 1/12 elapsed=10.1s
+facts 2/12 elapsed=19.3s
+facts 3/12 elapsed=27.3s
+facts 4/12 elapsed=36.1s
+facts 5/12 elapsed=45.4s
+facts 6/12 elapsed=54.7s
+facts 7/12 elapsed=64.1s
+facts 8/12 elapsed=73.6s
+facts 9/12 elapsed=81.9s
+facts 10/12 elapsed=90.0s
+facts 11/12 elapsed=99.6s
+facts 12/12 elapsed=109.0s
+anatomy 1/12 elapsed=112.7s
+anatomy 2/12 elapsed=116.5s
+anatomy 3/12 elapsed=120.2s
+anatomy 4/12 elapsed=124.0s
+anatomy 5/12 elapsed=127.8s
+anatomy 6/12 elapsed=131.5s
+anatomy 7/12 elapsed=135.2s
+anatomy 8/12 elapsed=139.0s
+anatomy 9/12 elapsed=142.7s
+anatomy 10/12 elapsed=146.4s
+anatomy 11/12 elapsed=150.2s
+anatomy 12/12 elapsed=153.9s
+COMPLETE

@@ -1,0 +1,93 @@
+{
+  "seed": 20261019,
+  "version": 1,
+  "pre_scoring": true,
+  "source_pdf_sha256": "c4e1eded9a224133d5c0a6e9424dbb204549db7e74aeceb9ee375f48e2c2ec08",
+  "selection": "Reuse 12 previously reviewed explicit facts; visually select 6 head and 6 chest CT figures from original pilot, without examining new model scores.",
+  "H1": "External-fact target likelihood gains should shrink when off-image facts are removed from source context, and recover under independent paraphrases. This is availability sensitivity, not MI or proof of impossibility.",
+  "H2": "Correct provenance behavior follows positive/negative supplied context, but chooses unknown when patient facts are absent; an explicit provenance instruction may help without retraining.",
+  "H3": "Visual anatomy decisions should follow the image when an unverified textual label conflicts. Compare to no-image and congruent-text conditions; measure both members correct within fixed-context image pairs.",
+  "H4": "Coarse anatomy may be retrievable from encoder, projector and middle LLM representations. Frozen leave-one-out 1NN is a pipeline sanity test, not a lesion oracle or pre/post boundary estimate.",
+  "source_ladder": {
+    "n": 12,
+    "contexts": [
+      "none",
+      "original",
+      "visual_only",
+      "paraphrase_positive",
+      "paraphrase_negative",
+      "donor"
+    ],
+    "images": [
+      "correct",
+      "swap",
+      "none"
+    ],
+    "score": "Original target mean logp and reviewed fact-span mean logp; targets fixed within model."
+  },
+  "fact_choices": {
+    "n": 12,
+    "contexts": [
+      "missing",
+      "positive",
+      "negative"
+    ],
+    "images": [
+      "correct",
+      "swap",
+      "none"
+    ],
+    "policies": [
+      "baseline",
+      "provenance"
+    ],
+    "orders": "All 6 permutations of yes/no/unknown; one forward scores all 3 single-token labels."
+  },
+  "anatomy_choices": {
+    "n": 12,
+    "contexts": [
+      "neutral",
+      "head",
+      "chest"
+    ],
+    "images": [
+      "correct",
+      "none"
+    ],
+    "policies": [
+      "baseline",
+      "provenance"
+    ],
+    "orders": "All 6 permutations of head/chest/unknown."
+  },
+  "generation": {
+    "n": 12,
+    "contexts": [
+      "missing"
+    ],
+    "images": [
+      "correct"
+    ],
+    "policies": [
+      "baseline",
+      "provenance"
+    ],
+    "max_new_tokens": 64,
+    "purpose": "Qualitative check of natural output; no automated hallucination-rate claim."
+  },
+  "statistics": "Average option permutations within record. Bootstrap records (5000) for paired effects; anatomy pair bootstrap for joint-correctness. Exploratory intervals, no multiplicity adjustment. Retrieval uses exact balanced-label permutation null.",
+  "expected_per_model": {
+    "ladder": 216,
+    "fact_choices": 1296,
+    "anatomy_choices": 864,
+    "features": 12,
+    "generation": 24
+  },
+  "not_tested": [
+    "Unreported small lesions",
+    "Causal effect of supervision or training scale",
+    "Pretraining versus post-training interventions",
+    "Clinical calibration or conformal guarantees",
+    "Population mismatch prevalence"
+  ]
+}

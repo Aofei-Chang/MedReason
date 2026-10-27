@@ -1,0 +1,110 @@
+[
+  {
+    "id": "Instruction-Tuning_202483",
+    "label": "head",
+    "pixel_sha256": "be2606039f1af5cf6ef29c50ba343a04f4fd53a466bfbea392680c619706c025",
+    "size": [
+      197,
+      243
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_219192",
+    "label": "chest",
+    "pixel_sha256": "230cc185568821907aa18d805a83cc3764d04e9080c04e800a739deef2da1009",
+    "size": [
+      780,
+      763
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_542571",
+    "label": "head",
+    "pixel_sha256": "cd36e9fcfebe2a9bbea818ab8bbec917a3c8ae763dbf705c28b0be187bad54ca",
+    "size": [
+      729,
+      321
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_298378",
+    "label": "chest",
+    "pixel_sha256": "9ee9269cec45e9c10a5605998c49715b6489addc707a5d63224d81a1c2987bfe",
+    "size": [
+      750,
+      595
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_351561",
+    "label": "head",
+    "pixel_sha256": "22fd3f63cdce8edde921d1ea098786903423b421c0968784f11d2b6aecd06ee1",
+    "size": [
+      711,
+      253
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_555935",
+    "label": "chest",
+    "pixel_sha256": "5bc06079ea75d4e4071c6eba19680de0de710cdd1f362c7cd99593ca8b446395",
+    "size": [
+      600,
+      431
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_392502",
+    "label": "head",
+    "pixel_sha256": "2265cab3660baf6a929539e0c0bf42e946c5bd786fa276eccb5a94b17c9f2bd1",
+    "size": [
+      324,
+      453
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_220158",
+    "label": "chest",
+    "pixel_sha256": "c197f09b311ab34171a4ca797f90c7634ba3f989e4bf8d62f1d0acf9ff3e1631",
+    "size": [
+      226,
+      269
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_455491",
+    "label": "head",
+    "pixel_sha256": "96c1c4526a19f24b8a7a2b2f87cf2af0538e6279c016a773030c0c8ad7265bfe",
+    "size": [
+      346,
+      272
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_357717",
+    "label": "chest",
+    "pixel_sha256": "ef0078b05a36420e79d50230e9010a033281032378ebf7d936d79dce63e0862f",
+    "size": [
+      750,
+      422
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_363837",
+    "label": "head",
+    "pixel_sha256": "d7e1aa45976eb4931fa6cdd17b013db4da55a16aebd23dd28f860009ce872786",
+    "size": [
+      715,
+      822
+    ]
+  },
+  {
+    "id": "Instruction-Tuning_241269",
+    "label": "chest",
+    "pixel_sha256": "2300f040dbffce00f3d8c60d5246445508b26a4a4e2830f9023f4285d5b67ef8",
+    "size": [
+      552,
+      828
+    ]
+  }
+]

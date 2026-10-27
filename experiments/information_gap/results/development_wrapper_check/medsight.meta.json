@@ -1,0 +1,17 @@
+{
+  "model": "medsight",
+  "checkpoint": "/home/avc6555/.cache/huggingface/hub/models--Caf0914--MedSIGHT-Comp/snapshots/971ed4e6826b0bd59d6cde6ae6588642f2e52699",
+  "manifest_hashes": {
+    "facts.jsonl": "648ed875de7dd56c81aedfb6ce1ae053f9592c35222abd3c6e554560439c8161",
+    "anatomy.jsonl": "d642a47d5cd41e35d503de9dbc4ca3d00be686ca2c9e057f3b30d0e24439ea75",
+    "protocol.json": "9a82e1cd23e423c44ac5afe801897166c66e06fdb041912b88dea69ab908aca8"
+  },
+  "started": 1792390385.0914123,
+  "torch": "2.9.1+cu126",
+  "transformers": "4.52.4",
+  "visible_devices": "2",
+  "gpu": "NVIDIA RTX A6000",
+  "template": "huatuo",
+  "medprobe_commit": "9d4d7de7ffb6b876480372e1084555cd06231e03",
+  "runner_sha256": "5b1fb94af2f9f364d89d3b6107beab2db90ba99ad9f925f04472982a27b44d9c"
+}

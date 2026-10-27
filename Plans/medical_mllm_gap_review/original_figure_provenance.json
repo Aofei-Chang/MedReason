@@ -1,0 +1,10 @@
+[
+  {
+    "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7300102/",
+    "figure": "Figure 3",
+    "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d9ec/7300102/9762213f8348/256_2020_3391_Fig3_HTML.jpg",
+    "asset": "assets/original_knee_figure.jpg",
+    "sha256": "aa52fca0eaf6fe287fd100ac47b564c1d3f0b207e5e89b5262a41388e220f7cc",
+    "inspection": "Visually matched local PubMedVision pmc_394494_0.jpg to final MRI 3 column. This is a structural panel check, not a specialist assessment of pathology."
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "model": "medsight",
+  "checkpoint": "/home/avc6555/.cache/huggingface/hub/models--Caf0914--MedSIGHT-Comp/snapshots/971ed4e6826b0bd59d6cde6ae6588642f2e52699",
+  "manifest_hashes": {
+    "facts.jsonl": "648ed875de7dd56c81aedfb6ce1ae053f9592c35222abd3c6e554560439c8161",
+    "anatomy.jsonl": "d642a47d5cd41e35d503de9dbc4ca3d00be686ca2c9e057f3b30d0e24439ea75",
+    "protocol.json": "e06c4bcef89ef4511366f84089c8f87180cc1f83cb4fbfc72464c81a5b80f927"
+  },
+  "started": 1792390911.5866678,
+  "torch": "2.9.1+cu126",
+  "transformers": "4.52.4",
+  "visible_devices": "2",
+  "gpu": "NVIDIA RTX A6000",
+  "template": "huatuo",
+  "medprobe_commit": "9d4d7de7ffb6b876480372e1084555cd06231e03",
+  "runner_sha256": "8f61cee044272f83d22101edee6392d24ca2b49280c2c78b1552f20cdf53a9e4",
+  "policy_variant": "evidence_first",
+  "policies": [
+    "evidence_first"
+  ],
+  "fact_policy_text": "Use all evidence that is actually supplied. An explicit patient record can establish that a statement is true or false. Choose Yes when the evidence supports the statement, No when it contradicts the statement, and Cannot determine only when neither conclusion is supported. ",
+  "visual_policy_text": "Inspect the supplied image and identify its body region from visible anatomy. Give a specific answer when the anatomy is clear, even if the unverified note disagrees. Use Cannot determine only when the available evidence does not establish the region. "
+}

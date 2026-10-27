@@ -1,0 +1,308 @@
+{
+  "seed": 20261018,
+  "per_cell": 16,
+  "counts": {
+    "full": {
+      "records": 646759,
+      "single_image": 504510,
+      "any_answer_marker": 49851,
+      "answer_marker_category_absent_question": 48543,
+      "question_absent_reference": 25921,
+      "question_absent_history": 4071,
+      "question_absent_external_test": 17686,
+      "question_absent_outcome": 3187,
+      "question_absent_age": 1296
+    },
+    "medsight_60k": {
+      "records": 60000,
+      "single_image": 46805,
+      "any_answer_marker": 4720,
+      "answer_marker_category_absent_question": 4592,
+      "question_absent_outcome": 316,
+      "question_absent_external_test": 1685,
+      "question_absent_reference": 2458,
+      "question_absent_history": 376,
+      "question_absent_age": 126
+    }
+  },
+  "selection_version": 2,
+  "pilot_excludes": "Reference-only markers and advisory language; missing source captions; unavailable exact-basename images",
+  "subset_exact_record_matches": 60000,
+  "subset_ids_missing_from_full": [],
+  "screening_patterns": {
+    "age": "\\b\\d{1,3}[ -]year[ -]old\\b|\\baged?\\s+\\d{1,3}\\b",
+    "history": "\\b(?:history of|presented with|was admitted|had undergone|previously diagnosed)\\b",
+    "external_test": "\\b(?:biopsy|histopatholog\\w*|patholog\\w* examination|genetic testing|laboratory (?:tests?|results?))\\b.{0,65}\\b(?:confirm\\w*|reveal\\w*|show\\w*|diagnos\\w*)\\b",
+    "outcome": "\\b(?:follow[ -]up|months? later|years? later|subsequently|eventually)\\b.{0,65}\\b(?:show\\w*|reveal\\w*|confirm\\w*|resolv\\w*|recover\\w*|died|improv\\w*)\\b",
+    "reference": "\\b(?:reference (?:information|text)|provided (?:context|history)|clinical history|patient.s history)\\b"
+  },
+  "candidate_pool_sizes": {
+    "full_only/visual_description": 56288,
+    "full_only/diagnostic_inference": 77569,
+    "medsight_60k/diagnostic_inference": 7905,
+    "medsight_60k/visual_description": 5687,
+    "full_only/external_context": 1917,
+    "medsight_60k/external_context": 205
+  },
+  "pilot_n": 96,
+  "examples": [
+    {
+      "id": "Instruction-Tuning_1",
+      "question": "What is the size of the inferior mesenteric artery aneurysm (IMAA) based on the CT angiography scan?",
+      "answer": "According to the measurements provided in the image, the inferior mesenteric artery aneurysm (IMAA) has a length of 4.87 cm and a width of 5.93 cm. The reference information indicates that this represents a 57% reduction in the volume of the IMAA compared to a previous scan, suggesting the embolization procedure was effective in decreasing the size of the aneurysm.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_8",
+      "question": "What type of pathology is suggested by the hyperdense lesion seen in the left kidney on the CT scan images?",
+      "answer": "The hyperdense lesion in the left kidney observed in the CT scan images is suggestive of either a hematoma (bleeding or blood collection) due to renal trauma, or an abscess (localized collection of pus) based on the available information. This assessment is made considering the radiographic appearance of the lesion as well as the clinical context provided in the reference information. Further clinical evaluation and potentially additional imaging studies would be required to definitively determine the underlying cause of the abnormality.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_9",
+      "question": "What does the linear lucency on the left parietal bone indicate in this radiograph?",
+      "answer": "The linear lucency observed on the left parietal bone extending from the lambdoid suture is indicative of a potential abnormality. It could possibly represent a fracture, especially if there is a history of trauma, or it may be a prominent vascular groove which is a normal variant where prominent blood vessels leave an impression on the skull bone. Distinguishing between these possibilities would typically require clinical correlation with patient history and symptoms. Further imaging modalities like a CT scan might also be used for a more detailed assessment if a fracture or other pathology is suspected.",
+      "flags": {
+        "history": "history of"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_13",
+      "question": "Based on the cellular characteristics visible in this H&E stained slide, such as the pleomorphic basophilic cells, presence of epithelioid and spindled cells, and notable nuclear irregularities including prominent nucleoli and mitoses, what might be the possible clinical implications or diagnosis for this tumor?",
+      "answer": "The histological features noted in the image, including the high cellularity, cellular pleomorphism, prominent nucleoli, and active mitosis suggest a highly aggressive tumor. The presence of predominantly epithelioid cells along with spindled cells and signs of rapid proliferation points towards a possible diagnosis of Mucoepidermoid carcinoma (MEC), especially given the basophilic staining indicating active RNA processes. These features imply that the tumor could be malignant with potential for significant aggression and involvement of surrounding tissues. It is essential to correlate these histopathological findings with clinical and radiological data to enhance diagnostic accuracy and plan appropriate management strategies.",
+      "flags": {
+        "external_test": "histopathological findings with clinical and radiological data to enhance diagnostic"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_22",
+      "question": "What does the presence of enhancing lesions and the isodose lines indicate in the MRI images?",
+      "answer": "The presence of enhancing lesions in MRI images generally indicates areas of disrupted blood-brain barrier, often associated with pathological conditions such as tumors. In the initial image, the enhanced lesion is typical for malignancy, suggestive of a high-grade glioma due to its irregular borders and associated edema. After surgical intervention, as shown in the second image, the absence of enhancing tissue suggests a successful resection of the active tumor, but a follow-up image shows recurrence within the resection cavity, highlighting the aggressive nature of the tumor likely regrowing or residual disease. The fourth image with isodose lines is crucial for radiation therapy planning. These lines represent the distribution of radiation doses, tailored to maximize the therapeutic effect on the tumor while sparing healthy tissue. The concentrated coloration around the cavity indicates a high dose targeting the area of concern, aiming to eradicate remaining tumor cells.",
+      "flags": {
+        "outcome": "follow-up image shows"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_23",
+      "question": "What is the location of the epidural collection observed in the image?",
+      "answer": "According to the reference information provided, the posterior epidural collection extends from the foramen magnum (the large opening at the base of the skull) to the T5 vertebral level. This indicates that the epidural collection is located along the cervical and upper thoracic regions of the spinal cord.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_32",
+      "question": "What is the location of the abnormal mass seen on the PET/CT scan?",
+      "answer": "The PET/CT scan shows an abnormal mass with high FDG uptake in the left axillary to subclavicular region. The reference information also confirms the location of the lesion as being a subclavicular or axillary mass.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_34",
+      "question": "What does the variation in color and texture among the lesions in the image suggest about their nature?",
+      "answer": "The variation in color and texture among the lesions represented in the image suggests differences in the histological make-up and malignancy of the tissue. Diverse shades and textures, such as raised, bumpy surfaces or heterogeneous coloration, often hint at pathological changes, potentially malignancies. Darker, more uniform patches could suggest areas of necrosis or denser tumor cells consistent with certain types of cancer. The precise assessment of these features usually relies on histopathological examination, which would confirm the types of cells present, their arrangement, and potential metastatic or primary cancerous nature. Observing these variations is crucial in determining the approach for treatment and understanding the prognosis.",
+      "flags": {
+        "external_test": "histopathological examination, which would confirm"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_41",
+      "question": "What areas of the lungs show partial interval resolution of opacities based on the X-ray image?",
+      "answer": "According to the image, the areas showing partial interval resolution of opacities are the left lung and the upper zone of the right lung, as indicated by the yellow arrows. The reference information also notes that the remaining opacities are visible in the right lower lobe, as denoted by the black arrow.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_42",
+      "question": "Doctor, I noticed some abnormalities in these scans of patients with Parkinson's disease who have undergone deep brain stimulation surgery. Could you please explain what these images are showing and the potential implications for the patients?",
+      "answer": "Certainly. These scans are revealing a complication that can occur after deep brain stimulation (DBS) surgery for Parkinson's disease. As you can see in images A and B, there is an arrow pointing to what appears to be a fracture or disconnection in the extension wire on the left side of the patient's brain. This issue with the extension wire can lead to high impedance in the DBS system, causing it to malfunction and potentially resulting in a sudden worsening of the patient's Parkinson's symptoms.\n\nIn DBS surgery, electrodes are implanted in specific brain regions, and these electrodes are connected to an implantable pulse generator (IPG) via extension wires. The IPG generates electrical impulses that are transmitted through the electrodes to modulate the activity of the targeted brain regions, thereby alleviating the motor symptoms of Parkinson's disease.\n\nWhen there is a fracture or disconnection in the extension wire, as shown in these scans, the electrical signal from the IPG cannot be properly transmitted to the electrodes in the brain. This disruption in the DBS system can cause the patient to experience a sudden deterioration in their motor function, tremors, rigidity, and other Parkinson's symptoms that were previously well-controlled by the DBS therapy.\n\nIn such cases, a revision surgery is typically required to replace the damaged extension wire and restore the proper functioning of the DBS system. As mentioned in the reference information provided, after replacing the fractured extension wire in the first patient (images A and B), the DBS system was restored to normal function, and the patient's symptoms likely improved.\n\nIt is crucial to closely monitor DBS patients for any sudden changes in symptom control, as this can be an indicator of a potential hardware complication like the one demonstrated in these scans. Early detection and prompt surgical intervention can help resolve the issue and prevent further worsening of the patient's condition.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_55",
+      "question": "Based on the histopathological characteristics observed in the image, what potential medical condition might be indicated by the presence of well-defined epithelioid granulomas and caseation necrosis within liver tissue?",
+      "answer": "The histopathological features observed, specifically the well-defined epithelioid granulomas with central caseation necrosis surrounded by multinucleated giant cells and chronic inflammatory cells, are highly suggestive of a granulomatous infection, most typically tuberculosis (TB). In hepatic tuberculosis, granulomas are a common finding and the presence of caseation necrosis further supports this diagnosis. It is essential to correlate these findings with clinical symptoms, history of exposure, and additional laboratory tests including mycobacterial cultures and PCR for tuberculosis to confirm the diagnosis. The absence of growth in culture may occur in cases with low bacterial load or sampling errors; hence, further diagnostic investigations may be recommended to provide a conclusive diagnosis.",
+      "flags": {
+        "history": "history of",
+        "external_test": "laboratory tests including mycobacterial cultures and PCR for tuberculosis to confirm"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_67",
+      "question": "What type of tumor is evident in this histopathological slide?",
+      "answer": "Based on the histopathological findings described in the reference information, the tumor evident in this slide is a leiomyoma, a benign smooth muscle tumor. The slide shows spindle-shaped cells with elongated fusiform nuclei, which is characteristic of leiomyomas. The mitotic activity of 4-5 mitoses per 10 high-power fields is also consistent with a leiomyoma, as they typically have a low mitotic rate compared to more aggressive tumor types. The absence of necrosis and mucosal lining further supports the diagnosis of a leiomyoma.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_77",
+      "question": "What anatomical structure is the aberrant artery supplying?",
+      "answer": "The aberrant artery is supplying a sequestered lung, as indicated by the reference information.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_86",
+      "question": "What type of MRI sequence was used to capture this brain image?",
+      "answer": "According to the reference information provided, the brain MRI image was captured using a FLAIR (Fluid Attenuated Inversion Recovery) sequence. The FLAIR sequence is a type of MRI imaging technique that is particularly useful for visualizing and detecting abnormalities in the brain, as it can effectively suppress the signal from cerebrospinal fluid, allowing for improved contrast and visibility of brain tissues and structures.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_87",
+      "question": "What type of medical condition do these images suggest, and what are the key features you observe?",
+      "answer": "These images suggest metastatic bone lesions, likely from a primary malignancy such as renal cell carcinoma or breast cancer. The key features observed include:\n\n1. Large, destructive, expansile, and necrotic mass arising within the right ilium and extending into the right sacrum in image (a), indicative of an aggressive metastatic lesion.\n\n2. Lytic lesions in the acetabulum and sacrum, as seen in images (b), (c), (d), and (e), which are characteristic of metastatic bone involvement.\n\n3. The lytic lesions appear to be causing bone destruction and involvement of the surrounding structures.\n\n4. Some of the lesions may be difficult to identify on plain radiographs, as indicated by images (b) and (d), but are more readily appreciated on CT scans with contrast enhancement.\n\nThe presence of these aggressive, destructive, and lytic bone lesions, particularly in the pelvic region, is highly suggestive of metastatic disease, likely from a primary malignancy such as renal cell carcinoma or breast cancer, as mentioned in the provided reference information.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_90",
+      "question": "Based on the PET-CT scan in Image A, which shows increased uptake, how should we interpret this finding in the clinical context?",
+      "answer": "The increased uptake shown in Image A of the PET-CT scan typically correlates with regions of high metabolic activity, which can be seen in various conditions including malignant tumors, infections, or inflammatory processes. However, considering the macroscopic appearance of the surgical specimen in Image B, which does not show visible malignancy, and the histopathological findings in Image C indicating possible scar tissue rather than neoplastic changes, this uptake might represent a benign process such as healing or inflammation around a surgical site. Therefore, in a clinical context, it is essential to correlate these imaging findings with the patient's history, prior treatments, and surgical outcomes to accurately assess the significance of this radiologic observation.",
+      "flags": {
+        "reference": "patient's history"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_101",
+      "question": "Doctor, I see these dark areas on my scan that are pointed out by the arrows. What exactly are these, and should I be worried about them?",
+      "answer": "The dark areas highlighted by the arrows on your scan represent clusters of cells that are distinct from the surrounding tissue. These could be nodules or masses, which we need to examine closely. The variability in cell density and structure can indicate abnormal growth, such as a tumor. However, not all growths are cancerous. We need to correlate these findings with your clinical history, other imaging studies, and possibly a biopsy to determine the nature of these cells. While it's natural to be concerned, please remember that further tests will give us more definitive answers and guide the appropriate treatment plan.",
+      "flags": {
+        "reference": "clinical history"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_112",
+      "question": "I'm still not convinced about the diagnosis. How can you be sure this is acute promyelocytic leukemia (APL) just from this image?",
+      "answer": "I understand your concerns. This diagnosis is typically confirmed by the specific appearance of the promyelocytes seen in your blood smear. The cells here are not only abnormally numerous but also display distinct Auer rods in their cytoplasm, which are rarely seen in other types of leukemia. These Auer rods, particularly when seen in clusters or bundles as in 'Faggot cells', are highly characteristic of APL. This visual evidence, combined with other clinical assessments and laboratory tests, guides us to a conclusive diagnosis. Rest assured, this approach is aligned with standard hematological diagnostic practices.",
+      "flags": {
+        "external_test": "laboratory tests, guides us to a conclusive diagnosis"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_129",
+      "question": "What is the threshold used to calculate the volume of the liver in this CT scan?",
+      "answer": "According to the reference information provided, the volume of the liver was calculated with a threshold of 30-300 HU (Hounsfield Units). This is a commonly used range to differentiate the liver tissue from other surrounding structures in a CT scan.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_164",
+      "question": "In the posteroanterior chest radiograph, can you identify the specific area indicated by the arrow and elaborate on the possible clinical implications of this opacity?",
+      "answer": "The arrow in the posteroanterior chest radiograph points to the retrocardiac region indicating opacities. Such opacities can be indicative of several conditions including infections, interstitial lung diseases, or potentially malignancies. The clinical implications often depend on the pattern, extent, and the patient's clinical history and symptoms, requiring further investigation such as a CT scan or biopsy to determine the exact nature and cause.",
+      "flags": {
+        "reference": "clinical history"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_186",
+      "question": "Based on the provided medical image, can you identify the characteristics and possible clinical implications of the pelvic mass observed? Specifically, please analyze the visible structures, any abnormal features, and how these might relate to the patient's symptoms and clinical presentation.",
+      "answer": "The image demonstrates a heterogeneous pelvic mass with both solid and cystic components, indicating a complex neoplasm. The well-defined border with some irregularities suggests aggressive growth, characteristic of malignant tumors such as Ewing sarcoma or peripheral neuroectodermal tumor (PNFT). The proximity to pelvic organs and potential pressure effects could explain the patient's symptoms, such as pain or discomfort in the pelvic region. The lack of clear vascular encasement is a favorable sign, but the involvement of surrounding soft tissues points to an invasive nature. These features, combined with clinical history and immunohistochemical findings (e.g., S-100, CK, CD56, P53 positivity), strongly suggest a diagnosis consistent with Ewing sarcoma/PNFT. Further imaging and biopsy are recommended for definitive diagnosis and treatment planning.",
+      "flags": {
+        "external_test": "biopsy are recommended for definitive diagnosis",
+        "reference": "clinical history"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_190",
+      "question": "What type of tumor is visible in the image?",
+      "answer": "The image shows a low-grade extragastrointestinal stromal tumor (EGIST) in the mesentery of a 46-year-old male patient. EGISTs are a rare type of soft tissue tumor that can occur outside the gastrointestinal tract, in this case, within the mesentery, which is the tissue that connects the intestines to the abdominal wall. The tumor appears as a large, 5.2-cm isodense mass with areas of calcification, which are characteristic features of this type of tumor.",
+      "flags": {
+        "age": "46-year-old"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_198",
+      "question": "As an intern, I noticed that the lesion has different textures and colors. Could this indicate different stages or types of tissue involvement? What would be the necessary steps in approaching a diagnosis for such a complex presentation?",
+      "answer": "Yes, the variations in texture and color within the lesion can indicate different pathological processes or stages of development in the lesion. The necrotic, crusted areas likely represent regions of tissue death due to inadequate blood supply or infection, whereas the reddish-purple, nodular components could suggest ongoing angiogenesis or vascular proliferation. To approach diagnosis, a comprehensive clinical evaluation is crucial, followed by diagnostic imaging to assess the depth and extent of tissue involvement. A biopsy is essential to obtain a definitive histopathological diagnosis, which will guide further treatment options. Such complex lesions require a multidisciplinary approach including dermatology, oncology, and possibly plastic surgery for optimal management and outcome.",
+      "flags": {
+        "external_test": "biopsy is essential to obtain a definitive histopathological diagnosis"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_220",
+      "question": "Respected attending physician, I've noticed an interesting finding on these images. Could you please provide your expert opinion on what this lesion in the liver might represent, based on the imaging characteristics and the combination of modalities used?",
+      "answer": "Thank you for bringing this case to my attention, medical trainee. Based on the multimodal imaging findings, the lesion in liver segment V appears to be a hypervascular metastatic lesion. The contrast-enhanced CT scan did not reveal this lesion, suggesting it may have been occult on that modality. However, the 18F-DOPA-PET/CT fusion image, which assesses metabolic activity, also did not show increased uptake in this region, indicating that the lesion might have been challenging to detect with this technique as well. The key findings that suggest metastatic disease are the hypervascular appearance on the arterial phase of the gadoxetic acid-enhanced MRI, the restricted diffusion on the DWI sequence, and the hypointense signal on the hepatobiliary phase, which is characteristic of a lesion that does not take up the hepatocyte-specific contrast agent. The combination of these imaging characteristics strongly points toward a metastatic lesion, potentially from an underlying primary malignancy. Further workup, including a thorough clinical history, additional imaging studies, and potentially a biopsy, may be warranted to confirm the diagnosis and determine the primary tumor site.",
+      "flags": {
+        "external_test": "biopsy, may be warranted to confirm the diagnosis",
+        "reference": "clinical history"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_234",
+      "question": "What is the size of the uterus, including the fibroids and adenomyosis, based on the information provided?",
+      "answer": "The size of the uterus, including the fibroids and adenomyosis, is approximately 22 cm in length and 10 cm in thickness, as stated in the reference information provided.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_245",
+      "question": "What does the high radiotracer uptake in the peritoneal region indicate, and what are the potential differential diagnoses?",
+      "answer": "The high radiotracer uptake in the peritoneal region indicates increased metabolic activity, which can be associated with either infectious or oncological processes. The potential differential diagnoses include peritoneal carcinomatosis, which is the spread of cancer within the peritoneal cavity, or a peritoneal infection such as peritonitis. Given the patient's history of tumoral resection, a recurrence or residual tumor is also a significant possibility.",
+      "flags": {
+        "history": "history of",
+        "reference": "patient's history"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_278",
+      "question": "What medical condition or event does this chest X-ray appear to be documenting?",
+      "answer": "Based on the reference information provided, this chest X-ray appears to be documenting a severe respiratory failure and cardiac arrest event that occurred on September 21, 2020. The image likely shows the patient's chest and lungs during this medical emergency, which is described as a bradyasystole episode. The chest X-ray is likely being used to evaluate the patient's pulmonary and cardiovascular status during this critical event.",
+      "flags": {
+        "reference": "reference information"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_283",
+      "question": "Senior Doctor: Can you describe the findings in the liver as seen in image (a) and discuss the implications of these findings?",
+      "answer": "Intern: The liver shows a large mass with mixed density, suggesting it includes solid portions and possibly necrotic or hemorrhagic areas. This heterogeneity could imply a malignant process, especially considering the size of the mass. The presence of ascites further supports the likelihood of a significant pathology, possibly advanced hepatic disease or peritoneal spread. This would warrant further diagnostic steps like biopsy and detailed laboratory tests to confirm the nature of the mass and plan appropriate management.",
+      "flags": {
+        "external_test": "biopsy and detailed laboratory tests to confirm"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_285",
+      "question": "Based on the imaging findings provided, how would you approach the diagnosis and management of a patient presenting with these CT features suggestive of acute eosinophilic pneumonia?",
+      "answer": "The CT images showing diffuse bilateral ground-glass opacity and interlobular septal thickening are strongly suggestive of acute eosinophilic pneumonia. First, a detailed clinical history and physical examination should be conducted to confirm the presence of symptoms such as fever, dyspnea, and cough. Blood tests should be ordered to look for peripheral eosinophilia. Bronchoalveolar lavage (BAL) could be considered to demonstrate eosinophilic infiltration in the lungs, a hallmark of this condition. Management typically involves systemic corticosteroids, such as prednisone, which usually lead to rapid clinical improvement and radiological resolution. It's also crucial to monitor the patient for potential complications, including respiratory failure. Consulting a pulmonologist would be advisable for expert management and follow-up.",
+      "flags": {
+        "reference": "clinical history"
+      }
+    },
+    {
+      "id": "Instruction-Tuning_288",
+      "question": "What is the location of the abnormal mass shown in the brain MRI?",
+      "answer": "The abnormal mass is located in the right temporal lobe, frontal lobe, and basal ganglia, as indicated in the reference information provided. The specific location of the mass in these critical brain regions suggests it may be affecting multiple important functional areas and could have significant neurological consequences for the patient.",
+      "flags": {
+        "reference": "reference information"
+      }
+    }
+  ],
+  "files": {
+    "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_InstructionTuning_VQA.json": {
+      "sha256": "11095defdaf08fc7ef196fa99946ae120d6752a61075c853bddd5d64302ff2fc",
+      "bytes": 721722204
+    },
+    "/data/aofei/Medical_datasets/PubMedVision/60k_PubMedVision_InstructionTuning_VQA.json": {
+      "sha256": "4e6354805cd434c9e9dc654b36dcc1ef32d0dcbb1c0e63280b6ea68a9f20bd05",
+      "bytes": 61093634
+    },
+    "/data/aofei/Medical_datasets/PubMedVision/PubMedVision_Original_Caption.json": {
+      "sha256": "9957f2bf3114488adcd3061f5ea4a9ba24d99a0f4ea75d3826b13c9c3c3ae459",
+      "bytes": 396157508
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "seed": 20261019,
+  "SLAKE": {
+    "train_english": 4919,
+    "test_english": 1061,
+    "test_unique_images": 96,
+    "train_test_image_overlap": 0,
+    "test_questions_seen_in_train": 999,
+    "seen_question_correct": 572,
+    "models": {
+      "global": {
+        "correct": 175,
+        "n": 1061,
+        "accuracy": 0.1649387370405278,
+        "image_cluster_bootstrap95": [
+          0.1475095785440613,
+          0.18111929834601959
+        ]
+      },
+      "type": {
+        "correct": 306,
+        "n": 1061,
+        "accuracy": 0.2884071630537229,
+        "image_cluster_bootstrap95": [
+          0.2601937891073168,
+          0.3168819070157956
+        ]
+      },
+      "question": {
+        "correct": 581,
+        "n": 1061,
+        "accuracy": 0.5475966069745523,
+        "image_cluster_bootstrap95": [
+          0.520292410034192,
+          0.5737092973721345
+        ]
+      },
+      "question_only": {
+        "correct": 579,
+        "n": 1061,
+        "accuracy": 0.5457115928369463,
+        "image_cluster_bootstrap95": [
+          0.5174472454197042,
+          0.5720736299540647
+        ]
+      }
+    },
+    "strata": {
+      "base_type": {
+        "kvqa": {
+          "n": 148,
+          "question_lookup_correct": 87
+        },
+        "vqa": {
+          "n": 913,
+          "question_lookup_correct": 494
+        }
+      },
+      "answer_type": {
+        "CLOSED": {
+          "n": 416,
+          "question_lookup_correct": 281
+        },
+        "OPEN": {
+          "n": 645,
+          "question_lookup_correct": 300
+        }
+      },
+      "content_type": {
+        "Abnormality": {
+          "n": 150,
+          "question_lookup_correct": 86
+        },
+        "Color": {
+          "n": 34,
+          "question_lookup_correct": 29
+        },
+        "KG": {
+          "n": 148,
+          "question_lookup_correct": 87
+        },
+        "Modality": {
+          "n": 108,
+          "question_lookup_correct": 52
+        },
+        "Organ": {
+          "n": 253,
+          "question_lookup_correct": 148
+        },
+        "Plane": {
+          "n": 58,
+          "question_lookup_correct": 41
+        },
+        "Position": {
+          "n": 186,
+          "question_lookup_correct": 75
+        },
+        "Quantity": {
+          "n": 52,
+          "question_lookup_correct": 30
+        },
+        "Shape": {
+          "n": 7,
+          "question_lookup_correct": 3
+        },
+        "Size": {
+          "n": 65,
+          "question_lookup_correct": 30
+        }
+      }
+    },
+    "definition": "question lookup uses exact normalized train question; fallback is content-type answer mode. Type metadata is supplied, so this is a metadata-aware text baseline, not a question-only language model.",
+    "limits": "Repeated question templates and class frequency explain some success. Correct text-only predictions do not establish individual visual claims are unsupported. Existing local split may differ from published protocols."
+  },
+  "PMC_VQA": {
+    "train_letter_counts": {
+      "B": 54217,
+      "A": 43421,
+      "C": 50791,
+      "D": 28505,
+      "'": 11,
+      "\"": 3
+    },
+    "test_letter_counts": {
+      "D": 7697,
+      "C": 15248,
+      "A": 11191,
+      "B": 15854,
+      "'": 9,
+      "\"": 1
+    },
+    "train_mode_letter": "B",
+    "blind_test_accuracy": 0.31708,
+    "invalid_train_answer_labels": 14,
+    "invalid_test_answer_labels": 10,
+    "definition": "Training most frequent answer letter, no question or image. Four-choice nominal random baseline=25%. Raw-file denominator includes malformed labels, listed separately."
+  }
+}

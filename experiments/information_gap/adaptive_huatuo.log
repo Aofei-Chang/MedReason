@@ -1,0 +1,32 @@
+/home/avc6555/research/MedProbe/HuatuoGPT
+loading from /data/aofei/output/MedProbe/models/huatuogpt-vision-7b
+loading from CLIP first. This should only be used at inference!!!
+loading vision model from openai/clip-vit-large-patch14-336
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 47.72it/s]
+choice_forward_check 1.1920928955078125e-07
+greedy_cache_check PASS
+facts 1/12 elapsed=6.0s
+facts 2/12 elapsed=11.2s
+facts 3/12 elapsed=16.2s
+facts 4/12 elapsed=21.3s
+facts 5/12 elapsed=26.5s
+facts 6/12 elapsed=31.7s
+facts 7/12 elapsed=37.0s
+facts 8/12 elapsed=42.2s
+facts 9/12 elapsed=47.5s
+facts 10/12 elapsed=52.8s
+facts 11/12 elapsed=58.0s
+facts 12/12 elapsed=63.3s
+anatomy 1/12 elapsed=66.0s
+anatomy 2/12 elapsed=68.8s
+anatomy 3/12 elapsed=71.6s
+anatomy 4/12 elapsed=74.4s
+anatomy 5/12 elapsed=77.2s
+anatomy 6/12 elapsed=80.0s
+anatomy 7/12 elapsed=82.8s
+anatomy 8/12 elapsed=85.6s
+anatomy 9/12 elapsed=88.4s
+anatomy 10/12 elapsed=91.2s
+anatomy 11/12 elapsed=94.0s
+anatomy 12/12 elapsed=96.9s
+COMPLETE

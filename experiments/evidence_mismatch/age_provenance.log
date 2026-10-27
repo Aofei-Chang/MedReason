@@ -1,0 +1,14 @@
+{
+  "full": {
+    "answer_numeric_age": 1553,
+    "answer_age_absent_question": 1376,
+    "source_shared_age_absent_question": 993,
+    "absent_question_not_found_in_caption": 395
+  },
+  "medsight_60k": {
+    "answer_numeric_age": 150,
+    "answer_age_absent_question": 128,
+    "source_shared_age_absent_question": 88,
+    "absent_question_not_found_in_caption": 41
+  }
+}

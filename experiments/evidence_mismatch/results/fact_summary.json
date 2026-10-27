@@ -1,0 +1,269 @@
+{
+  "annotation": {
+    "review_method": "Assistant review of question, target, source caption and image contact sheets before inspecting model contrasts. Select explicit patient facts or test events beyond a general diagnostic prediction. These are structural missing-context candidates, not clinician-adjudicated labels. All 32 original external-screen records remain in the primary analysis.",
+    "spans": {
+      "Instruction-Tuning_394494": "31-year-old woman",
+      "Instruction-Tuning_294756": "history of recurrent urinary tract infections",
+      "Instruction-Tuning_421261": "without any deterioration in renal function",
+      "Instruction-Tuning_512675": "55-year-old male",
+      "Instruction-Tuning_68061": "history of ovarian serous adenocarcinoma",
+      "Instruction-Tuning_502647": "history of medical treatments with BRAF- and MEK-inhibitors",
+      "Instruction-Tuning_43585": "history of high-grade fever, seizures, and subsequent movement disorders",
+      "Instruction-Tuning_422538": "biopsy results confirm",
+      "Instruction-Tuning_210842": "history of alcoholism",
+      "Instruction-Tuning_141171": "histological evaluation confirmed the diagnosis of non-small cell adenocarcinoma",
+      "Instruction-Tuning_160931": "25-year-old patient with a known histological diagnosis",
+      "Instruction-Tuning_572961": "histopathological examination of the eye, which showed massive choroidal invasion"
+    },
+    "known_screen_false_positives": {
+      "Instruction-Tuning_239276": "General statement about what follow-up x-rays can confirm, rather than a reported case-specific result.",
+      "Instruction-Tuning_260899": "Recommendation to correlate with history and laboratory results, rather than an assertion that those results are known.",
+      "Instruction-Tuning_343164": "The question asks about histopathology and the supplied montage visibly contains histology panels.",
+      "Instruction-Tuning_173357": "The question supplies a four-month comparison and the image visibly includes labeled before/follow-up radiographs."
+    },
+    "other_candidates": "Temporal comparison targets require panel-by-panel and image-text review. They are not automatically missing evidence. One age-marked knee image contains scanner text, so it was excluded from the explicit-fact subset pending OCR review."
+  },
+  "summaries": [
+    {
+      "model": "huatuo",
+      "scope": "full_sentence",
+      "metrics": {
+        "image_identity_gain": {
+          "n": 12,
+          "mean": 0.0888809948015893,
+          "median": 0.06023105768361425,
+          "ci95": [
+            0.03131585260806605,
+            0.15497305920925758
+          ]
+        },
+        "image_vs_none": {
+          "n": 12,
+          "mean": 0.07544407521634859,
+          "median": 0.07827862014087383,
+          "ci95": [
+            0.02437727577528608,
+            0.11855077218079889
+          ]
+        },
+        "prefix_gain_no_image": {
+          "n": 12,
+          "mean": 0.8607085391961465,
+          "median": 0.7950553898404413,
+          "ci95": [
+            0.7025796183501983,
+            1.055934694910211
+          ]
+        },
+        "prefix_specificity_no_image": {
+          "n": 12,
+          "mean": 0.8727648399268441,
+          "median": 0.8139635401857178,
+          "ci95": [
+            0.721374021317461,
+            1.0282922086838455
+          ]
+        },
+        "caption_specificity": {
+          "n": 12,
+          "mean": 0.7104880271013032,
+          "median": 0.7405792255202797,
+          "ci95": [
+            0.553492662112302,
+            0.8555790513210908
+          ]
+        },
+        "source_over_image": {
+          "n": 12,
+          "mean": 0.6216070322997137,
+          "median": 0.7004811958704926,
+          "ci95": [
+            0.4374620472585696,
+            0.7927529952779379
+          ]
+        }
+      }
+    },
+    {
+      "model": "huatuo",
+      "scope": "fact_span",
+      "metrics": {
+        "image_identity_gain": {
+          "n": 12,
+          "mean": 0.11966360896621091,
+          "median": 0.08732075530834582,
+          "ci95": [
+            0.054650175462110116,
+            0.19260159074001756
+          ]
+        },
+        "image_vs_none": {
+          "n": 12,
+          "mean": -0.012685778481547385,
+          "median": 0.04774366205674596,
+          "ci95": [
+            -0.12042990594689364,
+            0.07754196898408408
+          ]
+        },
+        "prefix_gain_no_image": {
+          "n": 12,
+          "mean": 0.329281736165431,
+          "median": 0.21560995744075617,
+          "ci95": [
+            0.15574869841320851,
+            0.5310388356884354
+          ]
+        },
+        "prefix_specificity_no_image": {
+          "n": 12,
+          "mean": 0.4077956167245335,
+          "median": 0.37180544633466917,
+          "ci95": [
+            0.27321657083391476,
+            0.5472535821939789
+          ]
+        },
+        "caption_specificity": {
+          "n": 12,
+          "mean": 1.551508039495378,
+          "median": 1.4667189595813528,
+          "ci95": [
+            1.2775889435988526,
+            1.852241111363392
+          ]
+        },
+        "source_over_image": {
+          "n": 12,
+          "mean": 1.431844430529167,
+          "median": 1.295139309944497,
+          "ci95": [
+            1.1872053207142315,
+            1.7263684407915323
+          ]
+        }
+      }
+    },
+    {
+      "model": "medsight",
+      "scope": "full_sentence",
+      "metrics": {
+        "image_identity_gain": {
+          "n": 12,
+          "mean": 0.14538656778078266,
+          "median": 0.14576420441005822,
+          "ci95": [
+            0.020543798545042367,
+            0.26118282775969315
+          ]
+        },
+        "image_vs_none": {
+          "n": 12,
+          "mean": 0.11890626405359872,
+          "median": 0.07647734413377849,
+          "ci95": [
+            -0.0029760639648265925,
+            0.25050555777153816
+          ]
+        },
+        "prefix_gain_no_image": {
+          "n": 12,
+          "mean": 1.4611732448206551,
+          "median": 1.395113854002437,
+          "ci95": [
+            1.0938943728658947,
+            1.9336598513002883
+          ]
+        },
+        "prefix_specificity_no_image": {
+          "n": 12,
+          "mean": 1.260728940162689,
+          "median": 1.2500157204884845,
+          "ci95": [
+            0.9998893932752554,
+            1.5296375087583485
+          ]
+        },
+        "caption_specificity": {
+          "n": 12,
+          "mean": 0.9073981798748658,
+          "median": 0.774139870569831,
+          "ci95": [
+            0.6501993826392951,
+            1.1816222234835618
+          ]
+        },
+        "source_over_image": {
+          "n": 12,
+          "mean": 0.7620116120940831,
+          "median": 0.716250868055996,
+          "ci95": [
+            0.4671705842488502,
+            1.048217917143921
+          ]
+        }
+      }
+    },
+    {
+      "model": "medsight",
+      "scope": "fact_span",
+      "metrics": {
+        "image_identity_gain": {
+          "n": 12,
+          "mean": 0.3334565622984382,
+          "median": 0.14947109367494704,
+          "ci95": [
+            0.06317848569515998,
+            0.6909664571890697
+          ]
+        },
+        "image_vs_none": {
+          "n": 12,
+          "mean": 0.18684557971689633,
+          "median": 0.0895457561043792,
+          "ci95": [
+            -0.003755546096181397,
+            0.3836963352929804
+          ]
+        },
+        "prefix_gain_no_image": {
+          "n": 12,
+          "mean": 0.9480025805498459,
+          "median": 0.6650755748611838,
+          "ci95": [
+            0.47779513091687026,
+            1.5182062255229447
+          ]
+        },
+        "prefix_specificity_no_image": {
+          "n": 12,
+          "mean": 1.3565949571858031,
+          "median": 1.200390117285835,
+          "ci95": [
+            0.8990428915570985,
+            1.9172416158489192
+          ]
+        },
+        "caption_specificity": {
+          "n": 12,
+          "mean": 1.9097003712530862,
+          "median": 1.8241899753448099,
+          "ci95": [
+            1.3333443628351422,
+            2.5781405443317267
+          ]
+        },
+        "source_over_image": {
+          "n": 12,
+          "mean": 1.5762438089546482,
+          "median": 1.3966488157285437,
+          "ci95": [
+            1.0761783679375934,
+            2.1502141712683307
+          ]
+        }
+      }
+    }
+  ],
+  "caveat": "Exploratory selected-subset sensitivity, not a prevalence estimate or validated clinical ground truth. Fact-span tokens still condition on earlier tokens inside the target sentence."
+}
